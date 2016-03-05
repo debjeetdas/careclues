@@ -1,0 +1,896 @@
+@font-face {
+    font-family: "OpenSans-Bold";
+    src: url(../font/ttf/OpenSans-Bold.ttf);
+}
+@font-face {
+    font-family: "OpenSans-BoldItalic";
+    src: url(../font/ttf/OpenSans-BoldItalic.ttf);
+}
+@font-face {
+    font-family: "OpenSans-Light";
+    src: url(../font/ttf/OpenSans-Light.ttf);
+}
+@font-face {
+    font-family: "OpenSans-LightItalic";
+    src: url(../font/ttf/OpenSans-LightItalic.ttf);
+}
+@font-face {
+    font-family: "OpenSans-Regular";
+    src: url(../font/ttf/OpenSans-Regular.ttf);
+}
+@font-face {
+    font-family: "OpenSans-Italic";
+    src: url(../font/ttf/OpenSans-Italic.ttf);
+}
+@font-face {
+    font-family: "OpenSans-SemiBold";
+    src: url(../font/ttf/OpenSans-SemiBold.ttf);
+}
+@font-face {
+    font-family: "OpenSans-SemiBoldItalic";
+    src: url(../font/ttf/OpenSans-SemiBoldItalic.ttf);
+}
+@font-face {
+    font-family: "OpenSans-ExtraBold";
+    src: url(../font/ttf/OpenSans-ExtraBold.ttf);
+}
+@font-face {
+    font-family: "OpenSans-ExtraBoldItalic";
+    src: url(../font/ttf/OpenSans-ExtraBoldItalic.ttf);
+}
+body {
+    width: 100%;
+    overflow-x: hidden;
+}
+.row {
+    margin-right: 0;
+}
+#headtop {
+    height: 75px;
+    border: 1px solid #e7e7e7;
+    background-color: #ffffff;
+}
+.container {
+    padding: 0 !important;
+    margin: 0 auto;
+}
+#appointment_img1 {
+    margin-top: 10px;
+    margin-left: 90px;
+    cursor: pointer;
+}
+.Appointment_para1 {
+    font-family: "OpenSans-Regular";
+    font-size: 12px;
+    color: #666666;
+    padding-top: 39.5px;
+}
+.Appointment_span1 {
+    font-family: "OpenSans-SemiBold";
+    color: #333333;
+}
+#Appointment_div {
+    margin-top: 75px;
+}
+.Appointment_heading1 {
+    font-family: "OpenSans-Bold";
+    font-size: 22px;
+    color: #333333;
+    margin-top: 24px;
+    margin-bottom: 14px;
+}
+.Appointment_fontfamily {
+    font-family: "OpenSans-Regular";
+    font-size: 16px;
+    font-weight: normal;
+}
+.dropdown-toggle {
+    color: #999999;
+}
+.dropdown {
+    display: inline;
+}
+.background {
+    background-color: #fafafc;
+}
+[type="checkbox"] {
+    width: 21px;
+}
+label {
+    margin-right: 9px;
+}
+[type="checkbox"]:not(:checked),
+[type="checkbox"]:checked {
+    position: absolute;
+    left: -9999px;
+}
+[type="checkbox"]:not(:checked) + label,
+[type="checkbox"]:checked + label {
+    position: relative;
+    padding-left: 25px;
+    cursor: pointer;
+    margin-right: 48px;
+}
+/* checkbox aspect */
+
+[type="checkbox"]:not(:checked) + label:before,
+[type="checkbox"]:checked + label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 2px;
+    width: 17px;
+    height: 17px;
+    border: none;
+    background: #FFFFFF;
+    border-radius: 2px;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, .3)
+}
+/* checked mark aspect */
+
+[type="checkbox"]:not(:checked) + label:after,
+[type="checkbox"]:checked + label:after {
+    content: url(../img/check.png);
+    position: absolute;
+    font-size: 15px;
+    left: 2px;
+    line-height: 0.8;
+    position: absolute;
+    font-weight: normal;
+    top: 3px;
+    transition: all 0.2s ease 0s;
+}
+/* checked mark aspect changes */
+
+[type="checkbox"]:not(:checked) + label:after {
+    opacity: 0;
+    transform: scale(0);
+}
+[type="checkbox"]:checked + label:after {
+    opacity: 1;
+    transform: scale(1);
+}
+[type="checkbox"]:disabled:checked + label:after {
+    color: #999;
+}
+[type="checkbox"]:disabled + label {
+    color: #aaa;
+}
+.button2 {
+    background-color: #d7155b;
+    color: #ffffff;
+    font-family: "OpenSans-SemiBold";
+    font-size: 14px;
+    float: right;
+    border: none;
+    width: 120px;
+    border-radius: 2px;
+    padding: 17.5px 34px 17.5px 34px;
+}
+.button2:hover,.button2:active{
+    background-color: #cb1557;
+    border-color: #a71047;
+}
+.Appointment_p2 {
+    font-family: "OpenSans-Bold";
+    font-size: 18px;
+    display: table;
+    margin: 34px 0 25px 0;
+    width: 100%;
+}
+.Appointment_span2 {
+    margin-left: 39px;
+    font-family: "OpenSans-Regular";
+    font-size: 13.99px;
+    color: #999999;
+    font-weight: normal;
+    margin-right: 21.6px;
+}
+.Appointment_span3 {
+    font-family: "OpenSans-Bold";
+    font-size: 13.99px;
+    color: #da346a;
+    border-right: 1px solid #d8d8d8;
+    font-weight: normal;
+    padding: 1px 20px 1px 0px;
+}
+.Appointment_span3 a {
+    color: #dd4c78;
+}
+.Appointment_span3 a:hover,.Appointment_span3 a:focus,.Appointment_span3 a:active{
+	text-decoration: none;
+}
+.Appointment_span4 {
+    font-family: "OpenSans-Regular";
+    font-size: 13.99px;
+    color: #333333;
+    padding-left: 23.7px;
+    font-weight: normal;
+}
+.Appointment_span4:hover,.Appointment_span4:focus,.Appointment_span4:active{
+	text-decoration: none;
+}
+.DoctorImg {
+    width: 100%;
+    margin-top: 19px;
+}
+.col-lg-4,
+.col-md-4,
+.col-sm-4,
+.col-xs-4 {
+    padding-right: 0px;
+    margin-right: 0px;
+}
+.col-lg-8,
+.col-md-8,
+.col-sm-8 {
+    padding-right: 0px;
+}
+.row3 {
+    margin: 0px;
+}
+.col-lg-6,
+.col-md-6,
+.col-sm-6 {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+.Appointment_p3 {
+    margin-top: 30px;
+    margin-bottom: 8px;
+    font-family: "OpenSans-SemiBold";
+    font-size: 18px;
+    color: #333333;
+}
+.Appointment_p4 {
+    font-family: "OpenSans-Regular";
+    font-size: 16px;
+    margin-bottom: 9px;
+    color: #999999;
+}
+.fa-star {
+    margin-bottom: 20px;
+}
+.Appointment_fa-star {
+    color: #d41c5c;
+}
+.Appointment_fa-star1 {
+    color: #cccccc;
+}
+.Appointment_fa_color {
+    color: #b7b7b7;
+}
+.Appointment_span5 {
+    font-size: 16px;
+    font-family: "OpenSans-Regular";
+    color: #333333;
+    margin-bottom: 23px;
+}
+.app_timings .Appointment_span5 {
+    margin-bottom: 0;
+}
+.Appointment_span51 {
+    border-right: 1px solid #d8d8d8;
+    font-family: "OpenSans-SemiBold";
+}
+.Appointment_span52 {
+    padding-left: 44px;
+    font-family: "OpenSans-SemiBold";
+}
+.Appointment_span6 {
+    color: #999999;
+    font-family: "OpenSans-SemiBold";
+    font-size: 14px;
+    position: relative;
+}
+.Appointment_p5 {
+    margin-left: 0;
+    margin-right: 0;
+}
+.Appointment_p6 {
+    margin-left: 79px;
+}
+.Appointment_span53 {
+    padding-left: 24px;
+}
+.Appointment_p54 {
+    margin-top: -13px;
+    margin-bottom: 30px;
+}
+.button3 {
+    border: 1px solid #d7155b;
+    color: #d7155b;
+    background-color: #ffffff;
+    border-radius: 2px;
+    padding: 18px 0;
+    width: 141px;
+    font-family: "OpenSans-SemiBold";
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+.button3:active,.button3:hover,.button3:focus{
+    background-color:#d7155b;
+    color:#fafafc;
+}
+.app-time {
+    font-family: "OpenSans-SemiBold";
+}
+.row4 {
+    margin-top: 18px;
+}
+.row5 {
+    margin-bottom: 55px;
+}
+footer {
+    padding-top: 22px;
+    background-color: #fafafc;
+    height: 104.9px;
+}
+.Appointment_p7 {
+    float: right;
+    color: #333333;
+    font-size: 14px;
+    font-family: "OpenSans-Regular";
+    padding-right: 20px;
+}
+.footer-contents.container {
+    position: relative;
+}
+.footerimage {
+    float: right;
+    margin-top: 28px;
+    margin-right: -25px;
+}
+.Appointment_span7 {
+    margin-right: -85px;
+    color: #8f66ae;
+    font-family: "OpenSans-Regular";
+    font-size: 14px;
+}
+.Appointment_span8 {
+    color: #d62465;
+}
+.pos-rel {
+    border: 1px solid #e7e1e8;
+    margin-left: 8px;
+    margin-right: 0px;
+}
+.container .row3_col1 .pos-rel {
+    margin-left: 0px;
+    margin-right: 8px;
+}
+.book-now-btn {
+    padding-left: 35px;
+    text-align: center;
+}
+@media screen and (min-width: 1200px) {
+    .book-now-btn {
+        padding-left: 0;
+        margin-left: -32px;
+    }
+}
+@media screen and (max-width: 1199px) {
+    .book-now-btn {
+        padding-left: 0;
+    }
+}
+@media screen and (min-width: 991px) {
+    .book-now-btn {
+        padding-left: 38px;
+    }
+}
+@media screen and (max-width: 767px) {
+    .book-now-btn {
+        padding-left: 0;
+        text-align: center;
+    }
+    .Appointment_span5 {
+        margin-bottom: 18px;
+    }
+}
+.doctorImage {
+    padding-right: 0;
+    padding-left: 30px;
+}
+.btn {
+    border-radius: 5px !important;
+}
+.btn-group > .btn-group {
+    padding-right: 9px;
+    padding-top: 20px !important;
+}
+.Appointment_para1 > a {
+    color: #666666;
+}
+.Appointment_span1 > a {
+    color: #333333;
+}
+.checkbox_div {
+    display: table;
+    margin: 20.5px 0;
+    width: 100%;
+}
+.checkbox1 {
+    vertical-align: middle;
+    display: table-cell;
+}
+.l-class,
+.caret {
+    display: inline-block;
+}
+.l-class {
+    float: left;
+}
+.caret {
+    float: right;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+.footer-contents1 {
+    float: right;
+    position: absolute;
+    right: 0;
+    top: 30px;
+}
+.footerimage {
+    float: right;
+    margin-top: 28px;
+    margin-right: -25px;
+}
+.Appointment_div1-span {
+    margin-right: 40px;
+    float: left;
+}
+.Appointment_span2 {
+    margin-left: 0;
+}
+.btn-group > .btn-group:last-child {
+    padding-right: 0;
+}
+@media screen and (min-width: 768px) and (max-width: 990px) {
+    .container {
+        width: 768px;
+    }
+}
+.app_exp,
+.app_timings {
+    display: table;
+    margin: 3px 0 30px;
+    width: 100%;
+}
+.app_exp {
+    margin: 3px 0;
+    padding-left: 0;
+}
+.avail-time {
+    padding-left: 28px;
+}
+.app_weekdays,
+.app_sun {
+    float: left;
+    text-align: left;
+    width: 50%;
+}
+.app_timings .app_weekdays,
+.app_sun {
+    padding-left: 30px;
+}
+.app_timings .app_weekdays,
+.app_timings .app_sun {
+    width: 100%;
+}
+.fa-clock-o::before {
+    content: url("../img/clock.png");
+    position: absolute;
+    top: 1px;
+}
+.Appointment_p5 {
+    display: table;
+    width: 100%;
+}
+.app-day,
+.app-time {
+    display: table-cell;
+}
+.app-day {
+    width: 35%;
+}
+.app-time {
+    width: 65%;
+}
+.exp-fee {
+    padding-left: 15px;
+}
+.exp-yrs {
+    padding-left: 5px;
+}
+@media screen and (max-width: 767px) {
+    .app_exp,
+    .app_timings {
+        margin: 3px 0 3px -47%;
+        width: 138%;
+    }
+    .Appointment_div1-span {
+        float: left;
+        width: 50%;
+        margin-right: 0px;
+    }
+    .Appointment_p2_div {
+        float: right;
+    }
+    .app_timings {
+        margin-bottom: 30px;
+    }
+    .Appointment_span5_3 {
+        font-size: 14px;
+    }
+    .app_weekdays,
+    .app_sun {
+        width: 43%;
+    }
+    .Appointment_span5 {
+        font-size: 14px;
+    }
+    .Appointment_p5 {
+        font-size: 15px;
+    }
+}
+@media screen and (max-width: 767px) {
+    .container {
+        margin: 0 20px;
+    }
+    .btn-group > .btn-group {
+        padding: 0;
+        margin-right: 3.1%;
+    }
+    .btn-group > .btn-group:nth-child(3) {
+        margin-right: 0;
+    }
+    .btn-group-justified > .btn,
+    .btn-group-justified > .btn-group {
+        float: left;
+        width: 31.3%;
+    }
+    .Appointment_span2 {
+        margin-right: 15px;
+    }
+    .Appointment_span3 {
+        padding-right: 15px;
+    }
+    .Appointment_span4 {
+        padding-left: 15px;
+    }
+}
+@media screen and (max-width: 767px) {
+    #appointment_img1 {
+        margin-left: 25px;
+    }
+    .Appointment_para1 {
+        padding-top: 25px;
+        padding-bottom: 7px;
+    }
+    .button2 {
+        margin-bottom: 27px;
+    }
+    .Appointment_p2 {
+        margin-bottom: 25px;
+        margin-top: 22px;
+    }
+    .Appointment_heading1 {
+        margin-top: 0px;
+    }
+}
+@media screen and (max-width: 420px) {
+    .Appointment_div1-span {
+        font-size: 15px;
+        width: 30%;
+    }
+}
+@media screen and (max-width: 420px) {
+    .btn-group-justified > .btn,
+    .btn-group-justified > .btn-group {
+        float: left;
+        width: 48%;
+    }
+    .Appointment_span6 {
+        color: #999999;
+        font-family: "OpenSans-Regular";
+        font-size: 14px;
+        position: relative;
+    }
+    .app-day {
+        width: 28%;
+    }
+    .app-time {
+        width: 72%;
+    }
+    .exp-yrs {
+        padding-left: 0;
+    }
+    .fa-suitcase::before,
+    .fa-clock-o::before {
+        font-size: 19px;
+        padding-right: 10px;
+    }
+    .app_weekdays,
+    .app_sun {
+        width: 43%;
+    }
+    .btn-group > .btn-group {
+        margin-right: 4% !important;
+        margin-left: 0 !important;
+        padding: 0;
+    }
+    .btn-group > .btn-group:nth-child(2),
+    .btn-group > .btn-group:nth-child(4) {
+        margin-right: 0 !important;
+    }
+    .Appointment_p4 {
+        font-size: 16px;
+    }
+    .Appointment_p2 {
+        margin-bottom: 2px;
+        margin-top: 15px;
+        font-size: 15px;
+    }
+    .col-xxs-12 {
+        width: 100%;
+        padding-top: 15px !important;
+    }
+    .Appointment_span6 {
+        color: #999999;
+        font-family: "Opensans-Regular";
+        font-size: 14px;
+    }
+    .Appointment_fontfamily {
+        font-size: 12px;
+    }
+    .Appointment_span2 {
+        font-size: 12px;
+        margin-right: 7px;
+        padding-right: 15px;
+    }
+    .Appointment_span3 {
+        font-size: 11px;
+    }
+    .Appointment_span4 {
+        font-size: 11px;
+        padding-left: 15px;
+    }
+    .container .row3_col1 .row_inside {
+        margin-right: 0;
+    }
+    .DoctorImg {
+        margin-top: 11px;
+    }
+    .Appointment_p3 {
+        margin-top: 20px;
+        font-size: 17px;
+    }
+    .app_exp,
+    .app_timings {
+        margin: 3px 0 3px -50%;
+        width: 160%;
+    }
+    .pos-rel,
+    .container .row3_col1 .pos-rel {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .button3 {
+        margin: 25px 0 20px;
+    }
+    .row4 {
+        margin-top: 0px;
+    }
+    .Appointment_span2 {
+        margin-right: 0;
+    }
+    .Appointment_span3 {
+        padding-right: 15px;
+    }
+    .Appointment_span4 {
+        padding-left: 15px;
+    }
+}
+@media screen and (max-width: 420px) {
+    .button2 {
+        margin-bottom: 24px;
+    }
+    .Appointment_para1 {
+        padding-top: 22px;
+        padding-bottom: 2px;
+    }
+    .Appointment_heading1 {
+        margin-top: 0px;
+    }
+}
+.rating {
+    float:left;
+    margin: -8px 0 21px;
+}
+
+.rating:not(:checked) > input {
+    position:absolute;
+    clip:rect(0,0,0,0);
+}
+
+.rating:not(:checked) > label {
+    float:right;
+    width:1em;
+    padding:0 .1em;
+    overflow:hidden;
+    white-space:nowrap;
+    cursor:pointer;
+    font-size:150%;
+    line-height:1.2;
+    color:#cccccc;
+}
+
+.rating:not(:checked) > label:before {
+    content: '★ ';
+}
+
+.rating > input:checked ~ label {
+     color: #d41c5c;
+}
+
+.rating > input:checked ~ label:after {
+    color: #d41c5c;
+}
+
+.rating:not(:checked) > label:hover,
+.rating:not(:checked) > label:hover ~ label {
+    color: #cccccc;
+}
+
+.rating > input:checked + label:hover,
+.rating > input:checked + label:hover ~ label,
+.rating > input:checked ~ label:hover,
+.rating > input:checked ~ label:hover ~ label,
+.rating > label:hover ~ input:checked ~ label {
+    color: #d41c5c;
+}
+
+.rating > label:active {
+    position:relative;
+    left:0px;
+    top: 0;
+}
+.rating > label{
+    margin-right: 0;
+}
+/*
+.rating-1,.rating-2,.rating-3,.rating-4,.rating-5,.rating-6 {
+    float:left;
+    margin: -8px 0 21px;
+}
+
+.rating-1:not(:checked) > input,
+.rating-2:not(:checked) > input,
+.rating-3:not(:checked) > input,
+.rating-4:not(:checked) > input,
+.rating-5:not(:checked) > input,
+.rating-6:not(:checked) > input
+ {
+    position:absolute;
+    clip:rect(0,0,0,0);
+}
+
+.rating-1:not(:checked) > label,
+.rating-2:not(:checked) > label,
+.rating-3:not(:checked) > label,
+.rating-4:not(:checked) > label,
+.rating-5:not(:checked) > label,
+.rating-6:not(:checked) > label,
+ {
+    float:right;
+    width:1em;
+    padding:0 .1em;
+    overflow:hidden;
+    white-space:nowrap;
+    cursor:pointer;
+    font-size:150%;
+    line-height:1.2;
+    color:#cccccc;
+}
+
+.rating-1:not(:checked) > label:before,
+.rating-2:not(:checked) > label:before,
+.rating-3:not(:checked) > label:before,
+.rating-4:not(:checked) > label:before,
+.rating-5:not(:checked) > label:before,
+.rating-6:not(:checked) > label:before
+{
+    content: '★ ';
+}
+
+.rating-1 > input:checked ~ label,
+.rating-2 > input:checked ~ label,
+.rating-3 > input:checked ~ label,
+.rating-4 > input:checked ~ label,
+.rating-5 > input:checked ~ label,
+.rating-6 > input:checked ~ label
+{
+     color: #d41c5c;
+}
+
+.rating-1 > input:checked ~ label:after,
+.rating-2 > input:checked ~ label:after,
+.rating-3 > input:checked ~ label:after,
+.rating-4 > input:checked ~ label:after,
+.rating-5 > input:checked ~ label:after,
+.rating-6 > input:checked ~ label:after
+{
+    color: #d41c5c;
+}
+
+.rating-1:not(:checked) > label:hover,
+.rating-1:not(:checked) > label:hover ~ label,
+.rating-2:not(:checked) > label:hover,
+.rating-2:not(:checked) > label:hover ~ label,
+.rating-3:not(:checked) > label:hover,
+.rating-3:not(:checked) > label:hover ~ label,
+.rating-4:not(:checked) > label:hover,
+.rating-4:not(:checked) > label:hover ~ label,
+.rating-5:not(:checked) > label:hover,
+.rating-5:not(:checked) > label:hover ~ label,
+.rating-6:not(:checked) > label:hover,
+.rating-6:not(:checked) > label:hover ~ label
+{
+    color: #cccccc;
+}
+.rating-1 > input:checked + label:hover,
+.rating-1 > input:checked + label:hover ~ label,
+.rating-1 > input:checked ~ label:hover,
+.rating-1 > input:checked ~ label:hover ~ label,
+.rating-1 > label:hover ~ input:checked ~ label,
+.rating-2 > input:checked + label:hover,
+.rating-2 > input:checked + label:hover ~ label,
+.rating-2 > input:checked ~ label:hover,
+.rating-2 > input:checked ~ label:hover ~ label,
+.rating-2 > label:hover ~ input:checked ~ label,
+.rating-3 > input:checked + label:hover,
+.rating-3 > input:checked + label:hover ~ label,
+.rating-3 > input:checked ~ label:hover,
+.rating-3 > input:checked ~ label:hover ~ label,
+.rating-3 > label:hover ~ input:checked ~ label,
+.rating-4 > input:checked + label:hover,
+.rating-4 > input:checked + label:hover ~ label,
+.rating-4 > input:checked ~ label:hover,
+.rating-4 > input:checked ~ label:hover ~ label,
+.rating-4 > label:hover ~ input:checked ~ label,
+.rating-5 > input:checked + label:hover,
+.rating-5 > input:checked + label:hover ~ label,
+.rating-5 > input:checked ~ label:hover,
+.rating-5 > input:checked ~ label:hover ~ label,
+.rating-5 > label:hover ~ input:checked ~ label,
+.rating-6 > input:checked + label:hover,
+.rating-6 > input:checked + label:hover ~ label,
+.rating-6 > input:checked ~ label:hover,
+.rating-6 > input:checked ~ label:hover ~ label,
+.rating-6 > label:hover ~ input:checked ~ label
+{
+    color: #d41c5c;
+}
+
+.rating-1 > label:active,
+.rating-2 > label:active,
+.rating-3 > label:active,
+.rating-4 > label:active,
+.rating-5 > label:active,
+.rating-6 > label:active
+{
+    position:relative;
+    left:0px;
+    top: 0;
+}
+.rating-1 > label,
+.rating-2 > label,
+.rating-3 > label,
+.rating-4 > label,
+.rating-5 > label,
+.rating-6 > label
+{
+    margin-right: 0;
+}*/
