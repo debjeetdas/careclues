@@ -142,9 +142,6 @@ body{
   	height: 250px;
   	background-size: cover;
   	background-repeat: no-repeat;
-   	background-position: 65% top;
-}
-.marketing-background-banner{
    	background-position: 50% top;
 }
 .navbar-default{
@@ -286,6 +283,7 @@ color: #666666;
     top: 35px;
     position: absolute;
     color: #666666;
+    display: none;
 }
 .col-xxs-4{
 	padding-left: 0px;
@@ -310,24 +308,47 @@ color: #666666;
 }
 #marketing-feature-image-6{
 	background-image: url("../img/Mobile-01_03.png");
-	width: 50px; 
+	width: 50px;
+	visibility: hidden;
 }
-#marketing-feature-image-7{
-	background-image: url("../img/Mobile-02_03.png"); 
-	width: 67px;
+#marketing-feature-image-mobile-unselect{
+	background-image: url("../img/mobile-unselect.png"); 
+	width: 50px;
+	position: relative;
+	visibility: hidden;
+}
+.marketing-feature-image-mobile-hand {
+    bottom: 0;
+    position: absolute;
+    right: -15px;
+    width: 40px;
+}
+.marketing-feature-image-mobile-select{
+	background-image: url("../img/mobile-select.png"); 
+	width: 50px;
+	position: relative;
+}
+.marketing-feature-image-mobile-final-select{
+	background-image: url("../img/mobile-final-select.png"); 
+	width: 50px;
+	position: relative;
 }
 #marketing-feature-image-8{
 	background-image: url("../img/Home-Hospital_03.png"); 
 	width: 107px;
+	visibility: hidden;
 }
 @media screen and (max-width: 350px){
 	#marketing-feature-image-8{
 		width: 86px;
 		height: 105px;
 	}
-	#marketing-feature-image-7{
-		width: 55px;
+	#marketing-feature-image-mobile-unselect,.marketing-feature-container .marketing-feature-image-mobile-select,.marketing-feature-image-mobile-final-select{
+		width: 42px;
 		height: 105px;
+	}
+	.marketing-feature-image-mobile-hand {
+		width: 30px;
 	}
 	#marketing-feature-image-6{
 		width: 42px;
@@ -681,7 +702,6 @@ margin-bottom: 55px;
 }
 .marketing-feature-buttoncontent {
     margin: 0 auto 84px;
-    width: 100%;
 }
 .marketing-feature-heading {
     margin-top: 60px;
