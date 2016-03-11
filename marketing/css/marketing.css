@@ -167,7 +167,7 @@ body {
 }
 
 .marketing-feature-final {
-  background-image: url("../img/doctorbackground.png");
+  background-image: url("../img/doctor_bg.png");
 }
 
 .marketing-background-banner {
@@ -529,10 +529,6 @@ body {
   display: table;
 }
 
-.marketing-footer-list {
-  list-style-type: none;
-}
-
 li {
   display: inline;
 }
@@ -589,86 +585,123 @@ li {
   color: #666666;
   margin-bottom: 25px;
 }
-
-.footerimage {
-  width: 30px;
-  padding-left: 10px;
+/* Start : Footer code */
+[class*=" socicon-"]:before,[class^=socicon-]:before,[data-icon]:before {
+  font-family: socicon!important;
+  font-style: normal!important;
+  font-weight: 400!important;
+  font-variant: normal!important;
+  text-transform: none!important;
+  speak: none;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  line-height: 1;
+}
+@font-face {
+  font-family:socicon;src:url(../fonts/socicon.eot);src:url(../fonts/socicon.eot?#iefix) format("embedded-opentype"),url(../fonts/socicon.woff) format("woff"),url(../fonts/socicon.ttf) format("truetype"),url(../fonts/socicon.svg#socicon) format("svg");font-weight:400;font-style:normal;
+}
+.socicon-facebook:before {
+  content: "\e041";
+}
+.socicon-twitter:before {
+  content: "\e040";
+}
+.socicon-linkedin:before {
+  content: "\e049";
+}
+.socicon-youtube:before {
+  content: "\e051";
+}
+.default-row {
+    background-color: #fff;
+    padding: 40px 0;
+    position: relative;
+    text-align: center;
+}
+.main-footer {
+    text-align: center;
+}
+.default-row {
+    text-align: center;
+}
+.default-row.brand-pink h2, .default-row.dark, .default-row.dark h2 {
+    color: #fff;
+}
+.default-row.dark {
+    background-color: #8B276C;
+}
+.for-s-mb-m {
+    margin-bottom: 40px;
+}
+.for-l-mb-l {
+    margin-bottom: 60px;
+}
+.main-footer .logo {
+    height: 32px;
+    width: auto;
+}
+.for-s-mb-s {
+    margin-bottom: 15px;
+}
+.main-footer .social-links ul,.menu{
+	padding-left: 0;
+}
+.main-footer .social-links ul li {
+    display: inline-block;
+}
+@media screen and (max-width: 331px){
+	.main-footer .social-links ul li:last-child {
+	    margin-top: 20px;
+	}
+}
+.main-footer .social-links ul li a {
+    border-radius: 50%;
+    color: #fff;
+    display: block;
+    font-family: "socicon";
+    font-size: 25px;
+    height: 60px;
+    margin: 0 10px;
+    padding: 10px;
+    width: 60px;
+}
+.main-footer .social-links ul li a.twitter {
+    border: 2px solid #55acee;
+}
+.main-footer .social-links ul li a.linkedin {
+    border: 2px solid #0177B5;
+}
+.main-footer .social-links ul li a.facebook {
+    border: 2px solid #3B579D;
+}
+.main-footer .social-links ul li a.youtube {
+    border: 2px solid #cd201f;
+}
+.main-footer .social-links ul li a:hover{
+	opacity: 0.7;
+}
+.for-s-mb-l {
+    margin-bottom: 60px;
+}
+.main-footer nav li {
+    display: inline-block;
+    margin: 0 10px;
+}
+a {
+    background-color: transparent;
+}
+.main-footer nav li a {
+    color: #fff;
+}
+.main-footer nav li a:hover {
+    opacity: 0.7;
+}
+#menu-footer-menu a{
+	font-family: "Roboto-Regular";
+  	font-size: 14px;
 }
 
-.footerimage1 {
-  width: 82px;
-  padding-left: 10px;
-}
-
-@media screen and (max-width: 350px) {
-  .footerimage {
-    padding-left: 10px;
-    width: 30%;
-  }
-
-  .footerimage1 {
-    padding-left: 5px;
-    width: 70%;
-  }
-}
-
-footer {
-  border: 1px solid #e6e6e6;
-  padding-bottom: 16px;
-  padding-top: 16px;
-}
-
-@media screen and (max-width: 600px) {
-  .footer-container {
-    padding-left: 0;
-    padding-right: 0;
-  }
-
-  footer {
-    border-left: none;
-    border-right: none;
-  }
-}
-
-.marketing-footer-list {
-  font-family: "Roboto-Regular";
-  font-size: 14px;
-  color: #333333;
-  text-align: right;
-}
-
-.marketing-feature-footer {
-  display: table;
-  width: 100%;
-}
-
-.marketing-feature-footer-cell {
-  display: table-cell;
-  vertical-align: middle;
-}
-
-.marketing-feature-footer-cell-1 {
-  float: left;
-  width: 35%;
-}
-
-.marketing-feature-footer-cell-2 {
-  float: left;
-  width: 65%;
-  margin-top: 2px;
-}
-
-.marketing-footer-redirect {
-  padding-left: 0;
-  width: 100%;
-  margin-bottom: 0;
-}
-
-.marketing-footer-redirect > li {
-  display: inline-block;
-  text-align: right;
-  width: 30%;
-}
+/* End : Footer code */
 
 .marketing-download-button {
   margin-left: auto;
@@ -735,13 +768,6 @@ a:hover {
   color: #ffffff;
 }
 
-@media screen and (min-width: 850px) {
-  footer {
-    margin-left: -40px;
-    margin-right: -40px;
-  }
-}
-
 @media screen and (min-width: 600px) and (max-width: 767px) {
   .marketing-background-cell-1 a {
     font-size: 14px;
@@ -771,17 +797,6 @@ a:hover {
 
   .marketing-download-button-3 {
     width: 120px;
-  }
-
-  .marketing-feature-footer-cell-1 {
-    width: 158px;
-    height: 42px;
-  }
-
-  footer {
-    margin-left: 6px;
-    margin-right: 6px;
-    margin-bottom: 18px;
   }
 
   .marketing-feature-final {
@@ -842,10 +857,6 @@ a:hover {
   .marketing-feature-watchvideo {
     margin-bottom: 62px;
     margin-top: 30px;
-  }
-
-  .marketing-feature-footer-cell {
-    vertical-align: middle;
   }
 
   .row {
@@ -952,19 +963,6 @@ a:hover {
 
 .marketing-feature-heading {
   margin-top: 60px;
-}
-
-ul {
-  float: right;
-  vertical-align: middle;
-  margin-bottom: 0;
-}
-
-footer {
-  padding-left: 53px;
-  margin-bottom: 18px;
-  padding-bottom: 30px;
-  padding-top: 30px;
 }
 
 .marketing-feature-final {
