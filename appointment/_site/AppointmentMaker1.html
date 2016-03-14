@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Appointment Maker</title>
+    <!-- Bootstrap -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/appointmentmaker_common.css">
+</head>
+<body id="app_marker_doctor_patient_details">
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div id="headtop">
+            <div class="navbar-header">
+                <img class="marginLeft" id="appointment_img1" src="img/apollo-logo.png" />
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div id="Appointment_div">
+          <p class="Appointment_para1"><a href="">Home</a> > <a href="">Dermotologists</a> > <a href="">Doctors Details<a href=""> > <span class="Appointment_span1"><a href="" class="Appointment_span1">Appointment Summary</a></span>
+          </p>
+        </div>
+        <div class="doctor-appointment-content">
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 Appointment_col1 appointment_row_col1 col-xxs-12">
+                <p class="Appointment_para2">Doctor Details</p>
+                <div class="row summary-part">
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                        <img src="img/Doctor.png" class="DoctorImg">
+                    </div>
+                    <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8 Appointment_col1">
+                        <p class="Appointment_p3">Dr. Jonathan Mathew
+                        </p>
+                        <p class="Appointment_p31">Dermatologist , Cosmetologist , Trichologist, Dermatosurgeon , Pediatric Dermatologist , Aesthetic Dermatology.
+                        </p>
+                        <p class="Appointment_p32">(MD, MBBS, Fellowship In Cosmetic Dermatology , ECAMS)</p>
+                        <fieldset class="rating">
+                            <input type="radio" id="star5" name="rating" value="5" /><label for="star5" title="Rocks!">5 stars</label>
+                            <input type="radio" id="star4" name="rating" value="4" /><label for="star4" title="Pretty good">4 stars</label>
+                            <input type="radio" id="star3" name="rating" value="3" checked/><label for="star3" title="Meh">3 stars</label>
+                            <input type="radio" id="star2" name="rating" value="2" /><label for="star2" title="Kinda bad">2 stars</label>
+                            <input type="radio" id="star1" name="rating" value="1" /><label for="star1" title="Sucks big time">1 star</label>
+                        </fieldset>
+                        <div class="app_exp">
+                            <div class="app_weekdays Appointment_span5 Appointment_span51"><i class="fa fa-suitcase Appointment_fa_color"></i><span class="exp-yrs"> 6 yrs experience</span></div>
+                            <div class="app_sun Appointment_span5 Appointment_span52"><i class="fa fa-inr Appointment_fa_color"></i><span class="exp-fee">500</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 Appointment_col1 Appointment_col11 col-xxs-12">
+                <p class="Appointment_para2">Patient Details</p>
+                <div class="row summary-part">
+                    <div class="table tab-1">
+                        <div class="tablerow">
+                            <span class="cell">Name:</span>
+                            <span class="cell1 cell">Druvi Shah</span>
+                        </div>
+                        <div class="tablerow">
+                            <span class="cell">Email Id:</span>
+                            <span class="cell1 cell">Druvi123@gmail.com</span>
+                        </div>
+                        <div class="tablerow">
+                            <span class="cell">Mobile Number:</span>
+                            <span class="cell cell1">9986848939</span>
+                        </div>
+                    </div>
+                    <p class="tableheading">Appointment Details</p>
+                    <div class="table tab-2">
+                        <div class="tablerow">
+                            <span class="cell">Date:</span>
+                            <span class="cell1 cell">08 January 2016</span>
+                        </div>
+                        <div class="tablerow">
+                            <span class="cell">Time:</span>
+                            <span class="cell1 cell">06:00PM - 06:30PM</span>
+                        </div>
+                        <div class="tablerow">
+                            <span class="cell">Location:</span>
+                            <span class="cell cell1">Apollo Hospital, HSR Layout.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row Appointment_row1 Appointment_row_2 col-lg-12 col-md-12 col-sm-12 col-xs-6 col-xxs-12">
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 Appointment_row1_col1 Appointment_row1_col_offer">
+                  <div class="Appointment_para3">Offer Details
+                  </div>
+                  <div class="Appointment_para4_div">
+                    <div class="Appointment_para4">
+                      <div class="of-det">
+                        <span class="of-c">OFFER CODE:</span><span class="Appointment_span3">LASER85</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 Appointment_row1_col1 Appointment_row1_col12">
+                    <div class="form-sub-button">
+                      <button class="button3 btn-cancel">CANCEL</button>
+                      <button class="button3 btn-confirm">CONFIRM</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+    <div class="footer-contents container">
+        <p class="Appointment_p7">Powered by</p>
+       <div class="footer-contents1"><img src="img/footerImg.png"> <img src="img/footerImgName.png"></div>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
