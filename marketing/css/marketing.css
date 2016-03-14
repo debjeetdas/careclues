@@ -397,7 +397,7 @@ body {
 
 .marketing-fa-arrow-right {
   right: 0;
-  top: 35px;
+  top: 32%;
   position: absolute;
   color: #666666;
   display: none;
@@ -433,13 +433,13 @@ body {
 
 #marketing-feature-image-6 {
   background-image: url("../img/Mobile-01_03.png");
-  width: 50px;
+  width: 85px;
   visibility: hidden;
 }
 
 #marketing-feature-image-mobile-unselect {
   background-image: url("../img/mobile-unselect.png");
-  width: 50px;
+  width: 85px;
   position: relative;
   visibility: hidden;
 }
@@ -453,53 +453,60 @@ body {
 
 .marketing-feature-image-mobile-select {
   background-image: url("../img/mobile-select.png");
-  width: 50px;
+  width: 85px;
   position: relative;
 }
 
 .marketing-feature-image-mobile-final-select {
   background-image: url("../img/mobile-final-select.png");
-  width: 50px;
+  width: 85px;
   position: relative;
 }
 
 #marketing-feature-image-8 {
   background-image: url("../img/Home-Hospital_03.png");
-  width: 107px;
+  width: 135px;
   visibility: hidden;
 }
-
-@media screen and (max-width: 350px) {
-  #marketing-feature-image-8 {
-    width: 86px;
-    height: 105px;
-  }
-
-  #marketing-feature-image-mobile-unselect,.marketing-feature-container .marketing-feature-image-mobile-select,.marketing-feature-image-mobile-final-select {
-    width: 42px;
-    height: 105px;
-  }
-
-  .marketing-feature-image-mobile-hand {
-    width: 30px;
-  }
-
-  #marketing-feature-image-6 {
-    width: 42px;
-    height: 105px;
-  }
-
-  .marketing-fa-arrow-right {
-    top: 27px;
-  }
-}
-
 .marketing-feature-imagecommon {
-  height: 125px;
+  height: 143px;
   background-repeat: no-repeat;
   background-size: contain;
   margin: 0px auto 0;
 }
+
+@media screen and (max-width: 600px) {
+	#marketing-feature-image-6,#marketing-feature-image-mobile-unselect,.marketing-feature-image-mobile-select,.marketing-feature-image-mobile-final-select {
+	  width: 51px;
+	  height: 86px;
+	}
+	#marketing-feature-image-8 {
+	  width: 80px;
+	  height: 86px;
+	}
+    .marketing-feature-image-mobile-hand {
+      width: 35px;
+	}
+	  .marketing-fa-arrow-right {
+	    top: 32px;
+	  }
+}
+@media screen and (max-width: 350px) {
+	#marketing-feature-image-6,#marketing-feature-image-mobile-unselect,.marketing-feature-image-mobile-select,.marketing-feature-image-mobile-final-select {
+	  width: 42px;
+	  height: 86px;
+	}
+	#marketing-feature-image-8 {
+	  width: 80px;
+	  height: 86px;
+	}
+    .marketing-feature-image-mobile-hand {
+      width: 30px;
+	}/*
+	  .marketing-fa-arrow-right {
+	    top: 27px;
+	  }
+*/}
 
 .marketing-feature-button {
   background-color: #663090;
@@ -512,13 +519,18 @@ body {
 }
 
 .marketing-feature-watchvideo {
-  width: 142px;
-  height: 38px;
-  margin-left: auto;
-  margin-right: auto;
+  background: url("../img/watch_video.png") scroll 0 0 no-repeat transparent;
+  width: 238px;
+  height: 64px;
+  background-size: contain;
   display: block;
-  margin-top: 8px;
-  margin-bottom: 10px;
+  margin:8px auto 27px;
+}
+@media screen and (max-width: 600px){
+	.marketing-feature-watchvideo {
+	  width: 145px;
+	  height: 40px;
+	}
 }
 
 .marketing-feature-final {
@@ -973,6 +985,15 @@ a:hover {
 /* Start : Contact */
 .popup {
   display: none;
+}
+
+.close-button {
+	font-family: "omnes-Regular-webfont";
+    color: #fff;
+    cursor: pointer;
+    position: absolute;
+    right: 15px;
+    top: 15px;
 }
 
 .k-tooltip-content {
