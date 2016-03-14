@@ -640,7 +640,8 @@ li {
     color: #fff;
 }
 .default-row.dark {
-    background-color: #8B276C;
+    background:url(../img/footer_bg.png) no-repeat scroll 0 0 transparent;
+	background-position: 50% top;
 }
 .for-s-mb-m {
     margin-bottom: 40px;
