@@ -264,12 +264,7 @@ body {
 
 #marketing-feature-image {
   background-image: url("../img/Hospital_03.png");
-  visibility: hidden;
-  -webkit-transition: all 0.5s ease-in-out 0.5s;
-  -moz-transition: all 0.5s ease-in-out 0.5s;
-  -ms-transition: all 0.5s ease-in-out 0.5s;
-  -o-transition: all 0.5s ease-in-out 0.5s;
-  transition: all 0.5s ease-in-out 0.5s;
+
 }
 
 #marketing-feature-image:hover {
@@ -279,12 +274,7 @@ body {
 #marketing-feature-image-1 {
   background-image: url("../img/Ambulance_03.png");
   width: 164px;
-  visibility: hidden;
-  -webkit-transition: all 1s ease-in-out 1s;
-  -moz-transition: all 1s ease-in-out 1s;
-  -ms-transition: all 1s ease-in-out 1s;
-  -o-transition: all 1s ease-in-out 1s;
-  transition: all 1s ease-in-out 1s;
+
 }
 
 #marketing-feature-image-1:hover {
@@ -295,12 +285,7 @@ body {
 #marketing-feature-image-2 {
   background-image: url("../img/24-7_doctor_03.png");
   width: 128px;
-  visibility: hidden;
-  -webkit-transition: all 1.5s ease-in-out 1.5s;
-  -moz-transition: all 1.5s ease-in-out 1.5s;
-  -ms-transition: all 1.5s ease-in-out 1.5s;
-  -o-transition: all 1.5s ease-in-out 1.5s;
-  transition: all 1.5s ease-in-out 1.5s;
+
 }
 
 #marketing-feature-image-2:hover {
@@ -311,12 +296,7 @@ body {
 #marketing-feature-image-3 {
   background-image: url("../img/Alert_03.png");
   width: 114px;
-  visibility: hidden;
-  -webkit-transition: all 0.5s ease-in-out 0.5s;
-  -moz-transition: all 0.5s ease-in-out 0.5s;
-  -ms-transition: all 0.5s ease-in-out 0.5s;
-  -o-transition: all 0.5s ease-in-out 0.5s;
-  transition: all 0.5s ease-in-out 0.5s;
+
 }
 
 #marketing-feature-image-3:hover {
@@ -326,12 +306,7 @@ body {
 
 #marketing-feature-image-4 {
   background-image: url("../img/Doctor-Home_03.png");
-  visibility: hidden;
-  -webkit-transition: all 1s ease-in-out 1s;
-  -moz-transition: all 1s ease-in-out 1s;
-  -ms-transition: all 1s ease-in-out 1s;
-  -o-transition: all 1s ease-in-out 1s;
-  transition: all 1s ease-in-out 1s;
+
 }
 
 #marketing-feature-image-4:hover {
@@ -341,17 +316,15 @@ body {
 #marketing-feature-image-5 {
   background-image: url("../img/Guide_03.png");
   width: 137px;
-  visibility: hidden;
-  -webkit-transition: all 1.5s ease-in-out 1.5s;
-  -moz-transition: all 1.5s ease-in-out 1.5s;
-  -ms-transition: all 1.5s ease-in-out 1.5s;
-  -o-transition: all 1.5s ease-in-out 1.5s;
-  transition: all 1.5s ease-in-out 1.5s;
+
 }
 
 #marketing-feature-image-5:hover {
   background-image: url("../img/Guide_hover_03.png");
   width: 137px;
+}
+#feature-1,#feature-2,#feature-3,#feature-4,#feature-5,#feature-6{
+  visibility: hidden;
 }
 
 .marketing-feature-content-1 {
@@ -435,6 +408,12 @@ body {
   background-image: url("../img/Mobile-01_03.png");
   width: 85px;
   visibility: hidden;
+}
+#marketing-feature-image-6 ~ h4.marketing-feature-center,
+#marketing-feature-image-mobile-unselect ~ h4.marketing-feature-center,
+.marketing-feature-image-mobile-select ~ h4.marketing-feature-center,
+#marketing-feature-image-8 ~ h4.marketing-feature-center {
+    visibility: hidden;
 }
 
 #marketing-feature-image-mobile-unselect {
