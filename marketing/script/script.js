@@ -59,18 +59,18 @@ $(document).ready(function() {
 		}
 	});
 });
+$(window).scroll(function(){
+	var scrollTop = $(window).scrollTop();
+	if (scrollTop>10) {
+		$('.navbar').addClass('navbar-top-fixed-banner');
+		return false;
+	}
+	else if (scrollTop<10) {
+		$('.navbar').removeClass('navbar-top-fixed-banner');
+		return false;
+	}
+});
 if($("#marketing-homepage").length != 0) {
-	$(window).scroll(function(){
-		var scrollTop = $(window).scrollTop();
-		if (scrollTop>10) {
-			$('.navbar').addClass('navbar-top-fixed-banner');
-			return false;
-		}
-		else if (scrollTop<10) {
-			$('.navbar').removeClass('navbar-top-fixed-banner');
-			return false;
-		}
-	});
 	$(window).scroll(function(){
 		if($(this).scrollTop()>=($('.how-it-works-row').position().top-250)){
 			$('#marketing-feature-image-6').css({visibility: "visible"});

@@ -178,7 +178,10 @@ body {
   background-repeat: no-repeat;
   background-position: 50% top;
 }
+#doctors-homepage .marketing-background-banner {
+  background-image: url("../img/doctor_banner.png");
 
+  }
 .navbar-default {
   background-color: transparent;
   border: none;
@@ -375,7 +378,6 @@ body {
   color: #666666;
   display: none;
 }
-
 .col-xxs-4 {
   padding-left: 0px;
   padding-right: 0px;
@@ -544,7 +546,7 @@ li {
   color: #666666;
   margin-bottom: 14px;
   border-radius: 5px;
-  border: none;
+  border: 1px solid #663090;
   height: 40px;
   padding-left: 27px;
 }
@@ -706,7 +708,7 @@ a {
   padding-right: 4px;
 }
 
-.marketing-download-button > img {
+.marketing-download-button img {
   width: 49%;
 }
 
@@ -728,7 +730,6 @@ a:hover {
     padding-left: 17px;
   }
 }
-
 .marketing-medical-emergencyheading {
   font-family: "OpenSans-Light";
   font-size: 18px;
@@ -736,7 +737,17 @@ a:hover {
   margin-top: 5px;
   line-height: 11px;
 }
-
+#doctors-homepage .marketing-medical-emergency{
+  width: 60%;
+}
+.marketing-feature-semibold{
+  font-family: "OpenSans-SemiBold";
+}
+.marketing-feature-header-text{
+  font-family: "OpenSans-Regular";
+  font-size: 30px;
+  color: #fff;
+}
 .marketing-medical-emergencyheading-1 {
   font-size: 26px;
   margin-bottom: 22px;
@@ -871,33 +882,96 @@ a:hover {
     padding-top: 125px;
     padding-left: 10%;
   }
-@media screen and (min-width: 931px) {
-    .marketing-medical-emergencyheading {
-		font-size: 42px;
-    line-height: 35px;
+
+
+
+  .marketing-background-logo {
+    height: 28px;
+    width: 137px;
+  }
+
+  .marketing-medical-emergencyheading-1 {
+    font-size: 57px;
+    font-family: "OpenSans-Regular";
+    margin-bottom: 55px;
+  }
+
+  .marketing-medical-emergencyheading-2 {
+    font-size: 33px;
+    color: #ffffff;
+  }
+
+  .marketing-medical-emergencyheading-4 {
+    font-size: 27px;
+  }
+    
+  .marketing-download-button-3 {
+    width: 164px;
+  }
+
+  .marketing-download-button-2 {
+    margin-top: 66px;
+  }
+
+  .marketing-feature-input {
+    width: 25%;
+    margin-right: 8px;
+  }
+
+  .marketing-feature-submit {
+    float: none;
+    margin-left: 13px;
+  }
+
+  .marketing-feature-content {
+    font-size: 18px;
+  }
+
+  .marketing-feature-heading {
+    font-size: 36px;
+    margin-top: 16px;
+  }
+
+  .marketing-feature-watchvideo {
+    margin: 73px auto 82px;
+  }
+
+  .marketing-feature-header-2 {
+    font-size: 24px;
+    margin-top: 14px;
+  }
+
+  .marketing-feature-buttoncontent {
+    margin: 0 auto 84px;
+  }
+
+  .marketing-feature-heading {
+    margin-top: 60px;
+  }
+
+  .marketing-feature-final {
+    width: 100%;
+  }
+
+  .fa.marketing-fa-arrow-right > img{
+    width: 31px;
   }
 }
-
-.marketing-background-logo {
-  height: 28px;
-  width: 137px;
+@media screen and (max-width: 768px){
+  .fa.marketing-fa-arrow-right > img{
+    width: 20px;
+  }
 }
-
-.marketing-medical-emergencyheading-1 {
-  font-size: 57px;
-  font-family: "OpenSans-Regular";
-  margin-bottom: 55px;
+@media screen and (max-width: 600px){
+  .fa.marketing-fa-arrow-right > img{
+    width: 20px;
+  }
 }
-
-.marketing-medical-emergencyheading-2 {
-  font-size: 33px;
-  color: #ffffff;
+@media screen and (max-width: 400px){
+  .fa.marketing-fa-arrow-right > img{
+    width: 14px;
+  }
 }
-
-.marketing-medical-emergencyheading-4 {
-  font-size: 27px;
-}
-
 @media screen and (min-width: 768px) and (max-width: 930px) {
   .marketing-medical-emergencyheading {
     line-height: 35px;
@@ -912,54 +986,14 @@ a:hover {
     font-size: 27px;
   }
 }
-
-.marketing-download-button-3 {
-  width: 164px;
-}
-
-.marketing-download-button-2 {
-  margin-top: 66px;
-}
-
-.marketing-feature-input {
-  width: 25%;
-  margin-right: 8px;
-}
-
-.marketing-feature-submit {
-  float: none;
-  margin-left: 13px;
-}
-
-..marketing-feature-content {
-  font-size: 18px;
-}
-
-.marketing-feature-heading {
-  font-size: 36px;
-  margin-top: 16px;
-}
-
-.marketing-feature-watchvideo {
-  margin: 73px auto 82px;
-}
-
-.marketing-feature-header-2 {
-  font-size: 24px;
-  margin-top: 14px;
-}
-
-.marketing-feature-buttoncontent {
-  margin: 0 auto 84px;
-}
-
-.marketing-feature-heading {
-  margin-top: 60px;
-}
-
-.marketing-feature-final {
-  width: 100%;
-}
+@media screen and (min-width: 931px) {
+  .marketing-medical-emergencyheading {
+    font-size: 42px;
+    line-height: 35px;
+  }
+  #doctors-homepage .marketing-medical-emergencyheading{
+    line-height: 50px;
+  }
 }
 
 /* Start : Contact */
@@ -1268,3 +1302,75 @@ ul.privacy-policy-para li {
   }
 }
 /* End : About-us */
+
+/* Start : Doctors */
+#doctors-homepage .marketing-feature-lastimage{
+  margin-top: 84px;
+}
+#doctors-homepage .marketing-feature-final{
+  border-bottom: 1px solid #6e696b;
+  border-top: 1px solid #6e696b;
+  padding-top: 25px;
+}
+@media screen and (min-width:980px) and (max-width: 1000px){
+  .marketing-feature-header-text{
+    font-size: 29px;
+  }
+  #doctors-homepage .marketing-medical-emergencyheading{
+    font-size: 41px;
+  }
+}
+@media screen and (min-width:501px) and (max-width: 767px){
+  #doctors-homepage .marketing-background-banner{
+    height: 280px;
+  }
+  #doctors-homepage .marketing-medical-emergencyheading{
+    font-size: 20px;
+    line-height: 25px;
+  }
+  .marketing-feature-header-text{
+    font-size: 16px;
+  }
+  #doctors-homepage .marketing-medical-emergency{
+    width: 50%;
+  }
+  #doctors-homepage .marketing-download-button-2{
+    margin-top: 20px;
+  }
+  #doctors-homepage .marketing-download-button-3{
+    width: 100px;
+  }
+}
+@media screen and (max-width: 500px){
+  #doctors-homepage .marketing-background-banner{
+    height: 265px;
+  }
+  #doctors-homepage .marketing-medical-emergencyheading{
+    font-size: 12px;
+    line-height: 17px;
+  }
+  .marketing-feature-header-text{
+    font-size: 10px;
+  }
+  #doctors-homepage .marketing-medical-emergency{
+    width: 50%;
+  }
+  #doctors-homepage .marketing-download-button-2{
+    margin-top: 20px;
+  }
+  #doctors-homepage .marketing-download-button-3{
+    width: 47px;
+  }
+}
+@media screen and (max-width: 767px){  
+  #doctors-homepage .marketing-feature-lastimage{
+    margin-top: 20px;
+  }
+  #doctors-homepage .marketing-feature-final{
+    padding-top: 0px;
+  }
+  #doctors-homepage .marketing-feature-heading{
+    margin-top: 5px;
+  }
+}
+/* End : Doctors */
