@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Blog</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../assets/script/owl.carousel.js">
+    <link rel="stylesheet" href="../../assets/css/owl-carousel.css">
+    <link rel="stylesheet" type="text/css" href="../../assets/css/marketing.css">
+    
+</head>
+<body>
+{% for post in site.posts | sort: 'date' %}
+<!-- <span>hh<span> -->
+<span class="post_category" style="display: none">{{post.category}}</span>
+{% endfor %}
+<div id="blogs-homepage">
+<div class="marketing-background-banner">
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div id="headtop">
+            <div class="navbar-header table">
+                <div class="tablerow">
+                    <div class="cell marketing-background-cell">
+                        <a href="/">
+                            <img class="marketing-background-logo" src="../../assets/img/Logo.png"/>
+                        </a>
+                    </div>
+                    <span class="divider"></span>
+                    <div class="cell marketing-background-cell-1 marketing-background-cell-2">
+                        <a href="javascript:void(0);">Blog</a>
+                    </div>
+                    <span class="divider"></span>
+                    <div class="cell marketing-background-cell-1 marketing-background-cell-3">
+                        <a href="/doctors">For  Doctors</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="blog_banner-content">
+      Attaining <span class="blog_banner-content-1">great health</span> doesn’t have to be a torture.<br/>
+      Kick start your journey with <span class="blog_banner-content-1">careclues</span> blog.
+    </div>
+</div>
+
+<div class="container">
+  <fieldset class="main-fieldset">
+      <legend class="blog-heading-2 blog-heading-22">Popular story</legend>
+      {% for post in site.posts | sort: 'date' limit:1 %}
+      <div class="row">
+
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 col-xxs-12 blog-yoga-division-0 blog-yoga-division">
+          <div class="blog-yoga-img  bg-content-i-50">
+          <img src="{{post.blog-exercise-image}}">
+            <div class="blog-yoga-img-inner">
+            <div><img src="../../assets/img/search_icon.png" class="blog-search-icon"></div>
+            </div>
+          </div>
+        </div>
+          <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 blog-yoga-division main bg-content-t-50">
+          <div class="blog-yoga-content">
+            <h6 class="blog-heading-1">{{post.published-date}}</h6>
+            <h3 class="blog-heading-2">{{post.title}}</h3>
+            <p class="blog-para-1 blog-para-11">{{post.blog-discription}}</p>
+            <a  target="_blank" href="{{ post.url}}"><button class="blog-read-more blog-heading-2">Read More <img src="../../assets/img/button-right-arrow.png"/ class="Read-more-img"></button></a>
+            
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+      <div class="row blog-cycle-division">
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 col-xxs-12 bg-content-a-50">
+        {% for post in site.posts | sort: 'date' limit:1 offset:1 %}
+          <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 col-xxs-12 blog-yoga-division-1">
+             
+              <div class="blog-yoga-img-1 bg-content-i-50" onclick="window.open('{{post.url}}')">
+        <img src="{{post.blog-exercise-image}}">
+                <div class="blog-facial-division blog-facial-1-division">{{post.category}}
+                </div>
+                  
+      <div class="blog-yoga-img-inner blog-facial-11-division">
+      <img class="blog-search-icon1" src="/assets/img/search_icon.png">
+      </div>
+      </div>
+      </div>
+    
+      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 col-xxs-12 blog-yoga-division-2 bg-content-t-50">
+      <div class="blog-yoga-content-1">
+        <h6 class="blog-heading-1">{{post.published-date}}</h6>
+        <h3 class="blog-heading-3 blog-heading-31">{{post.title}} </h3>
+        <p class="blog-para-1 blog-para-2">{{post.blog-discription}}</p>
+      </div>
+      </div>
+      </div>
+      {% endfor %}
+           </div>
+  <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 col-xxs-12 bg-content-b-50">
+    
+    <div class="row">
+    {% for post in site.posts | sort: 'date' limit:1 offset:2 %}
+    <a href="{{ post.url}}">
+    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 col-xxs-12 blog-running-content blog-exercise-div-1">
+      <div class="blog-yoga-img-2">
+      <img src="{{post.blog-exercise-image}}">
+<div class="blog-facial-division blog-facial-1-division">{{post.category}}</div>
+      <div class="blog-yoga-img-inner-1 blog-yoga-img-inner-11">
+      <h3 class="blog-heading-3">{{post.title}}</h3>
+      <h6 class="blog-heading-4">{{post.category}}</h6>
+      <h6 class="blog-heading-5">{{post.published-date}}</h6>
+      </div>
+      </div>
+      </div>
+      </a>
+      {% endfor %}
+      {% for post in site.posts | sort: 'date' limit:1 offset:3 %}
+      <a href="{{ post.url}}">
+      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 col-xxs-12 blog-running-content-1 blog1-exercise-div1-1">
+      <div class="blog-yoga-img-2">
+        <img src="{{post.blog-exercise-image}}">
+      <div class="blog-facial-division blog-facial-division-1">{{post.category}}</div>
+      <div class="blog-yoga-img-inner-1 blog-yoga-img-inner-11">
+      <h3 class="blog-heading-3">{{post.title}}</h3>
+      <h6 class="blog-heading-4">{{post.category}}</h6>
+      <h6 class="blog-heading-5">{{post.published-date}}</h6>
+      </div>
+      </div>
+      </div>
+      </a>
+      {% endfor %}
+      </div>
+      </div>
+      
+      </div>
+      </fieldset>
+<div class="row">
+  <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 col-xxs-12 pad-lr-0">
+    
+      <div class="row random-blog-row">
+      
+      {% for post in site.posts | sort: 'date' limit:1 offset:0 %}
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 col-xxs-12 blog-exercise-div-1 blog-exercise-yoga-3  bg-content-i-50">
+          <div class="blog-yoga-img-3" onclick="window.open('{{post.url}}')">
+          <img src="{{post.blog-exercise-image}}">
+          <div class="blog-facial-division">{{post.category}}</div>
+            <div class="blog-yoga-img-inner">
+            <div><img src="../../assets/img/search_icon.png" class="blog-search-icon"></div>
+            </div>
+          </div>
+            <div class="blog-yoga-content-1 blog-yoga-content-11 blog-yoga-content-1-1">
+        <h6 class="blog-heading-1 blog-heading-1-copy">{{post.published-date}}</h6>
+        <h3 class="blog-heading-3 blog-heading-3-1">{{post.title}}</h3>
+        <p class="blog-para-1 blog-para-2">{{post.blog-discription}}</p>
+      </div>
+        </div>
+        {% endfor %}
+        {% for post in site.posts | sort: 'date' limit:1 offset:1 %}
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 col-xxs-12 blog-yoga-division-5 blog-exercise-div1-1 bg-content-t-50">
+          <div class="blog-yoga-img-3" onclick="window.open('{{post.url}}')">
+          <img src="{{post.blog-exercise-image}}">
+          <div class="blog-facial-division">{{post.category}}</div>
+          <div class="blog-yoga-img-inner-1">
+      <h3 class="blog-heading-3 blog-heading1-3">{{post.title}}</h3>
+      <h6 class="blog-heading-4">{{post.category}}</h6>
+      <h6 class="blog-heading-5">{{post.published-date}}</h6>
+      </div>
+        </div>
+        <div class="blog-yoga-content-1 blog-yoga-content-11">
+        <h6 class="blog-heading-1 blog-heading-1-copy">{{post.published-date}}</h6>
+        <h3 class="blog-heading-3 blog-heading-3-1">{{post.title}}</h3>
+        <p class="blog-para-1 blog-para-2 blog-para-21">{{post.blog-discription}}</p>
+      </div>
+        </div>
+{% endfor %}
+      </div>
+      
+      <div class="row">
+      <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 col-xxs-12 blog-exercise-div blog-exercise-div-1">
+      {% assign items = site.posts | sort: 'published-date' | reverse %}
+      {% for post in items | limit:1 %}
+      <div class="blog-div-position">
+      <div class="blog-exercise-division">
+          <img class="blog-exercise-img" src="{{post.blog-exercise-image}}"/>
+          <div class="blog-workout-position">{{post.category}}</div></div>
+          <div class="blog-exercise-content">
+      <p class="blog-published-date">{{post.published-date}}</p>
+      <p class="blog-para">{{post.title}}</p>
+      <p class="blog-discription">{{post.blog-discription}}
+         </p>
+            <a target="_blank" href="{{ post.url}}"><button class="blog-read-more blog-heading-2">Read More <img src="../../assets/img/button-right-arrow.png"/ class="Read-more-img"></button></a>
+         </div>
+      </div>
+      {% endfor %}
+      </div>
+      </div>
+
+      <div class="row">
+      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 pad-lr-0">
+  <div class="row owl-carousel  owl-carousel-blog">
+                          
+{% for post in site.posts | sort: 'date' offset:4 %}
+                          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 pad-lr-0">
+                            <div class="blog-asana-division" id="blog-carousel-7" onclick="window.open('{{post.url}}')">
+                            <img src="{{post.blog-exercise-image}}">
+                                <div class="blog-facial-division">{{post.category}}</div>
+            <div class="blog-yoga-img-inner">
+              <img src="../../assets/img/search_icon.png" class="blog-search-icon">
+            </div>
+
+            </div>
+            <div class="blog-yoga-content-1 blog-yoga-content-11 blog-yoga-content-1-1">
+        <h6 class="blog-heading-1 blog-heading-1-copy">{{post.published-date}}</h6>
+        <h3 class="blog-heading-3 blog-heading-31">{{post.title}}</h3>
+        <p class="blog-para-1 blog-para-2">{{post.blog-discription}}</p>
+      </div>
+                          </div>
+ {% endfor %}
+</div>
+</div>
+
+      </div>
+            <div class="row">
+              <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 pad-lr-0">
+                <div class="blog-final-division">
+                  <h3 class="blog-final-heading">Subscribe to our mailing list Updates, Products, Surveys & Freebies.</h3>
+                  <div class="blog-final-division-1">
+                  <input type="text" placeholder="Your email" class="blog-final-input"/><input type="button" value="SUBMIT" class="blog-final-input blog-final-button"/>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+  </div>
+  <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 search-media">
+      <fieldset class="blog-search-fieldset search-height">
+              <legend class="blog-search-legend">SEARCH</legend>
+                <gcse:search></gcse:search>
+      </fieldset>
+      <fieldset class="blog-category-fieldset">
+              <legend class="blog-category-legend">CATEGORY</legend>
+              <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 cat-pad-right-0">
+                <div class="category-topic-div mar-left">
+                  <span class="category-topic"></span>
+                  <span class="category-count"></span>
+                </div>
+                <div class="category-topic-div mar-left"><span class="category-topic"></span><span class="category-count"></span></div>
+                <div class="category-topic-div mar-left"><span class="category-topic"></span><span class="category-count"></span></div>
+                <div class="category-topic-div mar-left"><span class="category-topic"></span><span class="category-count"></span></div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 cat-pad-left-0">
+                <div class="category-topic-div mar-right"><span class="category-topic"></span><span class="category-count"></span></div>
+                <!-- <div class="category-topic-div mar-right"><span class="category-topic"></span><span class="category-count"></span></div>
+                <div class="category-topic-div mar-right"><span class="category-topic"></span><span class="category-count"></span></div>
+                <div class="category-topic-div mar-right"><span class="category-topic"></span><span class="category-count"></span></div> -->
+                </div>
+            </div>
+          <!-- <p>{{page.para}}</p> -->
+      </fieldset>
+      <fieldset class="blog-edit-pic-fieldset">
+              <legend class="blog-edit-pic-legend">EDITOR'S PICK</legend>
+                 <ul id="paginationList">
+              {% for post in site.posts %}
+              <li>
+              <div class="row edit-pic-row1">
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 pad-right-0">
+                  <img src="{{post.blog-exercise-image}}" class="blog-edit-pics"/>
+                </div>
+                  <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8 pad-left-21">
+                    <p class="blog-editpic-text" onclick="window.open('{{post.url}}')">{{post.title}}</p>
+                      <p class="blog-editpic-date">{{post.published-date}}</p>
+                  </div>
+              </div>
+              <hr/>
+              </li>
+                {% endfor %}  
+                 </ul> 
+              <div class="pager" id="pager"><a href="javascript:void(0);" target="_parent" title="Previous"><img src="/assets/img/pager-left.png" /></a>
+            <a href="javascript:void(0);" target="_parent" title="Next"><img src="/assets/img/pager-right.png" /></a>
+            </div>
+      </fieldset>
+      <fieldset class="blog-twitter-fieldset">
+              <legend class="blog-twitter-legend">TWITTER FEED</legend>
+              
+              <div class="tw">
+              <a class="twitter-timeline" 
+               href="https://twitter.com/CareClues" 
+               data-widget-id="711798334533414912" 
+               data-chrome="nofooter noborders noscrollbar transparent noheaders" 
+               height="380" width="100%"></a>
+                       <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+                </div>
+      </fieldset>
+      <div class="fieldset blog-video-fieldset">
+              <h1>VIDEO</h1>
+                <div id="video">          
+                <div class="owl-carousel-vid">
+                  <div class="item-video"><a class="owl-video" href="http://vimeo.com/23924346"></a>
+                    <div class="vid-text-overlay">
+                      <span class="vid-title">Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words</span>
+                      <span class="vid-date">6th February, 2016</span>
+                    </div>
+                  </div>
+                  <div class="item-video"><a class="owl-video" href="https://www.youtube.com/watch?v=JpxsRwnRwCQ"></a>
+                    <div class="vid-text-overlay">
+                      <span class="vid-title">Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words</span>
+                      <span class="vid-date">6th February, 2016</span>
+                    </div></div>
+                  <div class="item-video"><a class="owl-video" href="http://www.youtube.com/watch?v=FBu_jxT1PkA"></a>
+                    <div class="vid-text-overlay">
+                      <span class="vid-title">Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words</span>
+                      <span class="vid-date">6th February, 2016</span>
+                    </div></div>
+                  <div class="item-video"><a class="owl-video" href="http://www.youtube.com/watch?v=oy18DJwy5lI"></a>
+                    <div class="vid-text-overlay">
+                      <span class="vid-title">Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words</span>
+                      <span class="vid-date">6th February, 2016</span>
+                    </div></div>
+                  <div class="item-video"><a class="owl-video" href="http://www.youtube.com/watch?v=H3jLkJrhHKQ"></a>
+                    <div class="vid-text-overlay">
+                      <span class="vid-title">Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words</span>
+                      <span class="vid-date">6th February, 2016</span>
+                    </div></div>
+                  <div class="item-video"><a class="owl-video" href="https://www.youtube.com/watch?v=g3J4VxWIM6s"></a>
+                    <div class="vid-text-overlay">
+                      <span class="vid-title">Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words</span>
+                      <span class="vid-date">6th February, 2016</span>
+                    </div></div>
+                  <div class="item-video"><a class="owl-video" href="http://www.youtube.com/watch?v=0fhoIate4qI"></a>
+                    <div class="vid-text-overlay">
+                      <span class="vid-title">Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words</span>
+                      <span class="vid-date">6th February, 2016</span>
+                    </div></div>
+                  <div class="item-video"><a class="owl-video" href="https://www.youtube.com/watch?v=EF_kj2ojZaE"></a>
+                    <div class="vid-text-overlay">
+                      <span class="vid-title">Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words</span>
+                      <span class="vid-date">6th February, 2016</span>
+                    </div></div>
+                </div>
+            </div>
+      </div>
+        </div>
+</div>
+
+             
+
+
+
+      
+
+
+</div>
+
+            <footer class="main-footer default-row dark">
+                <div class="popup">
+                    <div class="close-button">X</div>
+                    <h3 class="contact_header"><span class="header-border-bottom">Contact Us</span></h3>
+                    <div class="contact_body">
+                        <div class="contact_address">
+                            <h4 class="contact_address_header">Locations</h4>
+                            <section class="loc_details">
+                                <div class="loc_icon fa-map-marker"></div>
+                                <div class="loc_addr">
+                                    <span class="loc_area">Kolkata</span>
+                                    <span class="area_address">Eternity Building, 8<sup>th</sup> Floor, Block DN, Sector V<br/>West Bengal - 700091</span>
+                                    <span class="ph_num">
+                                        <i class="fa-phone"></i>+91 33 65290001
+                                    </span>
+                                </div>
+                            </section>
+                            <section class="loc_details">
+                                <div class="loc_icon fa-map-marker"></div>
+                                <div class="loc_addr">
+                                    <span class="loc_area">Kolkata</span>
+                                    <span class="area_address">Eternity Building, 8<sup>th</sup> Floor, Block DN, Sector V<br/>West Bengal - 700091
+                                    </span>
+                                    <span class="ph_num">
+                                        <i class="fa-phone"></i>+91 33 65290001
+                                    </span>
+                                </div>
+                            </section>
+                            <a class="supportId" href="mailto:support@careclues.com">
+                                <i class="fa fa-envelope"></i>support@careclues.com
+                            </a>
+                        </div>
+                        <form class="contact_form" method="post" onsubmit="return validateForm()" action="">
+                            <p>
+                                <input required type="text" name="fname" id="fname" placeholder="Name"/>
+                            </p>
+                            <p>
+                                <input required type="tel" name="phnumber" id="phnumber" maxlength="10" placeholder="Mobile Number"/>
+                            </p>
+                            <p>
+                                <input required type="email" name="email" id="email" placeholder="Email"/>
+                            </p>
+                            <p>
+                                <textarea required placeholder="Message" rows="5" id="message" maxlength="180"></textarea>
+                            </p>
+                            <p>
+                                <input type="submit" value="Submit"/>
+                            </p>
+                        </form>
+                    </div>
+                </div>
+          <div class="for-s-mb-m for-l-mb-l"><a href="/"><img alt="Careclues Logo" src="../../assets/img/Logo.png" class="logo"></a></div>
+          <div class="social-links for-s-mb-s">
+              <ul>
+                  <li><a class="twitter" href="https://twitter.com/careclues">&#xe040;</a></li>
+                  <li><a class="linkedin" href="https://linkedin.com/careclues">&#xe049;</a></li>
+                  <li><a class="facebook" href="https://www.facebook.com/careclues">&#xe041;</a></li>
+                  <li><a class="youtube" href="https://www.youtube.com/channel/careclues">&#xe051;</a></li>
+              </ul>
+          </div>
+          <nav class="for-s-mb-l">
+              <ul class="menu" id="menu-footer-menu">
+                <li>
+                          <a class="marketing-footer-list" id="marketing-footer-list-contact"> Contact</a>
+                      </li>
+                      <li>
+                          <a class="marketing-footer-list" id="marketing-footer-list-privacy" href="privacy-policy.html"> Privacy</a>
+                      </li>
+                      <li>
+                          <a class="marketing-footer-list" id="marketing-footer-list-about" href="about.html"> About</a>
+                      </li>
+          </ul>
+        </nav>
+            </footer>
+      </div>
+
+    <script src="../../assets/js/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <script src="../../assets/js/owl.carousel.min.js"></script>
+  <script src="../..//assets/js/paginate.js" type="text/javascript"></script> 
+  <script type="text/javascript" src="../../assets/js/blog.js"></script>
+  <script type="text/javascript" src="../../assets/js/script.js"></script>
+
+</body>
+</html>
