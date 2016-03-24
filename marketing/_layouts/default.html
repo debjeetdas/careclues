@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html> 
+<head> 
+	<title></title>
+	<link href="/assets/css/blog.css" rel="stylesheet">
+</head>
+<body>
+{%include include.html%}
+{{content}}
+<p>{{post.title}}</p>
+<ul>  
+{% assign my_variable_workout = 0 %}
+{% assign my_variable_nutrition = 0 %}
+{% assign my_variable_yoga = 0 %}
+{% assign my_variable = 0 %}
+{% for post in site.posts | sort: 'date' %}
+<li>
+	<a target="_blank" href="{{ post.url}}">{{ post.name }}</a> 
+
+
+{% if post.category == "workout" %}
+	{% assign assign my_variable_workout = my_variable_workout | plus:1  %}
+{% elsif post.category == "yoga" %}
+	{% assign assign my_variable_yoga = my_variable_yoga | plus:1  %}
+{% elsif post.category == "Nutrition" %}
+	{% assign assign my_variable_nutrition = my_variable_nutrition | plus:1  %}
+{% else %}
+	{% assign assign my_variable = my_variable | plus:1  %}
+{% endif %}
+
+     	
+
+</li>
+
+{% endfor %}
+<h1>nut {{my_variable_nutrition}} </h1>
+<h1>work= {{my_variable_workout}} </h1>
+<h1>yog={{my_variable_yoga}} </h1>
+<h1>othe={{my_variable}} </h1>
+<ul>
+</body>
+</html> 

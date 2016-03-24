@@ -1793,6 +1793,12 @@ label {
     text-align: right;
     vertical-align: middle;
 }
+@media screen and (max-width: 400px){
+    #app_marker_doctor_availability .of-c {
+        text-align: center;
+        font-size: 15px;     
+    }
+}
 #app_marker_doctor_availability .Appointment_span3 {
     color: #333;
     display: table-cell;
