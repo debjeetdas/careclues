@@ -3668,5 +3668,17 @@ td.gsc-search-button > input {
     text-align: center;
     width: 30%;
     color: #663090;
-}  
+}
+@media screen and (max-width: 767px){
+  .fieldset.main-fieldset > h1 {
+      margin-left: 25%;
+      margin-right: 25%;
+      width: 50%;
+  }  
+}
+.main-fieldset {
+    margin: 30px 0 20px;
+    padding: 0 0 18px;
+    border:1px solid #8559a6;
+}
 /* End : fieldset hack code */
