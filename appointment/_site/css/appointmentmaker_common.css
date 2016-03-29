@@ -183,7 +183,7 @@ footer {
 }
 @media screen and (max-width: 600px){
     .btn-group .dropdown-toggle{
-        font-size: 11px;
+        font-size: 18px;
     }
     .caret {
         margin-top: 7px;
@@ -310,6 +310,14 @@ label {
     width: 120px;
     border-radius: 4px;
     padding: 17.5px 0;
+}
+@media screen and (max-width: 600px){
+    .button2 {
+        padding: 13.5px 0;
+    }
+    .btn{
+        padding: 10px 12px;
+    }
 }
 .button2:hover,.button2:active{
     background-color: #cb1557;
@@ -528,6 +536,11 @@ label {
 /* End : Stars */
 
 /* Start : Appmarker.html*/
+@media screen and (max-width: 420px){
+    #app_marker_doctor_details{
+        overflow-x:hidden;
+    }
+}
 #app_marker_doctor_details .Appointment_para1 {
     font-family: "OpenSans-Regular";
     font-size: 12px;
@@ -856,7 +869,7 @@ label {
         padding-bottom: 7px;
     }
     #app_marker_doctor_details .button2 {
-        margin-bottom: 27px;
+        margin-bottom: 0px;
     }
     #app_marker_doctor_details .Appointment_p2 {
         margin-bottom: 25px;
@@ -927,6 +940,9 @@ label {
         font-size: 14px;
     }
     #app_marker_doctor_details .Appointment_fontfamily {
+        font-size: 18px;
+    }
+    #app_marker_doctor_details .checkbox1 .Appointment_fontfamily {
         font-size: 12px;
     }
     #app_marker_doctor_details .Appointment_span2 {
@@ -977,7 +993,7 @@ label {
         padding-left: 15px;
     }
     #app_marker_doctor_details .button2 {
-        margin-bottom: 24px;
+        margin-bottom: 0px;
     }
     #app_marker_doctor_details .Appointment_para1 {
         padding-top: 22px;
@@ -1363,7 +1379,11 @@ label {
 /* End : Appmarker1.html */
 
 /* Start : Appmarker2.html */
-
+@media screen and (max-width: 420px){
+    #app_marker_doctor_availability{
+        overflow-x:hidden;
+    }
+}
 #app_marker_doctor_availability .doc_det_slots_row {
     display: flex;
 }
@@ -2168,6 +2188,9 @@ label {
     #app_marker_doctor_availability .Appointment_Last_row_span1,
     #app_marker_doctor_availability .Appointment_fontfamily {
         font-size: 12px !important;
+    }    
+    #app_marker_doctor_availability .checkbox1 .Appointment_fontfamily {
+        font-size: 12px;
     }
     #app_marker_doctor_availability .offer_para3 {
         font-size: 13px;
@@ -2304,6 +2327,20 @@ label {
     #app_marker_doctor_availability .app_weekdays{
         display: table;
     }
+    #app_marker_doctor_availability .btn-group > .btn-group {
+        margin-left: 0 !important;
+        margin-right: 4% !important;
+        padding: 0;
+    }
+    #app_marker_doctor_availability .btn-group-justified > .btn, #app_marker_doctor_availability .btn-group-justified > .btn-group {
+        float: left;
+        width: 48%;
+    }    
+    #app_marker_doctor_availability .btn-group > .btn-group:nth-child(2),
+   #app_marker_doctor_availability  .btn-group > .btn-group:nth-child(4) {
+        margin-right: 0 !important;
+    }
+
 }
 @media screen and (max-width: 420px){
     #app_marker_doctor_availability .inner_slots .slots_button{
@@ -2317,6 +2354,9 @@ label {
     }
     #app_marker_doctor_availability .app_exp, #app_marker_doctor_availability .app_timings{
         width: 178%;
+    }
+    #app_marker_doctor_availability .checkbox1 .Appointment_fontfamily {
+        font-size: 12px !important;
     }
 }
 /* End : Appmarker2.html */

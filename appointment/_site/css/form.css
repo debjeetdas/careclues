@@ -1,0 +1,159 @@
+@font-face {
+    font-family: "OpenSans-Bold";
+    src: url(../font/ttf/OpenSans-Bold.ttf);
+}
+@font-face {
+    font-family: "OpenSans-BoldItalic";
+    src: url(../font/ttf/OpenSans-BoldItalic.ttf);
+}
+@font-face {
+    font-family: "OpenSans-Light";
+    src: url(../font/ttf/OpenSans-Light.ttf);
+}
+@font-face {
+    font-family: "OpenSans-LightItalic";
+    src: url(../font/ttf/OpenSans-LightItalic.ttf);
+}
+@font-face {
+    font-family: "OpenSans-Regular";
+    src: url(../font/ttf/OpenSans-Regular.ttf);
+}
+@font-face {
+    font-family: "OpenSans-Italic";
+    src: url(../font/ttf/OpenSans-Italic.ttf);
+}
+@font-face {
+    font-family: "OpenSans-SemiBold";
+    src: url(../font/ttf/OpenSans-SemiBold.ttf);
+}
+@font-face {
+    font-family: "OpenSans-SemiBoldItalic";
+    src: url(../font/ttf/OpenSans-SemiBoldItalic.ttf);
+}
+@font-face {
+    font-family: "OpenSans-ExtraBold";
+    src: url(../font/ttf/OpenSans-ExtraBold.ttf);
+}
+@font-face {
+    font-family: "OpenSans-ExtraBoldItalic";
+    src: url(../font/ttf/OpenSans-ExtraBoldItalic.ttf);
+}
+body{
+	background: #eeeeee;
+}
+.login-close-btn {
+    float: right;
+}
+.login-heading{
+	font-family: "OpenSans-Regular";
+    font-size: 18px;
+    color:#333333;
+}
+.login-btn{
+	background-color: #d41c5c;
+    border: none;
+    color: #fff;
+    font-family: OpenSans-SemiBold;
+    font-size: 16px;
+    height: 37px;
+    width: 127px;
+    border-radius: 5px;
+}
+#loginScreen{
+	background-color: #eeeeee;
+}
+.button { width: 150px; padding: 10px; 
+	background-color: #FF8C00; 
+	box-shadow: -8px 8px 10px 3px rgba(0,0,0,0.2); 
+	font-weight:bold; 
+	text-decoration:none; } 
+#cover{ position:fixed; 
+ 	top:0; 
+ 	left:0; 
+ 	background:rgba(0,0,0,0.6);
+ 	 z-index:5; 
+ 	 width:100%; 
+ 	 height:100%; 
+ 	 display:none; } 
+#loginScreen {
+ 	width:394px; 
+ 	margin:0 auto;
+ 	position:relative; 
+ 	z-index:10;
+ 	display:none;  
+ 	padding: 0 22px;
+ 	border:1px solid #cccccc; 
+ 	border-radius:4px; } 
+#login-form #loginScreen {
+    height:327px; 
+}
+#register-div #loginScreen{
+    height: 508px;
+}
+.form-control {
+    margin-bottom: 21px;
+}
+.btn-group.btn-input{
+    margin-bottom: 19px;
+}
+
+#loginScreen:target, #loginScreen:target + #cover{ display:block; opacity:2; } 
+.cancel{display:block; 
+ 	position:absolute; 
+ 	top:3px; 
+ 	right: 21px;
+ 	font-size:30px; 
+ 	text-decoration:none; 
+ 	text-align:center; 
+ 	font-weight:bold; 
+ } 
+ hr{
+ 	border-bottom: 1px solid #dfdfdf;
+ }
+.forget-psw{
+	float:right;
+	font-family: "OpenSans-Light";
+	font-size:16px;
+}
+.register{
+	text-align: center;
+	font-family: "OpenSans-Light";
+	font-size:16px;
+}
+.color-a{
+    color: #d41c5c;
+    cursor: pointer;
+}
+.color-a:hover,.color-a:focus{
+    color: #d41c5c;
+    text-decoration: none;
+}
+#register-div .login-btn{
+    float: right;
+}
+::-ms-reveal {
+     display:none !important;
+    }
+    .hideShowPassword-toggle {
+    background-image: url(../img/psw-img.png);
+    background-position: 0 center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    height: 100%;
+    overflow: hidden;
+    text-indent: -9999em;
+    width: 44px;
+    top: 0 !important;
+    margin-top: 0 !important;
+    }
+    .hideShowPassword-toggle-hide {
+    background-position: -44px center;
+    }
+@media screen and (max-width: 420px) {
+	#loginScreen{
+		width:100%;
+	}
+	}
+.hideShowPassword-wrapper {
+    width: 100% !important;
+}
