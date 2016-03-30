@@ -43,4 +43,8 @@ $(document).ready(function(){
         $(".log").show();
         $(".reg").hide();
       });
+ $('#pwd').hideShowPassword({
+    innerToggle: true,
+    touchSupport:Modernizr.touch
+  });
  });
