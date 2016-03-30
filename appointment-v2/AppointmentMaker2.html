@@ -7,17 +7,95 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/datepicker.css" />
+    <link rel="stylesheet" type="text/css" href="css/form.css">
+    <link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+    <script src="js/modernizr.custom.js"></script>
     <link rel="stylesheet" type="text/css" href="css/appointmentmaker_common.css">
     <link rel="stylesheet" type="text/css" href="css/jquery.mCustomScrollbar.css">
 </head>
 <body id="app_marker_doctor_availability">
     <nav class="navbar navbar-default navbar-fixed-top">
-        <div id="headtop">
+      <div id="headtop">
             <div class="navbar-header">
-                <img class="marginLeft" id="appointment_img1" src="img/apollo-logo.png" />
+                <img class="marginLeft" id="appointment_img1" src="img/apollo-logo.png"/>
+                <div class="login-img-div"><a href="#loginScreen" class="button"><img src="img/login-img.png"><p class="login-text">Log in</p></a></div>
             </div>
-        </div>
-    </nav>
+      </div>
+ </nav>
+ <div id="register-div">
+
+                <div id="loginScreen" class="conatiner">
+                <div style="display:none" class="reg">
+                    <div class="heading-div">
+                        <a href="#" class="reg-start-close"><img src="img/close-arrow-btn.png"></a> 
+                        <h1 class="login-heading">Register yourself</h1>
+                        <a href="#" class="cancel reg-end-close"><img src="img/cross-img.png"></a> 
+                        <hr class="reg-hr">
+                    </div>  
+                        <div>
+                            <form role="form" class="reg-form">
+                                <div class="form-group">
+                                    <input type="text" class="form-control log-in-placeholder" id="first-name" placeholder="First Name" required/>
+                                    <input type="text" class="form-control log-in-placeholder" id="last-name" placeholder="Last Name" required/>
+                                    <div class="row">
+                                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                                <div class="btn-group btn-input clearfix">
+                                                    <button type="button" class="btn btn-default dropdown-toggle drop-btn" data-toggle="dropdown">
+                                                     <span data-bind="label" class="genderName log-in-placeholder1" id="dropdown_title2">Gender</span> <span class="genderCaret caret"></span>
+                                                    </button>
+                                                     <ul class="dropdown-menu" role="menu">
+                                                     <li><a href="#">male</a></li>
+                                                     <li><a href="#">Female</a></li>
+                                                    </ul>
+                                                </div>
+                                        </div>  
+                                         <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                            <div class="input-group input-append date" id="dateRangePicker">
+                                                    <input type="text" class="form-control log-in-placeholder date-input" name="date" placeholder="DOB" required/>
+                                                    <span class="input-group-addon add-on calender-span"><img src="img/calender-img.png"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <input type="email" class="form-control log-in-placeholder" id="email" placeholder="Email ID" required/>
+
+                                    <div class="phone-no-div"><span class="mobile-no-start-code"><input class="login-phone-no-code" type="text" placeholder="+91"></span><input type="text" pattern="[789][0-9]{9}" class="form-control log-in-placeholder" id="phone-number" placeholder="Mobile number" required/></div>
+
+                                    <input class="form-control login-field login-field-password log-in-placeholder" id="pwd" type="password" placeholder="Password" required/>
+                                    <button type="submit" id="SendRequest" class="login-btn">REGISTER</button>
+                                </div>
+                            </form>
+                        </div>  
+                        </div> 
+                        <div class="log">
+                            <div class="heading-div">
+                                    <a href="#" class="reg-start-close"><img src="img/close-arrow-btn.png"></a> 
+                                    <h1 class="login-heading">Login with email</h1>
+                                    <a href="#" class="cancel reg-end-close"><img src="img/cross-img.png"></a> 
+                                    <hr class="reg-hr">
+                            </div>      
+                            <div>
+                                <form role="form" class="log-form">
+                                        <div class="form-group">
+                                            <input type="email" class="form-control log-in-placeholder" id="email1" placeholder="Email ID" required/>
+                                                <input type="password" class="form-control log-in-placeholder" id="pwd" placeholder="Password" required/>
+                                        </div>
+                                            <button type="submit" class="login-btn1">LOGIN</button>
+                                           <span><a class="forget-psw color-a">Forgot password</a></span>
+                                      <hr>
+                                </form>
+                               
+                            </div>  
+                            <div class="login-register">
+                                Don't have patient accont? <a class="color-a register-btn">Register</a>
+                            </div> 
+                        </div>      
+                </div>
+                
+                    <div id="cover"></div> 
+   
+ </div>
     <div class="background">
         <div class="container">
             <div id="Appointment_div">
@@ -30,65 +108,23 @@
             <div class="btn-group btn-group-justified" role="group">
                 
                 <div class="btn-group">
-                  <button class="btn btn-default dropdown-toggle Appointment_fontfamily" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                    <span class="l-class">Location</span>
-                    <span class="caret"></span>
-                  </button>
-                  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                    <li><a href="#">Action</a></li>
-                    <li><a href="#">Another action</a></li>
-                    <li><a href="#">Something else here</a></li>
-                    <li role="separator" class="divider"></li>
-                    <li><a href="#">Separated link</a></li>
-                  </ul>
-                </div>
-
-
-
-                <div class="btn-group">
-                  <button class="btn btn-default dropdown-toggle Appointment_fontfamily" type="button" id="dropdownMenu3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                    <span class="l-class">Doctor</span>
-                    <span class="caret"></span>
-                  </button>
-                  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                    <li><a href="#">Action</a></li>
-                    <li><a href="#">Another action</a></li>
-                    <li><a href="#">Something else here</a></li>
-                    <li role="separator" class="divider"></li>
-                    <li><a href="#">Separated link</a></li>
-                  </ul>
-                </div>
-                <div class="btn-group">
-                  <button class="btn btn-default dropdown-toggle Appointment_fontfamily" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                    <span class="l-class">Speciality</span>
-                    <span class="caret"></span>
-                  </button>
-                  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                    <li><a href="#">Action</a></li>
-                    <li><a href="#">Another action</a></li>
-                    <li><a href="#">Something else here</a></li>
-                    <li role="separator" class="divider"></li>
-                    <li><a href="#">Separated link</a></li>
-                  </ul>
-                </div>
-                <div class="btn-group">
-                  <button class="btn btn-default dropdown-toggle Appointment_fontfamily" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                    <span class="l-class">Date</span>
-                    <span class="caret"></span>
-                  </button>
-                  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                    <li><a href="#">Action</a></li>
-                    <li><a href="#">Another action</a></li>
-                    <li><a href="#">Something else here</a></li>
-                    <li role="separator" class="divider"></li>
-                    <li><a href="#">Separated link</a></li>
-                  </ul>
+                    <button class="btn btn-default dropdown-toggle Appointment_fontfamily" type="button" id="dropdownMenu3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                        <span class="l-class">Speciality</span>
+                        <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another action</a></li>
+                        <li><a href="#">Something else here</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">Separated link</a></li>
+                    </ul>
                 </div>
                 <div class="btn-group">
                     <button class="btn btn-default dropdown-toggle Appointment_fontfamily" type="button" id="dropdownMenu4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-					    <span class="l-class">Fees</span>
-					    <span class="caret"></span>
-					</button>
+                        <span class="l-class">Treatment Plans</span>
+                        <span class="caret"></span>
+                    </button>
                     <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
                         <li><a href="#">Action</a></li>
                         <li><a href="#">Another action</a></li>
@@ -138,14 +174,14 @@
                             </div>
                             <span class="app_exp Appointment_span6"><i class="fa fa-clock-o Appointment_fa_color"></i><span class="avail-time">Available Timings:</span></span>
                             <div class="app_timings">
-                            	<div class="app_weekdays">
-                            		<p class="Appointment_span5 Appointment_p5">Mon - Sat</p>
-                            		<p class="Appointment_span5 Appointment_p5 Appointment_span53 Appointment_span5_3">10.00 am - 07.00 pm</p>
-                            	</div>
-                            	<div class="app_sun">
-                            		<p class="Appointment_span5 Appointment_p5">Sun</p>
-                            		<p class="Appointment_span5 Appointment_p5 Appointment_span53 Appointment_span5_3">12.30 pm - 04.00 pm</p>
-                            	</div>
+                                <div class="app_weekdays">
+                                    <p class="Appointment_span5 Appointment_p5">Mon - Sat</p>
+                                    <p class="Appointment_span5 Appointment_p5 Appointment_span53 Appointment_span5_3">10.00 am - 07.00 pm</p>
+                                </div>
+                                <div class="app_sun">
+                                    <p class="Appointment_span5 Appointment_p5">Sun</p>
+                                    <p class="Appointment_span5 Appointment_p5 Appointment_span53 Appointment_span5_3">12.30 pm - 04.00 pm</p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -183,11 +219,11 @@
                 <div class="col-xs-12 col-lg-4 col-md-4 col-sm-4 AvailableSlots_div">
                     <div>
                         <div class="slots-row">
-						    <p class="AvailableSlots_para">Available Slots</p>
-						    <div class="fa-angle-div">
-						        <i class="fa fa-angle-left"></i><span class="fa-angle-para">Today, 25 February</span><i class="fa fa-angle-right"></i>
-						    </div>
-						</div>
+                            <p class="AvailableSlots_para">Available Slots</p>
+                            <div class="fa-angle-div">
+                                <i class="fa fa-angle-left"></i><span class="fa-angle-para">Today, 25 February</span><i class="fa fa-angle-right"></i>
+                            </div>
+                        </div>
                         <div class="row AvailableSlots_button inner_slots">
                             <div class="col-xs-3 col-sm-6 col-md-6 col-lg-6"><button class="btn slots_button">10:00AM</button></div>
                             <div class="col-xs-3 col-sm-6 col-md-6 col-lg-6"><button class="btn slots_button">10:30AM</button></div>
@@ -229,65 +265,65 @@
         <div class="row doc_det_slots treatment_det_slots">
             <div class="doc_det_slots_row">
                 <div class="col-xs-12 col-lg-8 col-md-8 col-sm-8 Treatment_Plans_div">
-                	<div class="table tab-heading">
-	                    <div class="tablerow tablerow_heading">
-	                        <span class="cell Treatment_Plans_leftpadding Treatment_Plans_para2">Treatment Plans</span>
-	                        <span class="Treatment_Plans_cell1 cell tablerow1">Duration</span>
-	                        <span class="Treatment_Plans_cell1 cell tablerow2">Cost (*per session)</span>
-	                    </div>
-	                </div>
-	                <div class="treat-scroll">
-	                    <div class="mCustomScrollbar" id="content-2">
-		                    <div class="tablerow">
-		                        <span class="cell Treatment_Plans_leftpadding Treatment_Plans_para2">Laser hair Removal for Face<br><span class="Treatment_Plans_span2">It is used to remove unwanted hair from<br>forhead, chin, upperlip or full face.</span></span>
-		                        <span class="Treatment_Plans_cell1 cell tablerow1">3 months</span>
-		                        <span class="Treatment_Plans_cell1 cell  tablerow2">Rs. 3540</span>
-		                    </div>
-		                    <div class="tablerow">
-		                        <span class="cell Treatment_Plans_leftpadding Treatment_Plans_para2">Laser hair Removal for Upper Torso<br><span class="Treatment_Plans_span2">It is used to remove unwanted hair from<br>forhead, chin, upperlip or full face.</span></span>
-		                        <span class="cell Treatment_Plans_cell1 tablerow1">2 weeks</span>
-		                        <span class="cell Treatment_Plans_cell1 tablerow2">Rs. 3540</span>
-		                    </div>
-		                    <div class="tablerow">
-		                        <span class="cell Treatment_Plans_leftpadding Treatment_Plans_para2">Laser hair Removal for Lower Extremity<br><span class="Treatment_Plans_span2">It is used to remove unwanted hair from<br>forhead, chin, upperlip or full face.</span></span>
-		                        <span class="cell Treatment_Plans_cell1 tablerow1">6 months</span>
-		                        <span class="cell Treatment_Plans_cell1 tablerow2">Rs. 3540</span>
-		                    </div>
-		                    <div class="tablerow">
-		                        <span class="cell Treatment_Plans_leftpadding Treatment_Plans_para2">Laser hair Removal for Lower Extremity<br><span class="Treatment_Plans_span2">It is used to remove unwanted hair from<br>forhead, chin, upperlip or full face.</span></span>
-		                        <span class="cell Treatment_Plans_cell1 tablerow1">6 months</span>
-		                        <span class="cell Treatment_Plans_cell1 tablerow2">Rs. 3540</span>
-		                    </div>
-		                    <div class="tablerow">
-		                        <span class="cell Treatment_Plans_leftpadding Treatment_Plans_para2">Acne Treatment<br><span class="Treatment_Plans_span2">It is used to remove unwanted hair from<br>forhead, chin, upperlip or full face.</span></span>
-		                        <span class="cell Treatment_Plans_cell1 tablerow1">2 weeks</span>
-		                        <span class="cell Treatment_Plans_cell1 tablerow2">Rs. 3540</span>
-		                    </div>
-		                    <div class="tablerow">
-		                        <span class="cell Treatment_Plans_leftpadding Treatment_Plans_para2">Acne Treatment<br><span class="Treatment_Plans_span2">It is used to remove unwanted hair from<br>forhead, chin, upperlip or full face.</span></span>
-		                        <span class="cell Treatment_Plans_cell1 tablerow1">6months</span>
-		                        <span class="cell Treatment_Plans_cell1 tablerow2">Rs. 3540</span>
-		                    </div>
-		                    <div class="tablerow">
-		                        <span class="cell Treatment_Plans_leftpadding Treatment_Plans_para2">Acne Treatment<br><span class="Treatment_Plans_span2">It is used to remove unwanted hair from<br>forhead, chin, upperlip or full face.</span></span>
-		                        <span class="cell Treatment_Plans_cell1 tablerow1">6months</span>
-		                        <span class="cell Treatment_Plans_cell1 tablerow2">Rs. 3540</span>
-		                    </div>
-		                </div>
-		            </div>
+                    <div class="table tab-heading">
+                        <div class="tablerow tablerow_heading">
+                            <span class="cell Treatment_Plans_leftpadding Treatment_Plans_para2">Treatment Plans</span>
+                            <span class="Treatment_Plans_cell1 cell tablerow1">Duration</span>
+                            <span class="Treatment_Plans_cell1 cell tablerow2">Cost (*per session)</span>
+                        </div>
+                    </div>
+                    <div class="treat-scroll">
+                        <div class="mCustomScrollbar" id="content-2">
+                            <div class="tablerow">
+                                <span class="cell Treatment_Plans_leftpadding Treatment_Plans_para2">Laser hair Removal for Face<br><span class="Treatment_Plans_span2">It is used to remove unwanted hair from<br>forhead, chin, upperlip or full face.</span></span>
+                                <span class="Treatment_Plans_cell1 cell tablerow1">3 months</span>
+                                <span class="Treatment_Plans_cell1 cell  tablerow2">Rs. 3540</span>
+                            </div>
+                            <div class="tablerow">
+                                <span class="cell Treatment_Plans_leftpadding Treatment_Plans_para2">Laser hair Removal for Upper Torso<br><span class="Treatment_Plans_span2">It is used to remove unwanted hair from<br>forhead, chin, upperlip or full face.</span></span>
+                                <span class="cell Treatment_Plans_cell1 tablerow1">2 weeks</span>
+                                <span class="cell Treatment_Plans_cell1 tablerow2">Rs. 3540</span>
+                            </div>
+                            <div class="tablerow">
+                                <span class="cell Treatment_Plans_leftpadding Treatment_Plans_para2">Laser hair Removal for Lower Extremity<br><span class="Treatment_Plans_span2">It is used to remove unwanted hair from<br>forhead, chin, upperlip or full face.</span></span>
+                                <span class="cell Treatment_Plans_cell1 tablerow1">6 months</span>
+                                <span class="cell Treatment_Plans_cell1 tablerow2">Rs. 3540</span>
+                            </div>
+                            <div class="tablerow">
+                                <span class="cell Treatment_Plans_leftpadding Treatment_Plans_para2">Laser hair Removal for Lower Extremity<br><span class="Treatment_Plans_span2">It is used to remove unwanted hair from<br>forhead, chin, upperlip or full face.</span></span>
+                                <span class="cell Treatment_Plans_cell1 tablerow1">6 months</span>
+                                <span class="cell Treatment_Plans_cell1 tablerow2">Rs. 3540</span>
+                            </div>
+                            <div class="tablerow">
+                                <span class="cell Treatment_Plans_leftpadding Treatment_Plans_para2">Acne Treatment<br><span class="Treatment_Plans_span2">It is used to remove unwanted hair from<br>forhead, chin, upperlip or full face.</span></span>
+                                <span class="cell Treatment_Plans_cell1 tablerow1">2 weeks</span>
+                                <span class="cell Treatment_Plans_cell1 tablerow2">Rs. 3540</span>
+                            </div>
+                            <div class="tablerow">
+                                <span class="cell Treatment_Plans_leftpadding Treatment_Plans_para2">Acne Treatment<br><span class="Treatment_Plans_span2">It is used to remove unwanted hair from<br>forhead, chin, upperlip or full face.</span></span>
+                                <span class="cell Treatment_Plans_cell1 tablerow1">6months</span>
+                                <span class="cell Treatment_Plans_cell1 tablerow2">Rs. 3540</span>
+                            </div>
+                            <div class="tablerow">
+                                <span class="cell Treatment_Plans_leftpadding Treatment_Plans_para2">Acne Treatment<br><span class="Treatment_Plans_span2">It is used to remove unwanted hair from<br>forhead, chin, upperlip or full face.</span></span>
+                                <span class="cell Treatment_Plans_cell1 tablerow1">6months</span>
+                                <span class="cell Treatment_Plans_cell1 tablerow2">Rs. 3540</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="col-xs-12 col-lg-4 col-md-4 col-sm-4 Special_Offers_div">
                     <div>
-	                    <div class="sp_offer_heading">
-	                        <p class="SpecialOffers_para">Special Offers</p>
-	                    </div>
+                        <div class="sp_offer_heading">
+                            <p class="SpecialOffers_para">Special Offers</p>
+                        </div>
                         <div class="SpecialOffers_div col-xxs-12 col-xs-6 col-lg-12 col-md-12 col-sm-12">
 
-		                    <div>
-		                        <p class="SpecialOffers_para1">LASER HAIR REMOVAL FOR FULL BODY</p>
-		                        <p class="SpecialOffers_para2">Laser hair removal is a process in which highly concentrated laser is absorbed by the hair follicles and destroys the hair without damaging the tissue. It is used to remove unwanted hair from face, arms, legs, underarms and other areas.</p>
-		                    </div>
-		                    <div>
+                            <div>
+                                <p class="SpecialOffers_para1">LASER HAIR REMOVAL FOR FULL BODY</p>
+                                <p class="SpecialOffers_para2">Laser hair removal is a process in which highly concentrated laser is absorbed by the hair follicles and destroys the hair without damaging the tissue. It is used to remove unwanted hair from face, arms, legs, underarms and other areas.</p>
+                            </div>
+                            <div>
                                 <p class="SpecialOffers_para1">Included Treatments</p>
                                 <div class="SpecialOffers_para3">
                                     <div class="specialOffer-cost">Laser hair Removal for Face<br><span class="SpecialOffers_para2">It is used to remove unwanted hair from forhead, chin, upperlip or full face.</span></div>
@@ -295,88 +331,88 @@
                                 </div>
 
                             </div>
-		                </div>
-						<div class="offer_div col-xxs-12 col-xs-6 col-lg-12 col-md-12 col-sm-12">
-						    <div class="row offer-row col-xxs-6">
-						        <div class="rate">
-						            <span class="offer_para offer-rate">85</span>
-						            <span class="offer_para1 of-p">%</span>
-						            <span class="offer_para2 of-p">OFF</span>
-						        </div>
-						    </div>
-						    <div class="offer-valid">
-						        <p class="offer_para3 col-xxs-6">Offer Valid from</p>
-						        <p class="offer_para4 col-xxs-6">20 January - 31 March ’16</p>
-						        <div class="Appointment_para4_div">
-						            <p class="Appointment_para4"><span class="of-c">OFFER CODE:</span><span class="Appointment_span3">LASER85</span></p>
-						        </div>
-						    </div>
-						</div>
+                        </div>
+                        <div class="offer_div col-xxs-12 col-xs-6 col-lg-12 col-md-12 col-sm-12">
+                            <div class="row offer-row col-xxs-6">
+                                <div class="rate">
+                                    <span class="offer_para offer-rate">85</span>
+                                    <span class="offer_para1 of-p">%</span>
+                                    <span class="offer_para2 of-p">OFF</span>
+                                </div>
+                            </div>
+                            <div class="offer-valid">
+                                <p class="offer_para3 col-xxs-6">Offer Valid from</p>
+                                <p class="offer_para4 col-xxs-6">20 January - 31 March ’16</p>
+                                <div class="Appointment_para4_div">
+                                    <p class="Appointment_para4"><span class="of-c">OFFER CODE:</span><span class="Appointment_span3">LASER85</span></p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-		<div class="Appointment_Last_row">
-		    <div class="Appointment_Last_row_div">
-		        <p class="Appointment_Last_row_para">Reviews (13)<a href="javascript:void(0);" class="Appointment_Last_row_span">Write a Review</a></p>
-		    </div>
-		    <div class="row">
-		        <div class="table1 mCustomScrollbar" id="content-1">
-		            <div class="tablerow1 Appointment_Last_row_tablerow">
-		                <div class="Appointment_Last_row_cell"><img id="review-prof-image-001"></div>
-		                <div class="Appointment_Last_row_cell1">Ramona Sikand<br><span class="Appointment_Last_row_span1">Excellent and very helpful.She understood my problem very well and explained the solution to me in a very detailed and effective way and provided me some very helpful tips.She has been very helpful to me right from the start and i recommend her to all my friends and family.</span></div>
-		            </div>
-		            <div class="tablerow1 Appointment_Last_row_tablerow">
-		                <div class="Appointment_Last_row_cell"><img id="review-prof-image-002" src="img/review1.png"></div>
-		                <div class="Appointment_Last_row_cell1">Anandhi Hariharan<br><span class="Appointment_Last_row_span1">Excellent and very helpful.She understood my problem very well and explained the solution to me in a very detailed and effective way and provided me some very helpful tips.She has been very helpful to me right from the start and i recommend her to all my friends and family.</span></div>
-		            </div>
-		            <div class="tablerow1 Appointment_Last_row_tablerow">
-		                <div class="Appointment_Last_row_cell"><img id="review-prof-image-003" src="img/review2.png"></div>
-		                <div class="Appointment_Last_row_cell1">Anandhi Hariharan<br><span class="Appointment_Last_row_span1">Excellent and very helpful.She understood my problem very well and explained the solution to me in a very detailed and effective way and provided me some very helpful tips.She has been very helpful to me right from the start and i recommend her to all my friends and family.</span></div>
-		            </div>
-		            <div class="tablerow1 Appointment_Last_row_tablerow">
-		                <div class="Appointment_Last_row_cell"><img id="review-prof-image-004" src="img/review.png"></div>
-		                <div class="Appointment_Last_row_cell1">Anandhi Hariharan<br><span class="Appointment_Last_row_span1">Excellent and very helpful.She understood my problem very well and explained the solution to me in a very detailed and effective way and provided me some very helpful tips.She has been very helpful to me right from the start and i recommend her to all my friends and family.</span></div>
-		            </div>
-		            <div class="tablerow1 Appointment_Last_row_tablerow">
-		                <div class="Appointment_Last_row_cell"><img id="review-prof-image-005" src="img/review1.png"></div>
-		                <div class="Appointment_Last_row_cell1">Anandhi Hariharan<br><span class="Appointment_Last_row_span1">Excellent and very helpful.She understood my problem very well and explained the solution to me in a very detailed and effective way and provided me some very helpful tips.She has been very helpful to me right from the start and i recommend her to all my friends and family.</span></div>
-		            </div>
-		            <div class="tablerow1 Appointment_Last_row_tablerow">
-		                <div class="Appointment_Last_row_cell"><img id="review-prof-image-006" src="img/review.png"></div>
-		                <div class="Appointment_Last_row_cell1">Anandhi Hariharan<br><span class="Appointment_Last_row_span1">Excellent and very helpful.She understood my problem very well and explained the solution to me in a very detailed and effective way and provided me some very helpful tips.She has been very helpful to me right from the start and i recommend her to all my friends and family.</span></div>
-		            </div>
-		            <div class="tablerow1 Appointment_Last_row_tablerow">
-		                <div class="Appointment_Last_row_cell"><img id="review-prof-image-007" src="img/review.png"></div>
-		                <div class="Appointment_Last_row_cell1">Anandhi Hariharan<br><span class="Appointment_Last_row_span1">Excellent and very helpful.She understood my problem very well and explained the solution to me in a very detailed and effective way and provided me some very helpful tips.She has been very helpful to me right from the start and i recommend her to all my friends and family.</span></div>
-		            </div>
-		            <div class="tablerow1 Appointment_Last_row_tablerow">
-		                <div class="Appointment_Last_row_cell"><img id="review-prof-image-008" src="img/review.png"></div>
-		                <div class="Appointment_Last_row_cell1">Anandhi Hariharan<br><span class="Appointment_Last_row_span1">Excellent and very helpful.She understood my problem very well and explained the solution to me in a very detailed and effective way and provided me some very helpful tips.She has been very helpful to me right from the start and i recommend her to all my friends and family.</span></div>
-		            </div>
-		            <div class="tablerow1 Appointment_Last_row_tablerow">
-		                <div class="Appointment_Last_row_cell"><img id="review-prof-image-009" src="img/review.png"></div>
-		                <div class="Appointment_Last_row_cell1">Anandhi Hariharan<br><span class="Appointment_Last_row_span1">Excellent and very helpful.She understood my problem very well and explained the solution to me in a very detailed and effective way and provided me some very helpful tips.She has been very helpful to me right from the start and i recommend her to all my friends and family.</span></div>
-		            </div>
-		            <div class="tablerow1 Appointment_Last_row_tablerow">
-		                <div class="Appointment_Last_row_cell"><img id="review-prof-image-010" src="img/review.png"></div>
-		                <div class="Appointment_Last_row_cell1">Anandhi Hariharan<br><span class="Appointment_Last_row_span1">Excellent and very helpful.She understood my problem very well and explained the solution to me in a very detailed and effective way and provided me some very helpful tips.She has been very helpful to me right from the start and i recommend her to all my friends and family.</span></div>
-		            </div>
-		            <div class="tablerow1 Appointment_Last_row_tablerow">
-		                <div class="Appointment_Last_row_cell"><img id="review-prof-image-011" src="img/review.png"></div>
-		                <div class="Appointment_Last_row_cell1">Anandhi Hariharan<br><span class="Appointment_Last_row_span1">Excellent and very helpful.She understood my problem very well and explained the solution to me in a very detailed and effective way and provided me some very helpful tips.She has been very helpful to me right from the start and i recommend her to all my friends and family.</span></div>
-		            </div>
-		            <div class="tablerow1 Appointment_Last_row_tablerow">
-		                <div class="Appointment_Last_row_cell"><img id="review-prof-image-012" src="img/review.png"></div>
-		                <div class="Appointment_Last_row_cell1">Anandhi Hariharan<br><span class="Appointment_Last_row_span1">Excellent and very helpful.She understood my problem very well and explained the solution to me in a very detailed and effective way and provided me some very helpful tips.She has been very helpful to me right from the start and i recommend her to all my friends and family.</span></div>
-		            </div>
-		            <div class="tablerow1 Appointment_Last_row_tablerow">
-		                <div class="Appointment_Last_row_cell"><img id="review-prof-image-013" src="img/review.png"></div>
-		                <div class="Appointment_Last_row_cell1">Mathew<br><span class="Appointment_Last_row_span1">Excellent and very helpful.She understood my problem very well and explained the solution to me in a very detailed and effective way and provided me some very helpful tips.She has been very helpful to me right from the start and i recommend her to all my friends and family.</span></div>
-		            </div>
-		        </div>
-		    </div>
-		</div>
+        <div class="Appointment_Last_row">
+            <div class="Appointment_Last_row_div">
+                <p class="Appointment_Last_row_para">Reviews (13)<a href="javascript:void(0);" class="Appointment_Last_row_span">Write a Review</a></p>
+            </div>
+            <div class="row">
+                <div class="table1 mCustomScrollbar" id="content-1">
+                    <div class="tablerow1 Appointment_Last_row_tablerow">
+                        <div class="Appointment_Last_row_cell"><img id="review-prof-image-001"></div>
+                        <div class="Appointment_Last_row_cell1">Ramona Sikand<br><span class="Appointment_Last_row_span1">Excellent and very helpful.She understood my problem very well and explained the solution to me in a very detailed and effective way and provided me some very helpful tips.She has been very helpful to me right from the start and i recommend her to all my friends and family.</span></div>
+                    </div>
+                    <div class="tablerow1 Appointment_Last_row_tablerow">
+                        <div class="Appointment_Last_row_cell"><img id="review-prof-image-002" src="img/review1.png"></div>
+                        <div class="Appointment_Last_row_cell1">Anandhi Hariharan<br><span class="Appointment_Last_row_span1">Excellent and very helpful.She understood my problem very well and explained the solution to me in a very detailed and effective way and provided me some very helpful tips.She has been very helpful to me right from the start and i recommend her to all my friends and family.</span></div>
+                    </div>
+                    <div class="tablerow1 Appointment_Last_row_tablerow">
+                        <div class="Appointment_Last_row_cell"><img id="review-prof-image-003" src="img/review2.png"></div>
+                        <div class="Appointment_Last_row_cell1">Anandhi Hariharan<br><span class="Appointment_Last_row_span1">Excellent and very helpful.She understood my problem very well and explained the solution to me in a very detailed and effective way and provided me some very helpful tips.She has been very helpful to me right from the start and i recommend her to all my friends and family.</span></div>
+                    </div>
+                    <div class="tablerow1 Appointment_Last_row_tablerow">
+                        <div class="Appointment_Last_row_cell"><img id="review-prof-image-004" src="img/review.png"></div>
+                        <div class="Appointment_Last_row_cell1">Anandhi Hariharan<br><span class="Appointment_Last_row_span1">Excellent and very helpful.She understood my problem very well and explained the solution to me in a very detailed and effective way and provided me some very helpful tips.She has been very helpful to me right from the start and i recommend her to all my friends and family.</span></div>
+                    </div>
+                    <div class="tablerow1 Appointment_Last_row_tablerow">
+                        <div class="Appointment_Last_row_cell"><img id="review-prof-image-005" src="img/review1.png"></div>
+                        <div class="Appointment_Last_row_cell1">Anandhi Hariharan<br><span class="Appointment_Last_row_span1">Excellent and very helpful.She understood my problem very well and explained the solution to me in a very detailed and effective way and provided me some very helpful tips.She has been very helpful to me right from the start and i recommend her to all my friends and family.</span></div>
+                    </div>
+                    <div class="tablerow1 Appointment_Last_row_tablerow">
+                        <div class="Appointment_Last_row_cell"><img id="review-prof-image-006" src="img/review.png"></div>
+                        <div class="Appointment_Last_row_cell1">Anandhi Hariharan<br><span class="Appointment_Last_row_span1">Excellent and very helpful.She understood my problem very well and explained the solution to me in a very detailed and effective way and provided me some very helpful tips.She has been very helpful to me right from the start and i recommend her to all my friends and family.</span></div>
+                    </div>
+                    <div class="tablerow1 Appointment_Last_row_tablerow">
+                        <div class="Appointment_Last_row_cell"><img id="review-prof-image-007" src="img/review.png"></div>
+                        <div class="Appointment_Last_row_cell1">Anandhi Hariharan<br><span class="Appointment_Last_row_span1">Excellent and very helpful.She understood my problem very well and explained the solution to me in a very detailed and effective way and provided me some very helpful tips.She has been very helpful to me right from the start and i recommend her to all my friends and family.</span></div>
+                    </div>
+                    <div class="tablerow1 Appointment_Last_row_tablerow">
+                        <div class="Appointment_Last_row_cell"><img id="review-prof-image-008" src="img/review.png"></div>
+                        <div class="Appointment_Last_row_cell1">Anandhi Hariharan<br><span class="Appointment_Last_row_span1">Excellent and very helpful.She understood my problem very well and explained the solution to me in a very detailed and effective way and provided me some very helpful tips.She has been very helpful to me right from the start and i recommend her to all my friends and family.</span></div>
+                    </div>
+                    <div class="tablerow1 Appointment_Last_row_tablerow">
+                        <div class="Appointment_Last_row_cell"><img id="review-prof-image-009" src="img/review.png"></div>
+                        <div class="Appointment_Last_row_cell1">Anandhi Hariharan<br><span class="Appointment_Last_row_span1">Excellent and very helpful.She understood my problem very well and explained the solution to me in a very detailed and effective way and provided me some very helpful tips.She has been very helpful to me right from the start and i recommend her to all my friends and family.</span></div>
+                    </div>
+                    <div class="tablerow1 Appointment_Last_row_tablerow">
+                        <div class="Appointment_Last_row_cell"><img id="review-prof-image-010" src="img/review.png"></div>
+                        <div class="Appointment_Last_row_cell1">Anandhi Hariharan<br><span class="Appointment_Last_row_span1">Excellent and very helpful.She understood my problem very well and explained the solution to me in a very detailed and effective way and provided me some very helpful tips.She has been very helpful to me right from the start and i recommend her to all my friends and family.</span></div>
+                    </div>
+                    <div class="tablerow1 Appointment_Last_row_tablerow">
+                        <div class="Appointment_Last_row_cell"><img id="review-prof-image-011" src="img/review.png"></div>
+                        <div class="Appointment_Last_row_cell1">Anandhi Hariharan<br><span class="Appointment_Last_row_span1">Excellent and very helpful.She understood my problem very well and explained the solution to me in a very detailed and effective way and provided me some very helpful tips.She has been very helpful to me right from the start and i recommend her to all my friends and family.</span></div>
+                    </div>
+                    <div class="tablerow1 Appointment_Last_row_tablerow">
+                        <div class="Appointment_Last_row_cell"><img id="review-prof-image-012" src="img/review.png"></div>
+                        <div class="Appointment_Last_row_cell1">Anandhi Hariharan<br><span class="Appointment_Last_row_span1">Excellent and very helpful.She understood my problem very well and explained the solution to me in a very detailed and effective way and provided me some very helpful tips.She has been very helpful to me right from the start and i recommend her to all my friends and family.</span></div>
+                    </div>
+                    <div class="tablerow1 Appointment_Last_row_tablerow">
+                        <div class="Appointment_Last_row_cell"><img id="review-prof-image-013" src="img/review.png"></div>
+                        <div class="Appointment_Last_row_cell1">Mathew<br><span class="Appointment_Last_row_span1">Excellent and very helpful.She understood my problem very well and explained the solution to me in a very detailed and effective way and provided me some very helpful tips.She has been very helpful to me right from the start and i recommend her to all my friends and family.</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     <footer>
         <div class="footer-contents container">
@@ -385,15 +421,18 @@
         </div>
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/hideShowPassword.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/datepicker.js"></script>
+    <script src="js/form.js"></script>
     <script type="text/javascript" src="script.js"></script>    
-	<!-- custom scrollbar plugin -->
-	<script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
-	<script type="text/javascript">
-		var $window = $(window);
-		$window.one('scroll',function() {     
-	       $('.treat-scroll').css('height','inherit');
-		});
-	</script>
+    <!-- custom scrollbar plugin -->
+    <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script type="text/javascript">
+        var $window = $(window);
+        $window.one('scroll',function() {     
+           $('.treat-scroll').css('height','inherit');
+        });
+    </script>
 </body>
 </html>

@@ -135,7 +135,7 @@
     	font-family: "OpenSans-Light";
     	font-size:16px;
     }
-    .color-a{
+    #register-div .color-a{
         color: #d41c5c;
         cursor: pointer;
     }
@@ -315,6 +315,14 @@
     margin-left: -15px !important;
     margin-right: -15px !important;
 }*/
+/*#app_marker_doctor_availability .row{
+    margin-right: 0px;
+    margin-left: 0px;
+} */
+#app_marker_doctor_availability .row {
+    margin-left: -15px !important;
+    margin-right: -15px !important;
+}
 .datepicker-dropdown{
     z-index: 1036;
 }
