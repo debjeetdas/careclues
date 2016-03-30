@@ -1,0 +1,336 @@
+    @font-face {
+        font-family: "OpenSans-Bold";
+        src: url(../font/ttf/OpenSans-Bold.ttf);
+    }
+    @font-face {
+        font-family: "OpenSans-BoldItalic";
+        src: url(../font/ttf/OpenSans-BoldItalic.ttf);
+    }
+    @font-face {
+        font-family: "OpenSans-Light";
+        src: url(../font/ttf/OpenSans-Light.ttf);
+    }
+    @font-face {
+        font-family: "OpenSans-LightItalic";
+        src: url(../font/ttf/OpenSans-LightItalic.ttf);
+    }
+    @font-face {
+        font-family: "OpenSans-Regular";
+        src: url(../font/ttf/OpenSans-Regular.ttf);
+    }
+    @font-face {
+        font-family: "OpenSans-Italic";
+        src: url(../font/ttf/OpenSans-Italic.ttf);
+    }
+    @font-face {
+        font-family: "OpenSans-SemiBold";
+        src: url(../font/ttf/OpenSans-SemiBold.ttf);
+    }
+    @font-face {
+        font-family: "OpenSans-SemiBoldItalic";
+        src: url(../font/ttf/OpenSans-SemiBoldItalic.ttf);
+    }
+    @font-face {
+        font-family: "OpenSans-ExtraBold";
+        src: url(../font/ttf/OpenSans-ExtraBold.ttf);
+    }
+    @font-face {
+        font-family: "OpenSans-ExtraBoldItalic";
+        src: url(../font/ttf/OpenSans-ExtraBoldItalic.ttf);
+    }
+    .login-close-btn{
+        float: right;
+     }
+    .login-heading{
+    	font-family: "OpenSans-Regular";
+        font-size: 18px;
+        color:#333333;
+    }
+    .login-btn,.login-btn1{
+    	background-color: #d41c5c;
+        border: none;
+        color: #fff;
+        font-family: OpenSans-SemiBold;
+        font-size: 16px;
+        height: 37px;
+        width: 127px;
+        border-radius: 5px;
+    }
+    #loginScreen{
+	   background-color: #eeeeee;
+     }
+   .button { 
+       /* width: 150px; 
+        padding: 10px; 
+    	background-color: #FF8C00; 
+    	box-shadow: -8px 8px 10px 3px rgba(0,0,0,0.2); 
+    	font-weight:bold; */
+    	text-decoration:none;
+    } 
+    .button:hover{
+        text-decoration: none;
+    }
+    #cover{ 
+        position:fixed; 
+     	top:0; 
+     	left:0; 
+     	background:rgba(0,0,0,0.6);
+     	z-index:5; 
+     	width:100%; 
+     	height:100%; 
+     	display:none; 
+    } 
+    #loginScreen {
+     	width:394px; 
+     	margin:0 auto;
+     	position:relative; 
+     	z-index:10;
+     	display:none;  
+     	padding: 0 22px;
+     	border:1px solid #cccccc; 
+     	border-radius:4px; 
+    } 
+    /*#login-form #loginScreen {
+        height:327px; 
+    }*/
+    /*#loginScreen{
+        height: 508px;
+     }*/
+    .reg{
+        display: table;
+        padding-bottom: 28px;
+    }
+    .log {
+    padding-bottom: 28px;
+}
+    .form-control {
+        margin-bottom: 21px;
+        height: 40px;
+    }
+    .btn-group.btn-input{
+        margin-bottom: 19px;
+     }
+
+    #loginScreen:target, #loginScreen:target + #cover{ display:block; opacity:2; } 
+    .cancel{
+        display:block; 
+     	position:absolute; 
+     	top:3px; 
+     	right: 21px;
+     	font-size:30px; 
+     	text-decoration:none; 
+     	text-align:center; 
+     	font-weight:bold; 
+    } 
+    hr{
+ 	  border-bottom: 1px solid #dfdfdf;
+    }
+    .forget-psw{
+    	float:right;
+    	font-family: "OpenSans-Light";
+    	font-size:16px;
+    }
+    .login-register{
+    	text-align: center;
+    	font-family: "OpenSans-Light";
+    	font-size:16px;
+    }
+    .color-a{
+        color: #d41c5c;
+        cursor: pointer;
+    }
+    .color-a:hover,.color-a:focus{
+        color: #d41c5c;
+        text-decoration: none;
+    }
+    .login-btn{
+        float: right;
+    }
+    ::-ms-reveal {
+         display:none !important;
+    }
+    .hideShowPassword-toggle {
+        background-image: url(../img/psw-img.png);
+        background-position: 0 center;
+        background-repeat: no-repeat;
+        cursor: pointer;
+        height: 100%;
+        overflow: hidden;
+        text-indent: -9999em;
+        width: 44px;
+        top: 0 !important;
+        margin-top: 0 !important;
+    }
+    .hideShowPassword-toggle-hide {
+        background-position: -44px center;
+    }
+    .phone-no-div{
+        position: relative;
+        margin-bottom: 21px;
+        }
+    .mobile-no-start-code {
+        background-color: #fff;
+        border: medium none;
+        border-radius: 5px;
+        color: #555;
+        display: block;
+        font-size: 14px;
+        height: 40px;
+        line-height: 1.42857;
+        position: absolute;
+        width: 15%;
+    }
+   #phone-number {
+        margin-left: 15%;
+        width: 85%;
+        border: 1px solid #ccc;
+        border-radius: 0 5px 5px 0;
+        margin-bottom: 0px;
+    }
+  .login-phone-no-code{
+        border-color: #ccc -moz-use-text-color #ccc #ccc;
+        border-radius: 5px 0 0 5px;
+        border-style: solid none solid solid;
+        border-width: 1px medium 1px 1px;
+        height: 40px;
+        width: 100%;
+        padding: 6px 12px;
+    }
+    .clearfix{
+        width:100%;
+    }
+    .drop-btn{
+        width:100%;
+        height: 40px;
+    }
+    .genderName {
+        float: left;
+    }
+    .genderCaret {
+        float: right;
+        margin-top: 8px;
+        color: #848484;
+    }
+    .reg-start-close{
+        display: none;
+    }
+    .hideShowPassword-wrapper{
+        width: 100% !important;
+    }
+    .log-in-placeholder{
+        font-family: "OpenSans-Light";
+        font-size: 16px;
+        color:#333;
+    }
+    .log-in-placeholder1{
+        font-family: "OpenSans-Light";
+        font-size: 16px;
+        color:#848484;
+    }
+    .calender-span{
+        background-color: #fff;
+     }
+    .date-input{
+        border-right: none;
+     }
+    .datepicker-dropdown.datepicker-orient-left::before{
+        left: 109px !important;
+     }
+    .datepicker-dropdown.datepicker-orient-left::after{
+        left: 110px !important;
+     }
+    .navbar-header {
+    float: none !important;
+    }
+    .login-img-div {
+    float: right;
+    margin-right: 108px;
+    margin-top: 26px;
+    }
+    .login-text{
+        margin: 0 -5px 10px;
+       font-family: "OpenSans-Regular";
+       font-size: 12px;
+       color:#666666; 
+    }
+    @media screen and (max-width: 767px){
+    	#loginScreen{
+    	   width:100%;
+    	}
+        h1 {
+            margin: 0 0 0 35px;
+            padding: 0;
+        }
+        .reg-start-close {
+        position: absolute;
+        display: block;
+        }
+        .reg-end-close{
+            display: none;
+        }
+        .reg-form,.log-form{
+            padding:0 22px;
+        }
+        #loginScreen{
+            padding: 0px;
+            border: none;
+            height: 750px;
+            background: #fff;
+            position: absolute;
+            top:0px;
+        }
+        .heading-div{
+            background-color: #d41c5c;
+            padding-bottom: 25px;
+            padding-left: 14px;
+            padding-top: 25px;
+        }
+        .reg-hr{
+            display: none;
+        }
+        #first-name {
+        margin-top: 118px;
+        }
+        .login-heading{
+            color:#fff;
+        }
+        #email1{
+            margin-top: 180px;
+        }
+    /*.reg{
+        display:block;
+    }*/
+	}
+   /* media query ends*/
+   #register-div {
+    position: fixed;
+    top: 15%;
+    width: 100%;
+    z-index: 1031;
+}
+.reg{
+    width:100%;
+}
+/*#register-div .row {
+    margin-left: -15px !important;
+    margin-right: -15px !important;
+}*/
+.datepicker-dropdown{
+    z-index: 1036;
+}
+#app_marker_doctor_details #register-div .col-lg-6 ,#app_marker_doctor_details #register-div .col-md-6,#app_marker_doctor_details #register-div .col-sm-6,#app_marker_doctor_details #register-div .col-xs-6{
+    padding-left: 15px !important;
+    padding-right: 0px !important;
+}
+.datepicker {
+    position: fixed !important;
+    z-index: 1032 !important;
+}
+@media screen and (max-width:767px){
+     #register-div{
+        top:0%;
+     } 
+     .login-img-div{
+         margin-right: 20px;
+    }
+}

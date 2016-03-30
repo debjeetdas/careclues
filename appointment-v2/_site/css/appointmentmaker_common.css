@@ -1,0 +1,2362 @@
+@font-face {
+    font-family: "OpenSans-Bold";
+    src: url(../font/ttf/OpenSans-Bold.ttf);
+}
+@font-face {
+    font-family: "OpenSans-BoldItalic";
+    src: url(../font/ttf/OpenSans-BoldItalic.ttf);
+}
+@font-face {
+    font-family: "OpenSans-Light";
+    src: url(../font/ttf/OpenSans-Light.ttf);
+}
+@font-face {
+    font-family: "OpenSans-LightItalic";
+    src: url(../font/ttf/OpenSans-LightItalic.ttf);
+}
+@font-face {
+    font-family: "OpenSans-Regular";
+    src: url(../font/ttf/OpenSans-Regular.ttf);
+}
+@font-face {
+    font-family: "OpenSans-Italic";
+    src: url(../font/ttf/OpenSans-Italic.ttf);
+}
+@font-face {
+    font-family: "OpenSans-SemiBold";
+    src: url(../font/ttf/OpenSans-SemiBold.ttf);
+}
+@font-face {
+    font-family: "OpenSans-SemiBoldItalic";
+    src: url(../font/ttf/OpenSans-SemiBoldItalic.ttf);
+}
+@font-face {
+    font-family: "OpenSans-ExtraBold";
+    src: url(../font/ttf/OpenSans-ExtraBold.ttf);
+}
+@font-face {
+    font-family: "OpenSans-ExtraBoldItalic";
+    src: url(../font/ttf/OpenSans-ExtraBoldItalic.ttf);
+}
+@font-face {
+    font-family: 'FontAwesome';
+    src: url('../fonts/fontawesome-webfont.eot?v=4.4.0');
+    src: url('../fonts/fontawesome-webfont.eot?#iefix&v=4.4.0') format('embedded-opentype'), url('../fonts/fontawesome-webfont.woff2?v=4.4.0') format('woff2'), url('../fonts/fontawesome-webfont.woff?v=4.4.0') format('woff'), url('../fonts/fontawesome-webfont.ttf?v=4.4.0') format('truetype'), url('../fonts/fontawesome-webfont.svg?v=4.4.0#fontawesomeregular') format('svg');
+    font-weight: normal;
+    font-style: normal
+}
+body {
+    width: 100%;
+}
+body.app_marker_doctor_details {
+    width: 100%;
+    overflow-x: hidden;
+}
+.row {
+    margin-right: 0;
+}
+#headtop {
+    height: 75px;
+    border: 1px solid #e7e7e7;
+    background-color: #ffffff;
+}
+.container {
+    padding: 0 !important;
+    margin: 0 auto;
+}
+#appointment_img1 {
+    margin-top: 10px;
+    margin-left: 90px;
+    cursor: pointer;
+}
+@media screen and (max-width: 767px) {
+    #appointment_img1 {
+        margin-left: 25px;
+    }
+}
+.background {
+    background-color: #fafafc;
+}
+#Appointment_div {
+    margin-top: 75px;
+}
+.Appointment_para1 {
+    color: #666666;
+    font-family: "OpenSans-Regular";
+    font-size: 12px;
+    padding-top: 39.5px;
+}
+.Appointment_span1 {
+    color: #333333;
+    font-family: "OpenSans-SemiBold";
+}
+.Appointment_span1 {
+    color: #333333;
+    font-family: "OpenSans-SemiBold";
+}
+.Appointment_heading1 {
+    color: #333333;
+    font-family: "OpenSans-Bold";
+    font-size: 22px;
+    margin-bottom: 14px;
+    margin-top: 24px;
+}
+.btn-group > .btn-group {
+    padding-right: 9px;
+    padding-top: 20px !important;
+}.btn {
+    border-radius: 5px !important;
+}
+.dropdown-toggle {
+    color: #999999;
+}
+.Appointment_fontfamily {
+    font-family: "OpenSans-Regular";
+    font-size: 16px;
+    font-weight: normal;
+}
+@media screen and (max-width: 767px) {
+    .container {
+        margin: 0 20px;
+    }    
+}
+.footer-contents.container {
+    position: relative;
+}
+footer {
+    padding-top: 22px;
+    background-color: #fafafc;
+    height: 104.9px;
+}
+.Appointment_p7 {
+    float: right;
+    color: #333333;
+    font-size: 14px;
+    font-family: "OpenSans-Regular";
+    padding-right: 20px;
+}
+.footer-contents1 {
+    float: right;
+    position: absolute;
+    right: 0;
+    top: 30px;
+}
+
+/* Drop Down */
+
+.btn {
+    border-radius: 5px !important;
+}
+.btn-group > .btn-group {
+    padding-right: 9px;
+    padding-top: 20px !important;
+}
+.btn-group > .btn-group:last-child {
+    padding-right: 0;
+}
+.l-class,
+.caret {
+    display: inline-block;
+}
+.l-class {
+    float: left;
+}
+.caret {
+    float: right;
+    margin-top: 10px;
+    margin-right: 0px;
+}
+
+@media screen and (max-width: 767px) {
+ .btn-group > .btn-group {
+        padding: 0;
+        margin-right: 3.1%;
+    }
+    .btn-group > .btn-group:nth-child(3) {
+        margin-right: 0;
+    }
+    .btn-group-justified > .btn,
+    .btn-group-justified > .btn-group {
+        float: left;
+        width: 31.3%;
+    }
+}
+@media screen and (max-width: 600px){
+    .btn-group .dropdown-toggle{
+        font-size: 18px;
+    }
+    .caret {
+        margin-top: 7px;
+    }
+}
+@media screen and (max-width: 420px) {
+ .btn-group-justified > .btn,
+    .btn-group-justified > .btn-group {
+        float: left;
+        width: 48%;
+    }
+    .btn-group > .btn-group {
+        margin-right: 4% !important;
+        margin-left: 0 !important;
+        padding: 0;
+    }
+    .btn-group > .btn-group:nth-child(2),
+    .btn-group > .btn-group:nth-child(4) {
+        margin-right: 0 !important;
+    }
+        .Appointment_fontfamily {
+        font-size: 12px;
+    }
+
+}
+
+/* END : Drop Down*/
+
+/* Check Box */
+.checkbox_div {
+   display: table;
+   margin: 20.5px 0;
+   width: 100%;
+}
+.checkbox1 {
+   vertical-align: middle;
+   display: table-cell;
+}
+[type="checkbox"]:not(:checked) + label:before,
+[type="checkbox"]:checked + label:before {
+   content: '';
+   position: absolute;
+   left: 0;
+   top: 2px;
+   width: 17px;
+   height: 17px;
+   border: 1px solid #cccccc;
+   background: #fafafc;
+   border-radius: 3px;
+}
+/* checked mark aspect */
+
+[type="checkbox"]:not(:checked) + label:after,
+[type="checkbox"]:checked + label:after {
+   color: #09ad7e;
+   content: url(../img/check.png);
+   font-size: 15px;
+   left: 2px;
+   line-height: 0.8;
+   position: absolute;
+   font-weight: normal;
+   top: 3px;
+   transition: all 0.2s ease 0s;
+}
+/* checked mark aspect changes */
+
+[type="checkbox"]:not(:checked) + label:after {
+   opacity: 0;
+   transform: scale(0);
+}
+[type="checkbox"]:checked + label:after {
+   opacity: 1;
+   transform: scale(1);
+}
+/* disabled checkbox */
+
+[type="checkbox"]:disabled:not(:checked) + label:before,
+[type="checkbox"]:disabled:checked + label:before {
+   box-shadow: none;
+   border-color: #bbb;
+   background-color: #ddd;
+}
+[type="checkbox"]:disabled:checked + label:after {
+   color: #999;
+}
+[type="checkbox"]:disabled + label {
+   color: #aaa;
+}
+/* accessibility */
+
+[type="checkbox"]:checked:focus + label:before,
+[type="checkbox"]:not(:checked):focus + label:before {
+   border: 1px solid #cccccc;
+}
+[type="checkbox"] {
+   width: 21px;
+   border-color: 1px solid #cccccc;
+}
+label {
+   margin-right: 9px;
+}
+[type="checkbox"]:not(:checked),
+[type="checkbox"]:checked {
+   position: absolute;
+   left: -9999px;
+}
+[type="checkbox"]:not(:checked) + label,
+[type="checkbox"]:checked + label {
+   position: relative;
+   padding-left: 25px;
+   cursor: pointer;
+   margin-right: 48px;
+}
+/* Check Box */
+
+/* Search button */
+.button2 {
+    background-color: #d7155b;
+    color: #ffffff;
+    font-family: "OpenSans-SemiBold";
+    font-size: 14px;
+    float: right;
+    border: none;
+    width: 120px;
+    border-radius: 4px;
+    padding: 17.5px 0;
+}
+@media screen and (max-width: 600px){
+    .button2 {
+        padding: 13.5px 0;
+    }
+    .btn{
+        padding: 10px 12px;
+    }
+}
+.button2:hover,.button2:active{
+    background-color: #cb1557;
+    border-color: #a71047;
+}
+
+/* Search button */
+
+/* Book now button */
+ .inner_slots .slots_button.active {
+    background-color: #d7155b;
+    color: #fafafc;
+}
+.inner_slots .slots_button:active,.inner_slots .slots_button:hover,.inner_slots .slots_button:focus,.BookNow_button:active,.BookNow_button:hover,.BookNow_button:focus{
+    background-color:#d7155b;
+    color:#fafafc;
+}
+.inner_slots {
+    margin: 0 auto;
+}
+.inner_slots .slots_button {
+    background-color: #fafafc;
+    border: 1px solid #d7155b;
+    color: #666666;
+    font-family: "OpenSans-SemiBold";
+    font-size: 16.01px;
+    margin-bottom: 9px;
+    padding: 11px 0;
+    width: 100%;
+    border-radius: 0 !important;
+}
+@media screen and (max-width: 767px) {
+    .inner_slots .slots_button {
+        font-size: 13.69px;
+    }
+}
+@media screen and (max-width: 420px) {
+.inner_slots .slots_button {
+        font-size: 11px;
+    }
+}
+.BookNow_button {
+    background-color: #fafafc;
+    border: 1px solid #d7155b;
+    border-radius: 5px;
+    color: #d7155b;
+    font-family: "OpenSans-SemiBold";
+    font-size: 14px;
+    margin-bottom: 28px;
+    padding-bottom: 11.5px;
+    padding-top: 11.5px;
+    width: 35%;
+}
+.AvailableSlots_button {
+    padding: 0;
+}
+.BookNow_div {
+    margin-top: 32px;
+    text-align: center;
+}
+.book-now-btn {
+    padding-left: 35px;
+    text-align: center;
+}
+@media screen and (min-width: 1200px) {
+    .book-now-btn {
+        padding-left: 0;
+        margin-left: -32px;
+    }
+}
+@media screen and (max-width: 1199px) {
+    .book-now-btn {
+        padding-left: 0;
+    }
+}
+@media screen and (min-width: 991px) {
+    .book-now-btn {
+        padding-left: 38px;
+    }
+}
+@media screen and (max-width: 767px) {
+    .book-now-btn {
+        padding-left: 0;
+        text-align: center;
+    }
+}
+.button3 {
+    margin: 25px 0 20px;
+    border: 1px solid #d7155b;
+    color: #d7155b;
+    background-color: #ffffff;
+    border-radius: 2px;
+    padding: 18px 0;
+    width: 141px;
+    font-family: "OpenSans-SemiBold";
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+.button3:active,.button3:hover,.button3:focus{
+    background-color:#d7155b;
+    color:#fafafc;
+}
+#app_marker_doctor_patient_details .button3 {
+    border: 1px solid #d7155b;
+    color: #d7155b;
+    background-color: #ffffff;
+    border-radius: 2px;
+    padding: 16.7px 0;
+    width: 141px;
+    font-family: "OpenSans-SemiBold";
+    font-size: 14px;
+    margin: 0 0 20px;
+}
+#app_marker_doctor_patient_details .button3:active,
+#app_marker_doctor_patient_details .button3:hover,
+#app_marker_doctor_patient_details .button3:focus{
+    background-color:#d7155b;
+    color:#fafafc;
+}
+#app_marker_doctor_patient_details .form-sub-button {
+    float: right;
+}
+#app_marker_doctor_patient_details .btn-cancel {
+    background-color: #efefef;
+    border: 1px solid #efefef;
+    color: #979797;
+    margin-right: 9px;
+}
+#app_marker_doctor_patient_details .btn-cancel:active,
+#app_marker_doctor_patient_details .btn-cancel:hover,
+#app_marker_doctor_patient_details .btn-cancel:focus{
+    background-color:#dedede;
+    color:#666;
+    border-color:#b5b5b5;
+}
+@media screen and (max-width: 767px) {
+#app_marker_doctor_patient_details .form-sub-button .button3 {
+        width: 47%;
+    }
+    #app_marker_doctor_patient_details .btn-cancel {
+        margin-right: 2%;
+    }
+    #app_marker_doctor_patient_details .btn-confirm {
+        margin-left: 2%;
+    }
+}
+@media screen and (max-width: 550px) {
+    #app_marker_doctor_patient_details .form-sub-button .button3 {
+        width: 46%;
+    }
+    #app_marker_doctor_patient_details .btn-cancel {
+        margin-right: 2.5%;
+    }
+    #app_marker_doctor_patient_details .btn-confirm {
+        margin-left: 2.5%;
+    }
+}
+/* Book now button */
+/* Stars */
+
+.rating {
+    float:left;
+    margin: -8px 0 21px;
+}
+
+.rating:not(:checked) > input {
+    position:absolute;
+    clip:rect(0,0,0,0);
+}
+
+.rating:not(:checked) > label {
+    float:right;
+    width:1em;
+    padding:0 .1em;
+    overflow:hidden;
+    white-space:nowrap;
+    cursor:pointer;
+    font-size:150%;
+    line-height:1.2;
+    color:#cccccc;
+}
+
+.rating:not(:checked) > label:before {
+    content: '★ ';
+}
+
+.rating > input:checked ~ label {
+     color: #d41c5c;
+}
+
+.rating > input:checked ~ label:after {
+    color: #d41c5c;
+}
+
+.rating:not(:checked) > label:hover,
+.rating:not(:checked) > label:hover ~ label {
+    color: #cccccc;
+}
+
+.rating > input:checked + label:hover,
+.rating > input:checked + label:hover ~ label,
+.rating > input:checked ~ label:hover,
+.rating > input:checked ~ label:hover ~ label,
+.rating > label:hover ~ input:checked ~ label {
+    color: #d41c5c;
+}
+
+.rating > label:active {
+    position:relative;
+    left:0px;
+    top: 0;
+}
+.rating > label{
+    margin-right: 0;
+}
+/* End : Stars */
+
+/* Start : Appmarker.html*/
+@media screen and (max-width: 420px){
+    #app_marker_doctor_details{
+        overflow-x:hidden;
+    }
+}
+#app_marker_doctor_details .Appointment_para1 {
+    font-family: "OpenSans-Regular";
+    font-size: 12px;
+    color: #666666;
+    padding-top: 39.5px;
+}
+#app_marker_doctor_details .Appointment_span1 {
+    font-family: "OpenSans-SemiBold";
+    color: #333333;
+}
+#app_marker_doctor_details #Appointment_div {
+    margin-top: 75px;
+}
+#app_marker_doctor_details .Appointment_heading1 {
+    font-family: "OpenSans-Bold";
+    font-size: 22px;
+    color: #333333;
+    margin-top: 24px;
+    margin-bottom: 14px;
+}
+#app_marker_doctor_details .Appointment_p2 {
+    font-family: "OpenSans-Bold";
+    font-size: 18px;
+    display: table;
+    margin: 34px 0 25px 0;
+    width: 100%;
+}
+#app_marker_doctor_details .Appointment_span2 {
+    margin-left: 39px;
+    font-family: "OpenSans-Regular";
+    font-size: 13.99px;
+    color: #999999;
+    font-weight: normal;
+    margin-right: 21.6px;
+}
+#app_marker_doctor_details .Appointment_span3 {
+    font-family: "OpenSans-Bold";
+    font-size: 13.99px;
+    color: #da346a;
+    border-right: 1px solid #d8d8d8;
+    font-weight: normal;
+    padding: 1px 20px 1px 0px;
+}
+#app_marker_doctor_details .Appointment_span3 a {
+    color: #dd4c78;
+}
+#app_marker_doctor_details .Appointment_span3 a:hover,#app_marker_doctor_details .Appointment_span3 a:focus,#app_marker_doctor_details .Appointment_span3 a:active{
+    text-decoration: none;
+}
+#app_marker_doctor_details .Appointment_span4 {
+    font-family: "OpenSans-Regular";
+    font-size: 13.99px;
+    color: #333333;
+    padding-left: 23.7px;
+    font-weight: normal;
+}
+#app_marker_doctor_details .Appointment_span4:hover,#app_marker_doctor_details .Appointment_span4:focus,#app_marker_doctor_details .Appointment_span4:active{
+    text-decoration: none;
+}
+#app_marker_doctor_details .DoctorImg {
+    width: 100%;
+    margin-top: 19px;
+}
+#app_marker_doctor_details .col-lg-4,
+#app_marker_doctor_details .col-md-4,
+#app_marker_doctor_details .col-sm-4,
+#app_marker_doctor_details .col-xs-4 {
+    padding-right: 0px;
+    margin-right: 0px;
+}
+#app_marker_doctor_details .col-lg-8,
+#app_marker_doctor_details .col-md-8,
+#app_marker_doctor_details .col-sm-8 {
+    padding-right: 0px;
+}
+#app_marker_doctor_details .row3 {
+    margin: 0px;
+}
+#app_marker_doctor_details .col-lg-6,
+#app_marker_doctor_details .col-md-6,
+#app_marker_doctor_details .col-sm-6 {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+#app_marker_doctor_details .Appointment_p3 {
+    margin-top: 30px;
+    margin-bottom: 8px;
+    font-family: "OpenSans-SemiBold";
+    font-size: 18px;
+    color: #333333;
+}
+#app_marker_doctor_details .Appointment_p4 {
+    font-family: "OpenSans-Regular";
+    font-size: 16px;
+    margin-bottom: 9px;
+    color: #999999;
+}
+#app_marker_doctor_details .fa-star {
+    margin-bottom: 20px;
+}
+#app_marker_doctor_details .Appointment_fa-star {
+    color: #d41c5c;
+}
+#app_marker_doctor_details .Appointment_fa-star1 {
+    color: #cccccc;
+}
+#app_marker_doctor_details .Appointment_fa_color {
+    color: #b7b7b7;
+}
+#app_marker_doctor_details .Appointment_span5 {
+    font-size: 16px;
+    font-family: "OpenSans-Regular";
+    color: #333333;
+    margin-bottom: 23px;
+}
+#app_marker_doctor_details .app_timings .Appointment_span5 {
+    margin-bottom: 0;
+}
+#app_marker_doctor_details .Appointment_span51 {
+    border-right: 1px solid #d8d8d8;
+    font-family: "OpenSans-SemiBold";
+}
+#app_marker_doctor_details .Appointment_span52 {
+    padding-left: 44px;
+    font-family: "OpenSans-SemiBold";
+}
+#app_marker_doctor_details .Appointment_span6 {
+    color: #999999;
+    font-family: "OpenSans-SemiBold";
+    font-size: 14px;
+    position: relative;
+}
+#app_marker_doctor_details .Appointment_p5 {
+    margin-left: 0;
+    margin-right: 0;
+}
+#app_marker_doctor_details .Appointment_p6 {
+    margin-left: 79px;
+}
+#app_marker_doctor_details .Appointment_span53 {
+    padding-left: 24px;
+}
+#app_marker_doctor_details .Appointment_p54 {
+    margin-top: -13px;
+    margin-bottom: 30px;
+}
+#app_marker_doctor_details .app-time {
+    font-family: "OpenSans-SemiBold";
+}
+#app_marker_doctor_details .row4 {
+    margin-top: 18px;
+}
+#app_marker_doctor_details .row5 {
+    margin-bottom: 55px;
+}
+#app_marker_doctor_details .pos-rel {
+    border: 1px solid #e7e1e8;
+    margin-left: 8px;
+    margin-right: 0px;
+}
+#app_marker_doctor_details .container .row3_col1 .pos-rel {
+    margin-left: 0px;
+    margin-right: 8px;
+}
+#app_marker_doctor_details .doctorImage {
+    padding-right: 0;
+    padding-left: 30px;
+}
+#app_marker_doctor_details .btn {
+    border-radius: 5px !important;
+}
+#app_marker_doctor_details .btn-group > .btn-group {
+    padding-right: 9px;
+    padding-top: 20px !important;
+}
+#app_marker_doctor_details .Appointment_para1 > a {
+    color: #666666;
+}
+#app_marker_doctor_details .Appointment_span1 > a {
+    color: #333333;
+}
+#app_marker_doctor_details .checkbox_div {
+    display: table;
+    margin: 20.5px 0;
+    width: 100%;
+}
+#app_marker_doctor_details .checkbox1 {
+    vertical-align: middle;
+    display: table-cell;
+}
+#app_marker_doctor_details .l-class,
+#app_marker_doctor_details .caret {
+    display: inline-block;
+}
+#app_marker_doctor_details .l-class {
+    float: left;
+}
+#app_marker_doctor_details .Appointment_div1-span {
+    margin-right: 40px;
+    float: left;
+}
+#app_marker_doctor_details .Appointment_span2 {
+    margin-left: 0;
+}
+#app_marker_doctor_details .btn-group > .btn-group:last-child {
+    padding-right: 0;
+}
+#app_marker_doctor_details .app_exp,
+#app_marker_doctor_details .app_timings {
+    display: table;
+    margin: 3px 0 30px;
+    width: 100%;
+}
+#app_marker_doctor_details .app_exp {
+    margin: 3px 0;
+    padding-left: 0;
+}
+#app_marker_doctor_details .avail-time {
+    padding-left: 28px;
+}
+#app_marker_doctor_details .app_weekdays,
+#app_marker_doctor_details .app_sun {
+    float: left;
+    text-align: left;
+    width: 50%;
+}
+#app_marker_doctor_details .app_timings .app_weekdays,
+#app_marker_doctor_details .app_sun {
+    padding-left: 30px;
+}
+#app_marker_doctor_details .app_timings .app_weekdays,
+#app_marker_doctor_details .app_timings .app_sun {
+    width: 100%;
+}
+#app_marker_doctor_details .fa-clock-o::before {
+    content: url("../img/clock.png");
+    position: absolute;
+    top: 1px;
+}
+#app_marker_doctor_details .Appointment_p5 {
+    display: table;
+    width: 100%;
+}
+#app_marker_doctor_details .app-day,
+#app_marker_doctor_details .app-time {
+    display: table-cell;
+}
+#app_marker_doctor_details .app-day {
+    width: 35%;
+}
+#app_marker_doctor_details .app-time {
+    width: 65%;
+}
+#app_marker_doctor_details .exp-fee {
+    padding-left: 15px;
+}
+#app_marker_doctor_details .exp-yrs {
+    padding-left: 5px;
+}
+@media screen and (max-width: 980px) {
+    #app_marker_doctor_details .app_exp,
+    #app_marker_doctor_details .app_timings {
+        margin: 3px 0 3px -47%;
+        width: 138%;
+    }
+}
+@media screen and (max-width: 767px) {
+    #app_marker_doctor_details .app_exp,
+    #app_marker_doctor_details .app_timings {
+        margin: 3px 0 3px -47%;
+        width: 138%;
+    }
+    #app_marker_doctor_details .Appointment_div1-span {
+        float: left;
+        /*width: 50%;*/
+        margin-right: 0px;
+    }
+    #app_marker_doctor_details .Appointment_p2_div {
+        float: right;
+    }
+    #app_marker_doctor_details .app_timings {
+        margin-bottom: 30px;
+    }
+    #app_marker_doctor_details .Appointment_span5_3 {
+        font-size: 14px;
+    }
+    #app_marker_doctor_details .app_weekdays,
+    #app_marker_doctor_details .app_sun {
+        width: 43%;
+    }
+    #app_marker_doctor_details .Appointment_span5 {
+        font-size: 14px;
+    }
+    #app_marker_doctor_details .Appointment_p5 {
+        font-size: 15px;
+    }
+    #app_marker_doctor_details .container {
+        margin: 0 20px;
+    }
+    #app_marker_doctor_details .btn-group > .btn-group {
+        padding: 0;
+        margin-right: 3.1%;
+    }
+    #app_marker_doctor_details .btn-group > .btn-group:nth-child(3) {
+        margin-right: 0;
+    }
+    #app_marker_doctor_details .btn-group-justified > .btn,
+    #app_marker_doctor_details .btn-group-justified > .btn-group {
+        float: left;
+        width: 31.3%;
+    }
+    #app_marker_doctor_details .Appointment_span2 {
+        margin-right: 15px;
+    }
+    #app_marker_doctor_details .Appointment_span3 {
+        padding-right: 15px;
+    }
+    #app_marker_doctor_details .Appointment_span4 {
+        padding-left: 15px;
+    }
+    #app_marker_doctor_details #appointment_img1 {
+        margin-left: 25px;
+    }
+    #app_marker_doctor_details .Appointment_para1 {
+        padding-top: 25px;
+        padding-bottom: 7px;
+    }
+    #app_marker_doctor_details .button2 {
+        margin-bottom: 0px;
+    }
+    #app_marker_doctor_details .Appointment_p2 {
+        margin-bottom: 25px;
+        margin-top: 22px;
+    }
+    #app_marker_doctor_details .Appointment_heading1 {
+        padding-top: 17px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    #app_marker_doctor_details .Appointment_div1-span {
+        font-size: 15px;
+        /*width: 30%;*/
+    }
+    #app_marker_doctor_details .btn-group-justified > .btn,
+    #app_marker_doctor_details .btn-group-justified > .btn-group {
+        float: left;
+        width: 48%;
+    }
+    #app_marker_doctor_details .Appointment_span6 {
+        color: #999999;
+        font-family: "OpenSans-Regular";
+        font-size: 14px;
+        position: relative;
+    }
+    #app_marker_doctor_details .app-day {
+        width: 28%;
+    }
+    #app_marker_doctor_details .app-time {
+        width: 72%;
+    }
+    #app_marker_doctor_details .exp-yrs {
+        padding-left: 0;
+    }
+    #app_marker_doctor_details .fa-suitcase::before,
+    #app_marker_doctor_details .fa-clock-o::before {
+        font-size: 19px;
+    }
+    #app_marker_doctor_details .app_weekdays,
+    #app_marker_doctor_details .app_sun {
+        width: 43%;
+    }
+    #app_marker_doctor_details .btn-group > .btn-group {
+        margin-right: 4% !important;
+        margin-left: 0 !important;
+        padding: 0;
+    }
+    #app_marker_doctor_details .btn-group > .btn-group:nth-child(2),
+   #app_marker_doctor_details  .btn-group > .btn-group:nth-child(4) {
+        margin-right: 0 !important;
+    }
+    #app_marker_doctor_details .Appointment_p4 {
+        font-size: 16px;
+    }
+    #app_marker_doctor_details .Appointment_p2 {
+        margin-bottom: 2px;
+        margin-top: 15px;
+        font-size: 15px;
+    }
+    #app_marker_doctor_details .col-xxs-12 {
+        width: 100%;
+        padding-top: 15px !important;
+    }
+    #app_marker_doctor_details .Appointment_span6 {
+        color: #999999;
+        font-family: "Opensans-Regular";
+        font-size: 14px;
+    }
+    #app_marker_doctor_details .Appointment_fontfamily {
+        font-size: 18px;
+    }
+    #app_marker_doctor_details .checkbox1 .Appointment_fontfamily {
+        font-size: 12px;
+    }
+    #app_marker_doctor_details .Appointment_span2 {
+        font-size: 12px;
+        margin-right: 7px;
+        padding-right: 15px;
+    }
+    #app_marker_doctor_details .Appointment_span3 {
+        font-size: 11px;
+    }
+    #app_marker_doctor_details .Appointment_span4 {
+        font-size: 11px;
+        padding-left: 15px;
+    }
+    #app_marker_doctor_details .container .row3_col1 .row_inside {
+        margin-right: 0;
+    }
+    #app_marker_doctor_details .DoctorImg {
+        margin-top: 11px;
+    }
+    #app_marker_doctor_details .Appointment_p3 {
+        margin-top: 20px;
+        font-size: 17px;
+    }
+    #app_marker_doctor_details .app_exp,
+    #app_marker_doctor_details .app_timings {
+        margin: 3px 0 3px -50%;
+        width: 176%;
+    }
+    #app_marker_doctor_details .pos-rel,
+    #app_marker_doctor_details .container .row3_col1 .pos-rel {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    #app_marker_doctor_details .button3 {
+        margin: 25px 0 20px;
+    }
+    #app_marker_doctor_details .row4 {
+        margin-top: 0px;
+    }
+    #app_marker_doctor_details .Appointment_span2 {
+        margin-right: 0;
+    }
+    #app_marker_doctor_details .Appointment_span3 {
+        padding-right: 15px;
+    }
+    #app_marker_doctor_details .Appointment_span4 {
+        padding-left: 15px;
+    }
+    #app_marker_doctor_details .button2 {
+        margin-bottom: 0px;
+    }
+    #app_marker_doctor_details .Appointment_para1 {
+        padding-top: 22px;
+        padding-bottom: 2px;
+    }
+    #app_marker_doctor_details .Appointment_heading1 {
+        padding-top: 17px;
+    }
+    #app_marker_doctor_details .exp-yrs {
+        display: table-cell;
+        font-size: 13px;
+        vertical-align: top;
+    }
+    #app_marker_doctor_details .fa-suitcase::before{
+        display: table-cell;
+        vertical-align: middle;
+    }
+    #app_marker_doctor_details .Appointment_span5{
+        font-size: 14px;
+    }
+    #app_marker_doctor_details .Appointment_span5_3{
+        font-size: 13px;
+    }
+    #app_marker_doctor_details .app_weekdays{
+        display: table;
+    }
+}
+@media screen and (max-width: 359px){
+    #app_marker_doctor_details .exp-yrs{
+        width: 80%;
+    }
+}
+/* End : Appmarker.html*/
+
+/* Start : Appmarker1.html */
+
+#app_marker_doctor_patient_details .Appointment_para1 {
+    font-family: "OpenSans-Regular";
+    font-size: 12px;
+    color: #666666;
+    padding-top: 30px;
+    margin-bottom: 46px;
+}
+#app_marker_doctor_patient_details .Appointment_span1 {
+    font-family: "OpenSans-SemiBold";
+    color: #333333;
+}
+#app_marker_doctor_patient_details #Appointment_div {
+    margin-top: 75px;
+}
+#app_marker_doctor_patient_details .Appointment_para2 {
+    font-family: "OpenSans-Semibold";
+    font-size: 18px;
+    color: #333333;
+}
+#app_marker_doctor_patient_details .Appointment_row1 {
+    border: 1px solid #e9e9e9;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-top: 21.6px;
+    border-bottom: none;
+}
+#app_marker_doctor_patient_details .Appointment_row_2 {
+    border-left: none;
+    border-right: none;
+}
+@media screen and (max-width: 767px) {
+    #app_marker_doctor_patient_details .Appointment_row_2 {
+        border: none;
+    }
+}
+#app_marker_doctor_patient_details .Appointment_p7 {
+    float: right;
+    color: #333333;
+    font-size: 14px;
+    font-family: "OpenSans-Regular";
+    padding-right: 20px;
+}
+#app_marker_doctor_patient_details .Appointment_span7 {
+    margin-right: -100px;
+    color: #8f66ae;
+    font-family: "OpenSans-Regular";
+    font-size: 14px;
+}
+#app_marker_doctor_patient_details .Appointment_span8 {
+    color: #d62465;
+}
+#app_marker_doctor_patient_details .DoctorImg {
+    width: 100%;
+    margin-top: 16%;
+}
+#app_marker_doctor_patient_details .col-lg-4,
+#app_marker_doctor_patient_details .col-md-4,
+#app_marker_doctor_patient_details .col-sm-4 {
+    padding-right: 41px;
+    margin-right: -49px;
+}
+#app_marker_doctor_patient_details .col-lg-8,
+#app_marker_doctor_patient_details .col-md-8,
+#app_marker_doctor_patient_details .col-sm-8 {
+    padding-right: 0px;
+}
+#app_marker_doctor_patient_details .Appointment_p3 {
+    margin-top: 36px;
+    margin-bottom: -1px;
+    font-family: "OpenSans-Semibold";
+    font-size: 18px;
+    color: #333333;
+}
+#app_marker_doctor_patient_details .Appointment_p4 {
+    font-family: "OpenSans-Regular";
+    font-size: 16px;
+    margin-bottom: 9px;
+    color: #999999;
+}
+#app_marker_doctor_patient_details .tableheading {
+    font-family: "OpenSans-Semibold";
+    font-size: 18px;
+}
+#app_marker_doctor_patient_details .fa-star {
+    margin-bottom: 20px;
+}
+#app_marker_doctor_patient_details .Appointment_fa-star {
+    color: #d41c5c;
+}
+#app_marker_doctor_patient_details .Appointment_fa-star1 {
+    color: #cccccc;
+}
+#app_marker_doctor_patient_details .Appointment_fa_color {
+    color: #b7b7b7;
+}
+#app_marker_doctor_patient_details .Appointment_span5 {
+    font-size: 16px;
+    font-family: "OpenSans-Semibold";
+    color: #333333;
+    margin-bottom: 2px;
+}
+#app_marker_doctor_patient_details .Appointment_span52 {
+    padding-left: 44px;
+}
+#app_marker_doctor_patient_details .Appointment_p5 {
+    margin-left: 15px;
+    margin-right: 37px;
+}
+#app_marker_doctor_patient_details .row{
+    margin-right: -15px;
+}
+#app_marker_doctor_patient_details .Appointment_p31 {
+    font-family: "OpenSans-Regular";
+    font-size: 14px;
+    line-height: 20px;
+    color: #666666;
+}
+#app_marker_doctor_patient_details .Appointment_p32 {
+    font-family: "OpenSans-Regular";
+    font-size: 16px;
+    line-height: 25px;
+    color: #666666;
+    margin-top: -2px;
+    margin-bottom: 12px;
+}
+#app_marker_doctor_patient_details .Appointment_fa-star {
+    margin-bottom: -4px;
+}
+#app_marker_doctor_patient_details .Appointment_col2 {
+    margin-left: 13px;
+    padding-bottom: 82px;
+}
+#app_marker_doctor_patient_details .table {
+    display: table;
+}
+#app_marker_doctor_patient_details .tablerow {
+    display: table-row;
+}
+#app_marker_doctor_patient_details .cell {
+    display: table-cell;
+    width: 20%;
+    font-family: "OpenSans-Regular";
+    font-size: 16px;
+    color: #666666;
+}
+#app_marker_doctor_patient_details .cell1 {
+    width: 50%;
+    color: #333333;
+}
+#app_marker_doctor_patient_details .row.summary-part {
+    border-top: 1px solid #ebebeb;
+}
+#app_marker_doctor_patient_details .Appointment_para4 {
+    border: 2px dashed #e0e0e0;
+    border-radius: 4px;
+    color: #999999;
+    display: table;
+    font-family: "OpenSans-SemiBold";
+    font-size: 18px;
+    margin: 0 auto;
+    padding-bottom: 12px;
+    padding-top: 12px;
+    vertical-align: middle;
+    width: 90%;
+    background-color: #fcfcfc;
+}
+#app_marker_doctor_patient_details .of-det {
+    display: table;
+    margin: 0 auto;
+    width: 80%;
+}
+#app_marker_doctor_patient_details .of-c {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+#app_marker_doctor_patient_details .Appointment_span3 {
+    color: #333;
+    display: table-cell;
+    font-size: 30px;
+    padding-left: 10px;
+    text-align: left;
+}
+#app_marker_doctor_patient_details .Appointment_row1_col1 {
+    display: table;
+}
+#app_marker_doctor_patient_details .Appointment_para3,
+#app_marker_doctor_patient_details .Appointment_para4_div {
+    display: table-cell;
+    vertical-align: middle;
+}
+#app_marker_doctor_patient_details .Appointment_para3 {
+    text-align: right;
+}
+#app_marker_doctor_patient_details .Appointment_para4_div {
+    text-align: left;
+}
+#app_marker_doctor_patient_details .Appointment_row1_col12 {
+    padding: 12px 15px;
+}
+#app_marker_doctor_patient_details .Appointment_col1 .Appointment_para2 {
+    padding-top: 18px;
+    padding-bottom: 8px;
+}
+#app_marker_doctor_patient_details .Appointment_col11 .summary-part {
+    border-right: 0;
+    padding-left: 36px;
+    padding-top: 36px;
+}
+#app_marker_doctor_patient_details .doctor-appointment-content {
+    border: 1px solid #e8e2e9;
+    display: table;
+}
+#app_marker_doctor_patient_details a {
+    color: #666666;
+}
+#app_marker_doctor_patient_details .app_exp {
+    width: 100%;
+    margin: 3px 0px;
+    margin-left: 0;
+    display: table;
+}
+#app_marker_doctor_patient_details .app_exp {
+    margin: 3px 0px;
+    padding-left: 0;
+}
+#app_marker_doctor_patient_details .app_weekdays,
+#app_marker_doctor_patient_details .app_sun {
+    float: left;
+    text-align: left;
+    width: 50%;
+}
+#app_marker_doctor_patient_details .Appointment_para3 {
+    color: #333333;
+    font-family: "OpenSans-Semibold";
+    font-size: 18px;
+}
+#app_marker_doctor_patient_details .Appointment_span51 {
+    border-right: 1px solid #d8d8d8;
+}
+#app_marker_doctor_patient_details .fa-suitcase::before,
+#app_marker_doctor_patient_details .fa-clock-o::before {
+    font-size: 19px;
+    padding-right: 10px;
+}
+#app_marker_doctor_patient_details .app_exp .Appointment_span52 {
+    padding-left: 30px;
+}
+#app_marker_doctor_patient_details .exp-fee {
+    padding-left: 10px;
+    text-align: left;
+    width: 75%;
+}
+#app_marker_doctor_patient_details .appointment_row_col1 .summary-part {
+    border-right: 1px solid #d8d8d8;
+    padding-bottom: 40px;
+}
+@media screen and (max-width: 767px) {
+    #app_marker_doctor_patient_details .appointment_row_col1 {
+        border-bottom: 1px solid #ebebeb;
+    }
+    #app_marker_doctor_patient_details .appointment_row_col1 .summary-part {
+        border-right: none;
+    }
+    #app_marker_doctor_patient_details .Appointment_col11 .summary-part {
+        border-top: none;
+        padding-left: 15px;
+        border-right: 1px solid #d8d8d8;
+    }
+    #app_marker_doctor_patient_details .Appointment_col11 {
+        padding-bottom: 32px;
+    }
+    #app_marker_doctor_patient_details .Appointment_row1_col1 .Appointment_para3,
+    #app_marker_doctor_patient_details .Appointment_row1_col1 .Appointment_para4_div {
+        width: 100%;
+        display: block;
+    }
+    #app_marker_doctor_patient_details .Appointment_para4 {
+        width: 100%;
+    }
+    #app_marker_doctor_patient_details .Appointment_para4_div {
+        padding-top: 17px;
+    }
+    #app_marker_doctor_patient_details .Appointment_para3 {
+        text-align: center;
+    }
+    #app_marker_doctor_patient_details .Appointment_row1 {
+        padding-top: 80px;
+    }
+    #app_marker_doctor_patient_details .form-sub-button {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 530px) {
+    #app_marker_doctor_patient_details .col-xxs-12 {
+        width: 100%;
+    }
+    #app_marker_doctor_patient_details .Appointment_para4 {
+        font-size: 16.65px;
+    }
+    #app_marker_doctor_patient_details .tableheading {
+        font-size: 16px;
+    }
+    #app_marker_doctor_patient_details .Appointment_span3 {
+        font-size: 27.76px;
+    }
+    #app_marker_doctor_patient_details .Appointment_para2 {
+        font-family: "OpenSans-Regular";
+    }
+    #app_marker_doctor_patient_details .appointment_row_col1 {
+        border-bottom: none;
+    }
+    #app_marker_doctor_patient_details .Appointment_col11 .summary-part {
+        border-right: none;
+        padding-top: 0;
+    }
+    #app_marker_doctor_patient_details .Appointment_col11 {
+        padding-bottom: 10px;
+    }
+    #app_marker_doctor_patient_details .appointment_row_col1 .summary-part {
+        padding-bottom: 12px;
+    }
+    #app_marker_doctor_patient_details .Appointment_row1 {
+        padding-top: 0px;
+    }
+    #app_marker_doctor_patient_details .Appointment_row1_col_offer {
+        padding-top: 20px;
+    }
+    #app_marker_doctor_patient_details .col-lg-4,
+    #app_marker_doctor_patient_details .col-md-4,
+    #app_marker_doctor_patient_details .col-sm-4 {
+        padding-right: 0;
+        margin-right: 0;
+    }
+    #app_marker_doctor_patient_details .Appointment_p3 {
+        margin-top: 10px;
+    }
+    #app_marker_doctor_patient_details .Appointment_row1_col_offer {
+        border-top: 1px solid #ebebeb;
+    }
+    #app_marker_doctor_patient_details .container {
+        margin: 0 20px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+/* End : Appmarker1.html */
+
+/* Start : Appmarker2.html */
+@media screen and (max-width: 420px){
+    #app_marker_doctor_availability{
+        overflow-x:hidden;
+    }
+}
+#app_marker_doctor_availability .doc_det_slots_row {
+    display: flex;
+}
+@media screen and (max-width: 767px) {
+    #app_marker_doctor_availability .doc_det_slots_row {
+        display: table;
+    }
+}
+#app_marker_doctor_availability .Appointment_span7 {
+    margin-right: -102px;
+    color: #8f66ae;
+    font-family: "OpenSans-Regular";
+    font-weight: bold;
+    font-size: 14px;
+}
+#app_marker_doctor_availability .Appointment_span8 {
+    color: #d62465;
+}
+#app_marker_doctor_availability .container {
+    padding: 0 !important;
+    margin: 0 auto;
+}
+#app_marker_doctor_availability .Appointment_para1 {
+    font-family: "OpenSans-Regular";
+    font-size: 12px;
+    color: #666666;
+    padding-top: 39.5px;
+}
+#app_marker_doctor_availability .Appointment_span1 {
+    font-family: "OpenSans-SemiBold";
+    color: #333333;
+}
+#app_marker_doctor_availability #Appointment_div {
+    margin-top: 75px;
+}
+#app_marker_doctor_availability .Appointment_heading1 {
+    font-family: "OpenSans-Bold";
+    font-size: 22px;
+    color: #333333;
+    margin-top: 42px;
+    margin-bottom: 0px;
+}
+#app_marker_doctor_availability .Appointment_fontfamily {
+    font-family: "OpenSans-Regular";
+    font-size: 16px;
+    font-weight: normal;
+}
+#app_marker_doctor_availability .background {
+    background-color: #fafafc;
+}
+
+#app_marker_doctor_availability .Doctor_Details_div,
+#app_marker_doctor_availability .Treatment_Plans_div {
+    padding-left: 0;
+    padding-right: 0;
+    position: relative;
+    margin-right: 10px;
+}
+#app_marker_doctor_availability .Treatment_Plans_div {
+    border: 1px solid rgb(231, 225, 232);
+    padding-bottom: 10px;
+}
+#app_marker_doctor_availability .AvailableSlots_div,
+#app_marker_doctor_availability .Special_Offers_div {
+    background-color: #fafafc;
+    border: 1px solid rgb(231, 225, 232);
+    margin-top: 26.9px;
+    margin-left: 10px;
+}
+#app_marker_doctor_availability .Special_Offers_div {
+    margin-top: 0px;
+    padding: 0;
+}
+#app_marker_doctor_availability .AvailableSlots_para {
+    font-family: "OpenSans-Semibold";
+    font-size: 18.43px;
+    margin-bottom: 10px;
+    margin-top: 17px;
+    margin-right: 1.2px;
+}
+#app_marker_doctor_availability .fa-angle-div {
+    display: table;
+    padding-bottom: 42px;
+    margin: 0 auto;
+    width: 95%;
+}
+#app_marker_doctor_availability .fa-angle-para {
+    display: table-cell;
+    vertical-align: middle;
+    font-family: "OpenSans-SemiBold";
+    font-size: 20px;
+    color: #666666;
+    text-align: center;
+}
+#app_marker_doctor_availability .fa-angle-left,
+#app_marker_doctor_availability .fa-angle-right {
+    display: table-cell;
+    vertical-align: middle;
+    color: #bbbbbd;
+    font-size: 34px;
+    cursor: pointer;
+}
+#app_marker_doctor_availability .fa-angle-right {
+    text-align: right;
+}
+#app_marker_doctor_availability .fa-angle-left {
+    text-align: left;
+}
+#app_marker_doctor_availability .Doctor_Details_para {
+    font-family: "OpenSans-Bold";
+    font-size: 22px;
+    margin-top: 33px;
+    padding-bottom: 8.7px;
+}
+#app_marker_doctor_availability .DoctorImg {
+    width: 100%;
+    margin-top: 19px;
+    padding-right: 13px;
+}
+#app_marker_doctor_availability .Appointment_p31 {
+    font-family: "OpenSans-Regular";
+    font-size: 14px;
+    line-height: 20px;
+    color: #666666;
+}
+#app_marker_doctor_availability .Appointment_p32 {
+    font-family: "OpenSans-Regular";
+    font-size: 16px;
+    line-height: 25px;
+    color: #666666;
+    margin-bottom: 12px;
+}
+#app_marker_doctor_availability .row_inside1 {
+    padding-right: 41px;
+    margin-right: -49px;
+}
+#app_marker_doctor_availability .row_inside2 {
+    padding-right: 0px;
+}
+#app_marker_doctor_availability .Appointment_p3 {
+    margin-top: 36px;
+    margin-bottom: 8px;
+    font-family: "OpenSans-SemiBold";
+    font-size: 20px;
+    color: #333333;
+}
+#app_marker_doctor_availability .Appointment_p4 {
+    font-family: "OpenSans-Regular";
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 9px;
+    color: #999999;
+}
+#app_marker_doctor_availability .fa-star {
+    margin-bottom: 20px;
+}
+#app_marker_doctor_availability .Appointment_fa-star {
+    color: #d41c5c;
+}
+#app_marker_doctor_availability .Appointment_fa-star1 {
+    color: #cccccc;
+}
+#app_marker_doctor_availability .Appointment_fa_color {
+    color: #b7b7b7;
+}
+#app_marker_doctor_availability .Appointment_span5 {
+    font-size: 16px;
+    font-family: "OpenSans-Regular";
+    color: #333333;
+    margin-bottom: 2px;
+}
+#app_marker_doctor_availability .Appointment_span51 {
+    border-right: 1px solid #d8d8d8;
+
+}
+#app_marker_doctor_availability .Appointment_span6 {
+    font-family: "OpenSans-Regular";
+    font-size: 14px;
+    color: #999999;
+    position: relative;
+}
+#app_marker_doctor_availability .avail-time {
+    padding-left: 28px;
+}
+#app_marker_doctor_availability .Appointment_p5_span5 {
+    margin-left: 35%;
+}
+#app_marker_doctor_availability .Appointment_p6 {
+    margin-left: 55px;
+}
+#app_marker_doctor_availability .Appointment_p54 {
+    margin-top: -13px;
+    margin-bottom: 30px;
+}
+#app_marker_doctor_availability .Appointment_span5_3 {
+    font-family: "OpenSans-Semibold";
+    font-size: 16.01px;
+    color: #666666;
+}
+#app_marker_doctor_availability .row_inside {
+    padding-bottom: 20px;
+    border: 1px solid rgb(231, 225, 232);
+    border-bottom: none;
+}
+#app_marker_doctor_availability .row {
+    margin: 0px;
+}
+#app_marker_doctor_availability .Services_Offered_div {
+    border: 1px solid rgb(231, 225, 232);
+    border-top: none;
+}
+#app_marker_doctor_availability .horizontal-rule {
+    margin: 0 19.2px;
+}
+#app_marker_doctor_availability .Services_Offered_para {
+    font-family: "OpenSans-Regular";
+    font-size: 18px;
+    padding-top: 38.6px;
+    padding-bottom: 3.7px;
+    padding-left: 19.2px;
+}
+#app_marker_doctor_availability .Services_Offered_para1 {
+    font-family: "OpenSans-Regular";
+    font-size: 14px;
+    padding-left: 19.2px;
+    padding-right: 52px;
+    margin-right: 52px;
+}
+#app_marker_doctor_availability .Services_Offered_para2 {
+    border-bottom: 1px dashed rgb(204, 204, 204);
+    padding-bottom: 17px;
+    padding-top: 2px;
+}
+#app_marker_doctor_availability .Services_Offered_para_1 {
+    margin-left: -84px;
+    padding-right: 0px;
+}
+#app_marker_doctor_availability .Services_Offered_para_11 {
+    margin-right: -10px;
+    padding-left: 0px;
+    padding-right: 58px;
+    margin-left: -10px;
+}
+#app_marker_doctor_availability .group {
+    display: table;
+}
+#app_marker_doctor_availability .Services_Offered_para_3 {
+    color: #0066ff;
+    font-family: "OpenSans-Regular";
+    font-size: 14px;
+    float: right;
+    padding-right: 46.8px;
+    padding-bottom: 47px;
+    margin-top: 25px;
+}
+#app_marker_doctor_availability a.Services_Offered_para_3:focus,
+#app_marker_doctor_availability a.Services_Offered_para_3:hover{
+    text-decoration: none;
+}
+#app_marker_doctor_availability .Treatment_Plans_para {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgb(231, 225, 232);
+}
+#app_marker_doctor_availability .Treatment_Plans_paraa {
+    padding-left: 20px;
+}
+#app_marker_doctor_availability .Treatment_Plans_para1 {
+    font-family: "OpenSans-Semibold";
+    font-size: 17.83px;
+    font-weight: bold;
+}
+#app_marker_doctor_availability .Treatment_Plans_para1_1 {
+    font-family: "OpenSans-Regular";
+    font-size: 14px;
+    font-weight: bold;
+    padding-bottom: 25px;
+}
+#app_marker_doctor_availability .tablerow_heading {
+    padding: 0 22px;
+}
+#app_marker_doctor_availability .table {
+    display: table;
+    max-width: 100%;
+    border: 1px solid rgb(231, 225, 232);
+    border-bottom: none;
+    margin-bottom: 0;
+}
+#app_marker_doctor_availability .tab-heading {
+    border:none;
+    border-bottom: 1px solid rgb(231, 225, 232);
+}
+#app_marker_doctor_availability .tablerow {
+    display: table;
+    width: 100%;
+}
+#app_marker_doctor_availability .cell {
+    display: table-cell;
+}
+#app_marker_doctor_availability .Treatment_Plans_para2 {
+    font-family: "OpenSans-Regular";
+    font-size: 16.05px;
+    font-weight: bold;
+    padding-top: 15px;
+    padding-bottom: 17px;
+    border-bottom: 1px solid rgb(231, 225, 232);
+    width: 60%;
+}
+#app_marker_doctor_availability .tablerow_heading .Treatment_Plans_para2 {
+    font-family: "OpenSans-Semibold";
+    font-size: 17.83px;
+}
+#app_marker_doctor_availability .tablerow_heading .Treatment_Plans_para2,
+#app_marker_doctor_availability .tablerow_heading .Treatment_Plans_cell1 {
+    border: none;
+}
+#app_marker_doctor_availability .tablerow1,
+#app_marker_doctor_availability .tablerow2 {
+    width: 20%;
+}
+#app_marker_doctor_availability .Appointment_Last_row .tablerow1,
+#app_marker_doctor_availability .Appointment_Last_row .tablerow2 {
+    width: 100%;
+}
+#app_marker_doctor_availability .Treatment_Plans_span2 {
+    font-family: "OpenSans-Regular";
+    font-size: 12px;
+    font-weight: normal;
+    color: #666666;
+    line-height: 18px;
+}
+#app_marker_doctor_availability .Treatment_Plans_cell1 {
+    font-family: "OpenSans-Regular";
+    font-size: 14px;
+    font-weight: normal;
+    vertical-align: middle;
+    border-bottom: 1px solid rgb(231, 225, 232);
+}
+#app_marker_doctor_availability .button_color {
+    background-color: #d7155b;
+}
+#app_marker_doctor_availability .SpecialOffers_div {
+    padding-top: 16px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+#app_marker_doctor_availability .sp_offer_heading {
+    border-bottom: 1px solid rgb(231, 225, 232);
+    padding: 14px 20px 5px;
+}
+#app_marker_doctor_availability .SpecialOffers_para {
+    font-family: "OpenSans-SemiBold";
+    font-size: 18px;
+}
+#app_marker_doctor_availability .SpecialOffers_para1 {
+    font-family: "OpenSans-SemiBold";
+    font-size: 16px;
+    padding-left: 20px;
+    padding-top: 10.5px;
+    padding-bottom: -3px;
+}
+#app_marker_doctor_availability .SpecialOffers_para2 {
+    font-family: "OpenSans-Regular";
+    font-size: 12px;
+    line-height: 18px;
+    color: #666666;
+    font-weight: normal;
+    padding-left: 20px;
+}
+#app_marker_doctor_availability .SpecialOffers_para3 .SpecialOffers_para2{
+    padding-left: 0px;
+}
+#app_marker_doctor_availability .SpecialOffers_para3 {
+    font-family: "OpenSans-Regular";
+    font-size: 14px;
+    font-weight: normal;
+    padding-left: 20px;
+    padding-top: -15px;
+}
+#app_marker_doctor_availability .SpecialOffers_span {
+    float: left;
+    font-family: "OpenSans-SemiBold";
+    font-size: 20px;
+    line-height: 17px;
+    margin-top: 0px;
+    width: 40%;
+}
+#app_marker_doctor_availability .SpecialOffers_span1 {
+    margin-left: 67px;
+}
+#app_marker_doctor_availability .SpecialOffers_para3, #app_marker_doctor_availability .SpecialOffers_para2 {
+    display: block;
+    width: 100%;
+}
+#app_marker_doctor_availability .specialOffer-cost {
+    float: left;
+    width: 60%;
+}
+#app_marker_doctor_availability .SpecialOffers_cost_session {
+    font-family: "OpenSans-Regular";
+    font-size: 12px;
+    line-height: 18px;
+}
+#app_marker_doctor_availability .Appointment_para3 {
+    margin-right: 13.5px;
+    font-family: "OpenSans-SemiBold";
+    font-size: 18px;
+    color: #333333;
+    font-weight: bold;
+    margin-top: 54px;
+}
+#app_marker_doctor_availability .Appointment_para4 {
+    font-family: "OpenSans-SemiBold";
+    font-size: 18px;
+    color: #999999;
+    vertical-align: middle;
+    border: 2px dashed #e0e0e0;
+    width: 90%;
+    padding-top: 17px;
+    padding-bottom: 17px;
+    margin: 0 auto;
+    display: table;
+    border-radius: 4px;
+}
+#app_marker_doctor_availability .of-c {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+}
+@media screen and (max-width: 400px){
+    #app_marker_doctor_availability .of-c {
+        text-align: center;
+        font-size: 15px;     
+    }
+}
+#app_marker_doctor_availability .Appointment_span3 {
+    color: #333;
+    display: table-cell;
+    font-size: 30px;
+    padding-left: 10px;
+    text-align: left;
+}
+#app_marker_doctor_availability .Appointment_para4_div {
+    padding-top: 12px;
+    text-align: center;
+    margin-bottom: 11px;
+}
+#app_marker_doctor_availability .offer_para {
+    color: #d41c5c;
+    font-family: "OpenSans-Semibold";
+    font-size: 89.84px;
+    line-height: 70px;
+    text-align: right;
+}
+#app_marker_doctor_availability .offer_para3 {
+    font-family: "OpenSans-Regular";
+    font-size: 13.98px;
+    color: #666666;
+    font-weight: normal;
+    text-align: center;
+}
+#app_marker_doctor_availability .offer_para1 {
+    color: #d41c5c;
+    font-size: 44px;
+    line-height: 45px;
+}
+#app_marker_doctor_availability .offer_para2 {
+    font-family: "OpenSans-Semibold";
+    font-size: 29px;
+    margin-top: 38px;
+}
+#app_marker_doctor_availability .offer_div6 {
+    padding-right: 0px;
+}
+#app_marker_doctor_availability .offer_div_6 {
+    padding-left: 0px;
+}
+#app_marker_doctor_availability .offer_para4 {
+    font-size: 15.97px;
+    font-family: "OpenSans-Semibold";
+    margin-top: -7.2px;
+    text-align: center;
+}
+#app_marker_doctor_availability .treatment_det_slots,
+#app_marker_doctor_availability .Appointment_Last_row {
+    margin-top: 17px;
+}
+#app_marker_doctor_availability .Appointment_Last_row_div {
+    border: 1px solid rgb(231, 225, 232);
+    padding-bottom: 21px;
+    padding-top: 21px;
+}
+#app_marker_doctor_availability .Appointment_Last_row_para {
+    font-family: "OpenSans-SemiBold";
+    font-size: 17.83px;
+    padding-left: 22px;
+}
+#app_marker_doctor_availability .Appointment_Last_row_span {
+    color: #0066ff;
+    float: right;
+    font-family: "OpenSans-Regular";
+    font-size: 16px;
+    padding-right: 22px;
+    text-decoration: none;
+}
+#app_marker_doctor_availability a.Appointment_Last_row_span:focus,
+#app_marker_doctor_availability a.Appointment_Last_row_span:hover{
+    text-decoration: none;
+}
+#app_marker_doctor_availability .table1 {
+    border-left: 1px solid rgb(231, 225, 232);
+    border-right: 1px solid rgb(231, 225, 232);
+    border-bottom: 1px solid rgb(231, 225, 232);
+    margin-bottom: 65px;
+}
+#app_marker_doctor_availability #content-1 {
+    width: inherit;
+    height: 335px;
+}
+#app_marker_doctor_availability .sc-treatment {
+    height: inherit;
+}
+#app_marker_doctor_availability .treat-scroll {
+    height: 100%;
+}
+#app_marker_doctor_availability #content-2 {
+    height: 80%;
+    border: none;
+}
+#app_marker_doctor_availability #content-2 .tablerow:last-child span {
+    border-bottom: none;
+}
+#app_marker_doctor_availability .Appointment_Last_row_tablerow {
+    border-bottom: 1px solid rgb(231, 225, 232);
+    padding-bottom: 17px;
+    padding-top: 17px;
+}
+#app_marker_doctor_availability .Appointment_Last_row_tablerow:last-child {
+    border-bottom: none;
+}
+#app_marker_doctor_availability .Appointment_Last_row_cell {
+    border-radius: 100%;
+    display: inline-block;
+    float: left;
+    overflow: hidden;
+    margin-right: 23px;
+}
+#app_marker_doctor_availability .Appointment_Last_row_cell1 {
+    font-family: "OpenSans-Semibold";
+    font-size: 16px;
+    padding-right: 15px;
+    text-align: justify;
+    padding-left: 30px;
+}
+#app_marker_doctor_availability .Appointment_Last_row_span1 {
+    color: #666666;
+    display: block;
+    font-family: "OpenSans-Regular";
+    font-size: 14.05px;
+    font-weight: normal;
+    line-height: 22.07px;
+    margin-left: 65px;
+}
+/* ScrollBar*/
+
+#app_marker_doctor_availability .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar,
+#app_marker_doctor_availability .mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar,
+#app_marker_doctor_availability .mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar {
+    background-color: rgba(204, 204, 204, 0.75) !important;
+}
+#app_marker_doctor_availability .mCSB_scrollTools .mCSB_draggerRail {
+    background-color: rgba(255, 255, 255, 0.4) !important;
+}
+#app_marker_doctor_availability .mCSB_scrollTools {
+    width: 5px !important;
+}
+#app_marker_doctor_availability .mCSB_inside > .mCSB_container {
+    margin: 0 22px !important;
+}
+@media screen and (max-width: 767px) {
+    #app_marker_doctor_availability .AvailableSlots_div,
+    #app_marker_doctor_availability .Special_Offers_div {
+        margin-left: 0;
+    }
+    #app_marker_doctor_availability .container {
+        margin: 0 20px;
+    }
+}
+#app_marker_doctor_availability .fa-suitcase::before,
+#app_marker_doctor_availability .fa-clock-o::before {
+    font-size: 19px;
+    padding-right: 10px;
+}
+#app_marker_doctor_availability .fa-clock-o::before {
+    content: url("../img/clock.png");
+    position: absolute;
+    top: 1px;
+}
+#app_marker_doctor_availability .app_exp,
+#app_marker_doctor_availability .app_timings {
+    width: 100%;
+    margin: 3px 0px;
+    margin-left: 0;
+    display: table;
+}
+#app_marker_doctor_availability .app_exp {
+    margin: 3px 0px;
+    padding-left: 0;
+}
+#app_marker_doctor_availability .app_weekdays,
+#app_marker_doctor_availability .app_sun {
+    width: 50%;
+    text-align: left;
+    float: left;
+}
+#app_marker_doctor_availability .app_timings .app_weekdays,
+#app_marker_doctor_availability .app_sun {
+    padding-left: 30px;
+}
+#app_marker_doctor_availability .exp-fee {
+    padding-left: 10px;
+    text-align: left;
+    width: 75%;
+}
+#app_marker_doctor_availability .app_exp .Appointment_span52 {
+    padding-left: 30px;
+}
+#app_marker_doctor_availability .row.offer-row {
+    border-top: 1px solid #d8d8d8;
+    margin-top: 15px;
+    padding: 25px 0;
+}
+#app_marker_doctor_availability .rate {
+    height: inherit;
+    margin: 0 auto;
+    padding: 10px;
+    width: 175px;
+}
+#app_marker_doctor_availability .offer-rate {
+    float: left;
+}
+#app_marker_doctor_availability .of-p {
+    float: left;
+    width: 0;
+}
+@media screen and (max-width: 767px) {
+    #app_marker_doctor_availability .slots-row {
+        width: 100%;
+        display: table;
+        padding: 20px 15px 33px;
+    }
+    #app_marker_doctor_availability .AvailableSlots_para {
+        margin-right: 0;
+        margin-top: 0;
+        width: 50%;
+        margin-bottom: 0;
+        float: left;
+    }
+    #app_marker_doctor_availability .fa-angle-div {
+        padding: 0;
+        float: left;
+        width: 50%;
+    }
+    #app_marker_doctor_availability .row.offer-row {
+        border-top: none;
+        margin-top: 15px;
+        padding: 0;
+    }
+    #app_marker_doctor_availability .SpecialOffers_div {
+        padding-right: 15px;
+        padding-top: 0;
+        border-right: 1px solid #d8d8d8;
+        margin-top: 20px;
+        margin-bottom: 22px;
+    }
+    #app_marker_doctor_availability .SpecialOffers_para1 {
+        padding-top: 0;
+    }
+    #app_marker_doctor_availability .row.offer-row {
+        margin-top: 23px;
+    }
+    #app_marker_doctor_availability .rate {
+        padding: 0 10px;
+    }
+    #app_marker_doctor_availability .Special_Offers_div {
+        margin-top: 17px;
+    }
+    #app_marker_doctor_availability #content-2 {
+        height: 350px;
+    }
+}
+#app_marker_doctor_availability #Appointment_div a,
+#app_marker_doctor_availability #Appointment_div a:hover {
+    text-decoration: none;
+    color: #666;
+}
+#app_marker_doctor_availability .r-arr {
+    vertical-align: middle;
+}
+#app_marker_doctor_availability .Appointment_Last_row_cell img {
+    background-image: url("../img/review.png");
+    background-position: -38px 0;
+    background-repeat: no-repeat;
+    height: 72px;
+    width: 72px;
+    display: block;
+}
+#app_marker_doctor_availability .colorFix {
+    padding-left: 20px;
+}
+#app_marker_doctor_availability #categories ul li {
+    display: inline-block;
+    vertical-align: middle;
+    width: 30%;
+    padding-top: 2px;
+    font-family: "OpenSans-Regular";
+    font-size: 14px;
+}
+#app_marker_doctor_availability #categories ul li .service-list {
+    float: left;
+    width: 90%;
+    border-bottom: 1px dashed rgb(204, 204, 204);
+    padding-bottom: 17px;
+}
+@media screen and (max-width: 500px) {
+    #app_marker_doctor_availability .col-xxs-12 {
+        width: 100%;
+    }
+    #app_marker_doctor_availability .SpecialOffers_div {
+        border-right: none;
+    }
+    #app_marker_doctor_availability .col-xxs-6 {
+        float: left;
+        width: 50%;
+    }
+    #app_marker_doctor_availability .offer_para3,
+    #app_marker_doctor_availability .offer_para4 {
+        text-align: left;
+    }
+    #app_marker_doctor_availability .offer_para4 {
+        margin-bottom: 24px;
+    }
+    #app_marker_doctor_availability .offer-valid {
+        margin-top: 38px;
+    }
+    #app_marker_doctor_availability .rate {
+        margin: 0;
+    }
+}
+@media screen and (max-width: 420px) {
+    #app_marker_doctor_availability .row_inside1 {
+        margin-right: 0;
+        padding-right: 0;
+    }
+    #app_marker_doctor_availability .row_inside2 {
+        padding-left: 0;
+        padding-right: 15px;
+    }
+    #app_marker_doctor_availability .Appointment_p3 {
+        margin-top: 12px;
+        font-size: 16px;
+    }
+    #app_marker_doctor_availability .Appointment_p31,
+    #app_marker_doctor_availability .Appointment_p32 {
+        font-size: 14px;
+    }
+    #app_marker_doctor_availability .app_exp,
+    #app_marker_doctor_availability .app_timings {
+        margin: 3px 0 3px -45%;
+        width: 165%;
+    }
+    #app_marker_doctor_availability .Appointment_span5_3 {
+        font-size: 14px;
+    }
+    #app_marker_doctor_availability .app_weekdays,
+    #app_marker_doctor_availability .app_sun {
+        width: 43%;
+    }
+    #app_marker_doctor_availability .Services_Offered_para {
+        font-size: 16px;
+    }
+    #app_marker_doctor_availability #categories ul li {
+        font-size: 12px;
+    }
+    #app_marker_doctor_availability #categories ul li {
+        width: 45%;
+    }
+    #app_marker_doctor_availability .AvailableSlots_para {
+        font-size: 12px;
+    }
+    #app_marker_doctor_availability .fa-angle-para {
+        font-size: 12px;
+    }
+    #app_marker_doctor_availability .Treatment_Plans_cell1 {
+        font-size: 10px;
+    }
+    #app_marker_doctor_availability .Treatment_Plans_para2,
+    #app_marker_doctor_availability .SpecialOffers_para2 {
+        font-size: 11px;
+    }
+    #app_marker_doctor_availability .tablerow_heading .Treatment_Plans_para2,
+    #app_marker_doctor_availability .Appointment_Last_row_span1,
+    #app_marker_doctor_availability .Appointment_fontfamily {
+        font-size: 12px !important;
+    }    
+    #app_marker_doctor_availability .checkbox1 .Appointment_fontfamily {
+        font-size: 12px;
+    }
+    #app_marker_doctor_availability .offer_para3 {
+        font-size: 13px;
+    }
+    #app_marker_doctor_availability .SpecialOffers_para3,
+    #app_marker_doctor_availability .Appointment_Last_row_span,
+    #app_marker_doctor_availability .Appointment_span5 {
+        font-size: 14px;
+    }
+    #app_marker_doctor_availability .SpecialOffers_para1,
+    #app_marker_doctor_availability .offer_para4,
+    #app_marker_doctor_availability .Appointment_Last_row_cell1,
+    #app_marker_doctor_availability .Appointment_p5 {
+        font-size: 15px
+    }
+    #app_marker_doctor_availability .SpecialOffers_para,
+    #app_marker_doctor_availability .Appointment_Last_row_para {
+        font-size: 16px;
+    }
+    #app_marker_doctor_availability .fa-angle-left,
+    #app_marker_doctor_availability .fa-angle-right {
+        font-size: 18px;
+    }
+    #app_marker_doctor_availability .offer_para2 {
+        font-size: 19px;
+    }
+    #app_marker_doctor_availability .Doctor_Details_para,
+    #app_marker_doctor_availability .Appointment_fontfamily {
+        font-size: 20px;
+    }
+    #app_marker_doctor_availability .Appointment_heading1 {
+        font-size: 24px;
+    }
+    #app_marker_doctor_availability .of-c {
+        font-size: 16.65px;
+    }
+    #app_marker_doctor_availability .Appointment_span3 {
+        font-size: 27.76px;
+    }
+    #app_marker_doctor_availability .fa-angle-div {
+        width: 60%;
+    }
+    #app_marker_doctor_availability .offer_para {
+        font-size: 62.84px;
+    }
+    #app_marker_doctor_availability .offer_para1 {
+        font-size: 30px;
+        line-height: 53px;
+    }
+    #app_marker_doctor_availability .inner_slots div,
+    #app_marker_doctor_availability .slots-row {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    #app_marker_doctor_availability .AvailableSlots_para {
+        width: 40%;
+    }
+    #app_marker_doctor_availability .fa-angle-div {
+        width: 60%;
+    }
+}
+#app_marker_doctor_availability .rating {
+    float:left;
+    margin: -8px 0 21px;
+}
+
+#app_marker_doctor_availability .rating:not(:checked) > input {
+    position:absolute;
+    clip:rect(0,0,0,0);
+}
+
+#app_marker_doctor_availability .rating:not(:checked) > label {
+    float:right;
+    width:1em;
+    padding:0 .1em;
+    overflow:hidden;
+    white-space:nowrap;
+    cursor:pointer;
+    font-size:150%;
+    line-height:1.2;
+    color:#cccccc;
+}
+
+#app_marker_doctor_availability .rating:not(:checked) > label:before {
+    content: '★ ';
+}
+
+#app_marker_doctor_availability .rating > input:checked ~ label {
+     color: #d41c5c;
+}
+
+#app_marker_doctor_availability .rating > input:checked ~ label:after {
+    color: #d41c5c;
+}
+
+#app_marker_doctor_availability .rating:not(:checked) > label:hover,
+#app_marker_doctor_availability .rating:not(:checked) > label:hover ~ label {
+    color: #cccccc;
+}
+
+#app_marker_doctor_availability .rating > input:checked + label:hover,
+#app_marker_doctor_availability .rating > input:checked + label:hover ~ label,
+#app_marker_doctor_availability .rating > input:checked ~ label:hover,
+#app_marker_doctor_availability .rating > input:checked ~ label:hover ~ label,
+#app_marker_doctor_availability .rating > label:hover ~ input:checked ~ label {
+    color: #d41c5c;
+}
+
+#app_marker_doctor_availability .rating > label:active {
+    position:relative;
+    left:0px;
+    top: 0;
+}
+#app_marker_doctor_availability .rating > label{
+    margin-right: 0;
+}
+@media screen and (max-width: 600px){
+    #app_marker_doctor_availability .exp-yrs {
+        display: table-cell;
+        font-size: 13px;
+        vertical-align: top;
+        width: 84%;
+    }
+    #app_marker_doctor_availability .fa-suitcase::before{
+        display: table-cell;
+        vertical-align: middle;
+    }
+    #app_marker_doctor_availability .Appointment_span5{
+        font-size: 14px;
+    }
+    #app_marker_doctor_availability .Appointment_span5_3{
+        font-size: 13px;
+    }
+    #app_marker_doctor_availability .app_weekdays{
+        display: table;
+    }
+    #app_marker_doctor_availability .btn-group > .btn-group {
+        margin-left: 0 !important;
+        margin-right: 4% !important;
+        padding: 0;
+    }
+    #app_marker_doctor_availability .btn-group-justified > .btn, #app_marker_doctor_availability .btn-group-justified > .btn-group {
+        float: left;
+        width: 48%;
+    }    
+    #app_marker_doctor_availability .btn-group > .btn-group:nth-child(2),
+   #app_marker_doctor_availability  .btn-group > .btn-group:nth-child(4) {
+        margin-right: 0 !important;
+    }
+
+}
+@media screen and (max-width: 420px){
+    #app_marker_doctor_availability .inner_slots .slots_button{
+        padding: 6px 0;
+    }
+    #app_marker_doctor_availability .BookNow_button{
+        padding-bottom: 6px;
+        padding-top: 6px;
+        width: 45%;
+        font-size: 13px;
+    }
+    #app_marker_doctor_availability .app_exp, #app_marker_doctor_availability .app_timings{
+        width: 178%;
+    }
+    #app_marker_doctor_availability .checkbox1 .Appointment_fontfamily {
+        font-size: 12px !important;
+    }
+}
+/* End : Appmarker2.html */
