@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Appointment Maker</title>
+ <!-- Bootstrap -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/appointmentmaker_common.css">
+</head>
+<body id="app_marker_doctor_details">
+
+ <nav class="navbar navbar-default navbar-fixed-top">
+      <div id="headtop">
+      	    <div class="navbar-header">
+     			<img class="marginLeft" id="appointment_img1" src="img/apollo-logo.png"/>
+    		</div>
+      </div>
+ </nav>
+
+<div class="background">
+<div class="container">
+ <div id="Appointment_div">
+    <!-- <p class="Appointment_para1"><a href="javascript:void(0);">Home</a> > <span class="Appointment_span1"><a href="javascript:void(0);">Dermotologists</a></span>
+    </p> -->
+ </div>
+
+
+ <div>
+ 	<h4 class="Appointment_heading1">Search Your Doctor & Book an Appointment</h4>
+ </div>
+
+
+<div class="btn-group btn-group-justified" role="group">
+<div class="btn-group">
+  <button class="btn btn-default dropdown-toggle Appointment_fontfamily" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+    <span class="l-class">Location</span>
+    <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+    <li><a href="#">Action</a></li>
+    <li><a href="#">Another action</a></li>
+    <li><a href="#">Something else here</a></li>
+    <li role="separator" class="divider"></li>
+    <li><a href="#">Separated link</a></li>
+  </ul>
+</div>
+
+
+
+<div class="btn-group">
+  <button class="btn btn-default dropdown-toggle Appointment_fontfamily" type="button" id="dropdownMenu3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+    <span class="l-class">Doctor</span>
+    <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+    <li><a href="#">Action</a></li>
+    <li><a href="#">Another action</a></li>
+    <li><a href="#">Something else here</a></li>
+    <li role="separator" class="divider"></li>
+    <li><a href="#">Separated link</a></li>
+  </ul>
+</div>
+<div class="btn-group">
+  <button class="btn btn-default dropdown-toggle Appointment_fontfamily" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+    <span class="l-class">Speciality</span>
+    <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+    <li><a href="#">Action</a></li>
+    <li><a href="#">Another action</a></li>
+    <li><a href="#">Something else here</a></li>
+    <li role="separator" class="divider"></li>
+    <li><a href="#">Separated link</a></li>
+  </ul>
+</div>
+<div class="btn-group">
+  <button class="btn btn-default dropdown-toggle Appointment_fontfamily" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+    <span class="l-class">Date</span>
+    <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+    <li><a href="#">Action</a></li>
+    <li><a href="#">Another action</a></li>
+    <li><a href="#">Something else here</a></li>
+    <li role="separator" class="divider"></li>
+    <li><a href="#">Separated link</a></li>
+  </ul>
+</div>
+<div class="btn-group">
+  <button class="btn btn-default dropdown-toggle Appointment_fontfamily" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+    <span class="l-class">Fees</span>
+    <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+    <li><a href="#">Action</a></li>
+    <li><a href="#">Another action</a></li>
+    <li><a href="#">Something else here</a></li>
+    <li role="separator" class="divider"></li>
+    <li><a href="#">Separated link</a></li>
+  </ul>
+</div>
+</div>
+
+ <div class="checkbox_div">
+ <div class="checkbox1">
+<input type="checkbox" id="test1"/>
+   <label for="test1" class="Appointment_fontfamily">CareClues Verified</label>
+  
+ 
+      <input type="checkbox" id="test2"/>
+     <label for="test2" class="Appointment_fontfamily">Available Now</label>
+</div>
+<div class="checkbox1">
+     <input type="button" class="button2" value="SEARCH"/>
+     </div>
+     </div>
+</div>
+</div>
+
+
+<div class="container">
+		<div class="Appointment_p2 Appointment_div1"><span class="Appointment_div1-span">Recommended Doctors</span><span class="Appointment_p2_div"><span class="Appointment_span2">Sort By:</span><span class="Appointment_span3"><a href="javascript:void(0);">FEES</a></span><span><a href="javascript:void(0);" class="Appointment_span4">RATINGS</a></span></span></div>
+	</div>
+
+<div class="container">
+	<div class="row row3">
+		<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 col-xxs-12 row3_col1">
+		<div class="pos-rel">
+		<div class="row row_inside">
+			<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 doctorImage">
+				<img src="img/Doctor.png" class="DoctorImg">
+			</div>
+
+			<div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
+				
+				<p class="Appointment_p3">Dr. Jonathan Mathew
+				</p>
+
+				<p class="Appointment_p4">Dermatologist (MD, MBBS)
+				</p>
+				
+        <fieldset class="rating">
+            <input type="radio" id="star15" name="rating-1" value="5" /><label for="star15" title="Rocks!">5 stars</label>
+            <input type="radio" id="star14" name="rating-1" value="4" /><label for="star14" title="Pretty good">4 stars</label>
+            <input type="radio" id="star13" name="rating-1" value="3" checked/><label for="star13" title="Meh">3 stars</label>
+            <input type="radio" id="star12" name="rating-1" value="2" /><label for="star12" title="Kinda bad">2 stars</label>
+            <input type="radio" id="star11" name="rating-1" value="1" /><label for="star11" title="Sucks big time">1 star</label>
+        </fieldset>
+
+				
+				<div class="app_exp"><div class="app_weekdays Appointment_span5 Appointment_span51"><i class="fa fa-suitcase Appointment_fa_color"></i><span class="exp-yrs"> 6 yrs experience</span></div><div class="app_sun Appointment_span5 Appointment_span52"><i class="fa fa-inr Appointment_fa_color"></i><span class="exp-fee">500</span></div>
+                </div>
+                <span class="app_exp Appointment_span6"><i class="fa fa-clock-o Appointment_fa_color"></i><span class="avail-time">Timings:</span></span>
+                <div class="app_timings">
+                	<div class="app_weekdays">
+                		<p class="Appointment_span5 Appointment_p5"><span class="app-day">Mon - Sat -</span><span class="app-time">10.00 am - 07.00 pm</span></p>                		
+                	</div>
+                	<div class="app_sun">
+                		<p class="Appointment_span5 Appointment_p5"><span class="app-day">Sun -</span><span class="app-time">12.30 pm - 04.00 pm</p>
+                		<p class="Appointment_span5 Appointment_p5 Appointment_span53 Appointment_span5_3"></p>
+                	</div>
+                </div></div>
+			</div>
+                 <div class="book-now-btn">
+                <button class="button3">BOOK NOW</button>
+                </div>
+		</div>
+
+		</div>
+
+		<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 col-xxs-12">
+		<div class="pos-rel">
+		<div class="row row_inside">
+			<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 doctorImage">
+				<img src="img/doctor1.png" class="DoctorImg">
+			</div>
+
+			<div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
+				
+            <p class="Appointment_p3">Dr. Jonathan Mathew
+				</p>
+
+				<p class="Appointment_p4">Dermatologist (MD, MBBS)
+				</p>
+				
+        <fieldset class="rating">
+            <input type="radio" id="star25" name="rating-2" value="5" /><label for="star25" title="Rocks!">5 stars</label>
+            <input type="radio" id="star24" name="rating-2" value="4" /><label for="star24" title="Pretty good">4 stars</label>
+            <input type="radio" id="star23" name="rating-2" value="3" checked/><label for="star23" title="Meh">3 stars</label>
+            <input type="radio" id="star22" name="rating-2" value="2" /><label for="star22" title="Kinda bad">2 stars</label>
+            <input type="radio" id="star21" name="rating-2" value="1" /><label for="star21" title="Sucks big time">1 star</label>
+        </fieldset>
+				<div class="app_exp"><div class="app_weekdays Appointment_span5 Appointment_span51"><i class="fa fa-suitcase Appointment_fa_color"></i><span class="exp-yrs"> 6 yrs experience</span></div><div class="app_sun Appointment_span5 Appointment_span52"><i class="fa fa-inr Appointment_fa_color"></i><span class="exp-fee">500</span></div>
+                </div>
+                <span class="app_exp Appointment_span6"><i class="fa fa-clock-o Appointment_fa_color"></i><span class="avail-time">Timings:</span></span>
+                <div class="app_timings">
+                	<div class="app_weekdays">
+                		<p class="Appointment_span5 Appointment_p5"><span class="app-day">Mon - Sat -</span><span class="app-time">10.00 am - 07.00 pm</span></p>                		
+                	</div>
+                	<div class="app_sun">
+                		<p class="Appointment_span5 Appointment_p5"><span class="app-day">Sun -</span><span class="app-time">12.30 pm - 04.00 pm</p>
+                		<p class="Appointment_span5 Appointment_p5 Appointment_span53 Appointment_span5_3"></p>
+                	</div>
+                </div>
+                </div>
+</div>
+                <div class="book-now-btn">
+                <button class="button3">BOOK NOW</button>
+
+			</div>
+		</div>
+
+		
+	</div>
+	</div>
+
+
+<div class="row row3 row4">
+		<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 col-xxs-12 row3_col1">
+		<div class="pos-rel">
+		<div class="row row_inside">
+			<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 doctorImage">
+				<img src="img/doctor1.png" class="DoctorImg">
+			</div>
+
+			<div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
+				
+				<p class="Appointment_p3">Dr. Jonathan Mathew
+				</p>
+
+				<p class="Appointment_p4">Dermatologist (MD, MBBS)
+				</p>
+
+        <fieldset class="rating">
+            <input type="radio" id="star35" name="rating-3" value="5" /><label for="star35" title="Rocks!">5 stars</label>
+            <input type="radio" id="star34" name="rating-3" value="4" /><label for="star34" title="Pretty good">4 stars</label>
+            <input type="radio" id="star33" name="rating-3" value="3" checked/><label for="star33" title="Meh">3 stars</label>
+            <input type="radio" id="star32" name="rating-3" value="2" /><label for="star32" title="Kinda bad">2 stars</label>
+            <input type="radio" id="star31" name="rating-3" value="1" /><label for="star31" title="Sucks big time">1 star</label>
+        </fieldset>
+
+				<div class="app_exp"><div class="app_weekdays Appointment_span5 Appointment_span51"><i class="fa fa-suitcase Appointment_fa_color"></i><span class="exp-yrs"> 6 yrs experience</span></div><div class="app_sun Appointment_span5 Appointment_span52"><i class="fa fa-inr Appointment_fa_color"></i><span class="exp-fee">500</span></div>
+                </div>
+                <span class="app_exp Appointment_span6"><i class="fa fa-clock-o Appointment_fa_color"></i><span class="avail-time">Timings:</span></span>
+                <div class="app_timings">
+                	<div class="app_weekdays">
+                		<p class="Appointment_span5 Appointment_p5"><span class="app-day">Mon - Sat -</span><span class="app-time">10.00 am - 07.00 pm</span></p>                		
+                	</div>
+                	<div class="app_sun">
+                		<p class="Appointment_span5 Appointment_p5"><span class="app-day">Sun -</span><span class="app-time">12.30 pm - 04.00 pm</p>
+                		<p class="Appointment_span5 Appointment_p5 Appointment_span53 Appointment_span5_3"></p>
+                	</div>
+                </div>
+                </div>
+                <div class="book-now-btn">
+                <button class="button3">BOOK NOW</button>
+                </div>
+			</div>
+		</div>
+
+
+		</div>
+
+		<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 col-xxs-12">
+		<div class="pos-rel">
+		<div class="row row_inside">
+			<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 doctorImage">
+				<img src="img/doctor3.png" class="DoctorImg">
+			</div>
+
+			<div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
+				
+            <p class="Appointment_p3">Dr. Jonathan Mathew
+				</p>
+
+				<p class="Appointment_p4">Dermatologist (MD, MBBS)
+				</p>				
+
+        <fieldset class="rating">
+            <input type="radio" id="star45" name="rating-4" value="5" /><label for="star45" title="Rocks!">5 stars</label>
+            <input type="radio" id="star44" name="rating-4" value="4" /><label for="star44" title="Pretty good">4 stars</label>
+            <input type="radio" id="star43" name="rating-4" value="3" checked/><label for="star43" title="Meh">3 stars</label>
+            <input type="radio" id="star42" name="rating-4" value="2" /><label for="star42" title="Kinda bad">2 stars</label>
+            <input type="radio" id="star41" name="rating-4" value="1" /><label for="star41" title="Sucks big time">1 star</label>
+        </fieldset>
+
+				<div class="app_exp"><div class="app_weekdays Appointment_span5 Appointment_span51"><i class="fa fa-suitcase Appointment_fa_color"></i><span class="exp-yrs"> 6 yrs experience</span></div><div class="app_sun Appointment_span5 Appointment_span52"><i class="fa fa-inr Appointment_fa_color"></i><span class="exp-fee">500</span></div>
+                </div>
+                <span class="app_exp Appointment_span6"><i class="fa fa-clock-o Appointment_fa_color"></i><span class="avail-time">Timings:</span></span>
+                <div class="app_timings">
+                	<div class="app_weekdays">
+                		<p class="Appointment_span5 Appointment_p5"><span class="app-day">Mon - Sat -</span><span class="app-time">10.00 am - 07.00 pm</span></p>                		
+                	</div>
+                	<div class="app_sun">
+                		<p class="Appointment_span5 Appointment_p5"><span class="app-day">Sun -</span><span class="app-time">12.30 pm - 04.00 pm</p>
+                		<p class="Appointment_span5 Appointment_p5 Appointment_span53 Appointment_span5_3"></p>
+                	</div>
+                </div></div>
+                <div class="book-now-btn">
+                <button class="button3">BOOK NOW</button>
+</div>
+
+			</div>
+		</div>
+
+		
+	</div>
+	</div>
+
+
+<div class="row row3 row4 row5">
+		<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 col-xxs-12 row3_col1">
+		<div class="pos-rel">
+		<div class="row row_inside ">
+			<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 doctorImage">
+				<img src="img/doctor3.png" class="DoctorImg">
+			</div>
+
+			<div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
+				
+				<p class="Appointment_p3">Dr. Jonathan Mathew
+				</p>
+
+				<p class="Appointment_p4">Dermatologist (MD, MBBS)
+				</p>
+
+        <fieldset class="rating">
+            <input type="radio" id="star55" name="rating-5" value="5" /><label for="star55" title="Rocks!">5 stars</label>
+            <input type="radio" id="star54" name="rating-5" value="4" /><label for="star54" title="Pretty good">4 stars</label>
+            <input type="radio" id="star53" name="rating-5" value="3" checked/><label for="star53" title="Meh">3 stars</label>
+            <input type="radio" id="star52" name="rating-5" value="2" /><label for="star52" title="Kinda bad">2 stars</label>
+            <input type="radio" id="star51" name="rating-5" value="1" /><label for="star51" title="Sucks big time">1 star</label>
+        </fieldset>
+
+				<div class="app_exp"><div class="app_weekdays Appointment_span5 Appointment_span51"><i class="fa fa-suitcase Appointment_fa_color"></i><span class="exp-yrs"> 6 yrs experience</span></div><div class="app_sun Appointment_span5 Appointment_span52"><i class="fa fa-inr Appointment_fa_color"></i><span class="exp-fee">500</span></div>
+                </div>
+                <span class="app_exp Appointment_span6"><i class="fa fa-clock-o Appointment_fa_color"></i><span class="avail-time">Timings:</span></span>
+                <div class="app_timings">
+                	<div class="app_weekdays">
+                		<p class="Appointment_span5 Appointment_p5"><span class="app-day">Mon - Sat -</span><span class="app-time">10.00 am - 07.00 pm</span></p>                		
+                	</div>
+                	<div class="app_sun">
+                		<p class="Appointment_span5 Appointment_p5"><span class="app-day">Sun -</span><span class="app-time">12.30 pm - 04.00 pm</p>
+                		<p class="Appointment_span5 Appointment_p5 Appointment_span53 Appointment_span5_3"></p>
+                	</div>
+                </div>
+                </div>
+                <div class="book-now-btn">
+                <button class="button3">BOOK NOW</button>
+</div>
+
+
+
+			</div>
+		</div>
+
+
+		</div>
+
+		<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 col-xxs-12">
+		<div class="pos-rel">
+		<div class="row row_inside">
+			<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 doctorImage">
+				<img src="img/Doctor.png" class="DoctorImg">
+			</div>
+
+			<div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
+				
+            <p class="Appointment_p3">Dr. Jonathan Mathew
+				</p>
+
+				<p class="Appointment_p4">Dermatologist (MD, MBBS)
+				</p>
+				
+        <fieldset class="rating">
+            <input type="radio" id="star65" name="rating-6" value="5" /><label for="star65" title="Rocks!">5 stars</label>
+            <input type="radio" id="star64" name="rating-6" value="4" /><label for="star64" title="Pretty good">4 stars</label>
+            <input type="radio" id="star63" name="rating-6" value="3" checked/><label for="star63" title="Meh">3 stars</label>
+            <input type="radio" id="star62" name="rating-6" value="2" /><label for="star62" title="Kinda bad">2 stars</label>
+            <input type="radio" id="star61" name="rating-6" value="1" /><label for="star61" title="Sucks big time">1 star</label>
+        </fieldset>
+
+				<div class="app_exp"><div class="app_weekdays Appointment_span5 Appointment_span51"><i class="fa fa-suitcase Appointment_fa_color"></i><span class="exp-yrs"> 6 yrs experience</span></div><div class="app_sun Appointment_span5 Appointment_span52"><i class="fa fa-inr Appointment_fa_color"></i><span class="exp-fee">500</span></div>
+                </div>
+                <span class="app_exp Appointment_span6"><i class="fa fa-clock-o Appointment_fa_color"></i><span class="avail-time">Timings:</span></span>
+                <div class="app_timings">
+                	<div class="app_weekdays">
+                		<p class="Appointment_span5 Appointment_p5"><span class="app-day">Mon - Sat -</span><span class="app-time">10.00 am - 07.00 pm</span></p>                		
+                	</div>
+                	<div class="app_sun">
+                		<p class="Appointment_span5 Appointment_p5"><span class="app-day">Sun -</span><span class="app-time">12.30 pm - 04.00 pm</p>
+                		<p class="Appointment_span5 Appointment_p5 Appointment_span53 Appointment_span5_3"></p>
+                	</div>
+                </div>
+                </div>
+                <div class="book-now-btn">
+                <button class="button3">BOOK NOW</button>
+                </div>
+
+			</div>
+		</div>
+
+		
+	</div>
+	</div>
+
+
+</div>
+
+<footer>
+    <div class="footer-contents container">
+        <p class="Appointment_p7">Powered by</p>
+       <div class="footer-contents1"><img src="img/footerImg.png"> <img src="img/footerImgName.png"></div>
+        </div>
+    </footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+
+</body>
+</html>
