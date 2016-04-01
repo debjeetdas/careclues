@@ -1,0 +1,24 @@
+{
+    "data": {
+        "id": 2,
+        "first_name": "Sachu",
+        "last_name": "Thomas",
+        "gender": "unknown",
+        "links": [{
+            "rel": "self",
+            "href": "http://52.86.144.65/api/v1/public/physicians/2"
+        }, {
+            "rel": "services",
+            "href": "http://52.86.144.65/api/v1/public/physicians/2/services"
+        }, {
+            "rel": "schedules",
+            "href": "http://52.86.144.65/api/v1/public/physicians/2/schedules"
+        }, {
+            "rel": "specialties",
+            "href": "http://52.86.144.65/api/v1/public/physicians/2/specialties"
+        }, {
+            "rel": "qualifications",
+            "href": "http://52.86.144.65/api/v1/public/physicians/2/qualifications"
+        }]
+    }
+}

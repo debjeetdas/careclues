@@ -13,7 +13,7 @@
     <script src="js/modernizr.custom.js"></script>
     <link rel="stylesheet" type="text/css" href="css/appointmentmaker_common.css">
 </head>
-<body id="app_marker_doctor_details">
+<body id="app_marker_doctor_details" ng-app="TestApp">
 
  <nav class="navbar navbar-default navbar-fixed-top">
       <div id="headtop">
@@ -201,7 +201,7 @@
 		<div class="Appointment_p2 Appointment_div1"><span class="Appointment_div1-span">Recommended Doctors</span><span class="Appointment_p2_div"><span class="Appointment_span2">Sort By:</span><span class="Appointment_span3"><a href="javascript:void(0);">FEES</a></span><span><a href="javascript:void(0);" class="Appointment_span4">RATINGS</a></span></span></div>
 	</div>
 
-<div class="container">
+<div class="container" ng-controller="TestCtrl">
 	<div class="row row3">
 		<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 col-xxs-12 row3_col1">
 		<div class="pos-rel">
@@ -212,7 +212,7 @@
 
 			<div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
 				
-				<p class="Appointment_p3">Dr. Jonathan Mathew
+				<p class="Appointment_p3">{{patients.first_name}}
 				</p>
 
 				<p class="Appointment_p4">Dermatologist (MD, MBBS)
@@ -494,10 +494,12 @@
     </footer>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular.min.js"></script>
 <script src="js/hideShowPassword.min.js"></script>
 <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="js/datepicker.js"></script>
 <script src="js/form.js"></script>
 <script type="text/javascript" src="js/script.js"></script>
+<script src="js/app.js"></script>
 </body>
 </html>
