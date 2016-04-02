@@ -265,7 +265,7 @@
         position: absolute;
         display: block;
         }
-        .reg-end-close{
+        .reg-end-close1,.reg-end-close2{
             display: none;
         }
         .reg-form,.log-form{
@@ -306,7 +306,7 @@
     position: fixed;
     top: 15%;
     width: 100%;
-    z-index: 1031;
+    z-index: 1044;
 }
 .reg{
     width:100%;
@@ -332,7 +332,7 @@
 }
 .datepicker {
     position: fixed !important;
-    z-index: 1032 !important;
+    z-index: 1045 !important;
 }
 @media screen and (max-width:767px){
      #register-div{

@@ -28,9 +28,9 @@
                 <div id="loginScreen" class="conatiner">
                 <div style="display:none" class="reg">
                     <div class="heading-div">
-                        <a href="#" class="reg-start-close"><img src="img/close-arrow-btn.png"></a> 
+                        <a href="#close" class="reg-start-close reg-start-close1"><img src="img/close-arrow-btn.png"></a> 
                         <h1 class="login-heading">Register yourself</h1>
-                        <a href="#" class="cancel reg-end-close"><img src="img/cross-img.png"></a> 
+                        <a href="#close" class="cancel reg-end-close1 reg-end-close"><img src="img/cross-img.png"></a> 
                         <hr class="reg-hr">
                     </div>  
                         <div>
@@ -70,9 +70,9 @@
                         </div> 
                         <div class="log">
                             <div class="heading-div">
-                                    <a href="#" class="reg-start-close"><img src="img/close-arrow-btn.png"></a> 
+                                    <a href="#close" class="reg-start-close log-start-close"><img src="img/close-arrow-btn.png"></a> 
                                     <h1 class="login-heading">Login with email</h1>
-                                    <a href="#" class="cancel reg-end-close"><img src="img/cross-img.png"></a> 
+                                    <a href="#close" class="cancel reg-end-close2 log-end-close"><img src="img/cross-img.png"></a> 
                                     <hr class="reg-hr">
                             </div>      
                             <div>
@@ -201,7 +201,7 @@
 		<div class="Appointment_p2 Appointment_div1"><span class="Appointment_div1-span">Recommended Doctors</span><span class="Appointment_p2_div"><span class="Appointment_span2">Sort By:</span><span class="Appointment_span3"><a href="javascript:void(0);">FEES</a></span><span><a href="javascript:void(0);" class="Appointment_span4">RATINGS</a></span></span></div>
 	</div>
 
-<div class="container" ng-controller="HomeController">
+<div class="container">
 	<div class="row row3">
 		<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 col-xxs-12 row3_col1">
 		<div class="pos-rel">
@@ -212,8 +212,8 @@
 
 			<div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
 				
-				<p class="Appointment_p3">{{ photos.author }}
-				</p>
+				<div ng-view>
+				</div>
 
 				<p class="Appointment_p4">Dermatologist (MD, MBBS)
 				</p>
@@ -495,6 +495,7 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular.min.js"></script>
+    <script src="https://code.angularjs.org/1.2.28/angular-route.min.js"></script>
 <script src="js/hideShowPassword.min.js"></script>
 <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="js/datepicker.js"></script>
