@@ -1,24 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>Appointment Maker</title>
+    <meta charset="UTF-8">
+    <title>Appointment Maker</title>
  <!-- Bootstrap -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-  <link rel="stylesheet" type="text/css" href="css/appointmentmaker_common.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/datepicker.css" />
+    <link rel="stylesheet" type="text/css" href="css/form.css">
+    <link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+    <script src="js/modernizr.custom.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/appointmentmaker_common.css">
 </head>
-<body id="app_marker_doctor_details">
+<body id="app_marker_doctor_details" ng-app="GalleryApp">
 
  <nav class="navbar navbar-default navbar-fixed-top">
       <div id="headtop">
-      	    <div class="navbar-header">
-     			<img class="marginLeft" id="appointment_img1" src="img/apollo-logo.png"/>
-    		</div>
+            <div class="navbar-header">
+                <img class="marginLeft" id="appointment_img1" src="img/apollo-logo.png"/>
+                <div class="login-img-div"><a href="#loginScreen" class="button"><img src="img/login-img.png"><p class="login-text">Log in</p></a></div>
+            </div>
       </div>
  </nav>
+ <div id="register-div">
 
+                <div id="loginScreen" class="conatiner">
+                <div style="display:none" class="reg">
+                    <div class="heading-div">
+                        <a href="#close" class="reg-start-close reg-start-close1"><img src="img/close-arrow-btn.png"></a> 
+                        <h1 class="login-heading">Register yourself</h1>
+                        <a href="#close" class="cancel reg-end-close1 reg-end-close"><img src="img/cross-img.png"></a> 
+                        <hr class="reg-hr">
+                    </div>  
+                        <div>
+                            <form role="form" class="reg-form">
+                                <div class="form-group">
+                                    <input type="text" class="form-control log-in-placeholder" id="first-name" placeholder="First Name" required/>
+                                    <input type="text" class="form-control log-in-placeholder" id="last-name" placeholder="Last Name" required/>
+                                    <div class="row">
+                                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                                <div class="btn-group btn-input clearfix">
+                                                    <button type="button" class="btn btn-default dropdown-toggle drop-btn" data-toggle="dropdown">
+                                                     <span data-bind="label" class="genderName log-in-placeholder1" id="dropdown_title2">Gender</span> <span class="genderCaret caret"></span>
+                                                    </button>
+                                                     <ul class="dropdown-menu" role="menu">
+                                                     <li><a href="#">male</a></li>
+                                                     <li><a href="#">Female</a></li>
+                                                    </ul>
+                                                </div>
+                                        </div>  
+                                         <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                            <div class="input-group input-append date" id="dateRangePicker">
+                                                    <input type="text" class="form-control log-in-placeholder date-input" name="date" placeholder="DOB" required/>
+                                                    <span class="input-group-addon add-on calender-span"><img src="img/calender-img.png"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <input type="email" class="form-control log-in-placeholder" id="email" placeholder="Email ID" required/>
+
+                                    <div class="phone-no-div"><span class="mobile-no-start-code"><input class="login-phone-no-code" type="text" placeholder="+91"></span><input type="text" pattern="[789][0-9]{9}" class="form-control log-in-placeholder" id="phone-number" placeholder="Mobile number" required/></div>
+
+                                    <input class="form-control login-field login-field-password log-in-placeholder" id="pwd" type="password" placeholder="Password" required/>
+                                    <button type="submit" id="SendRequest" class="login-btn">REGISTER</button>
+                                </div>
+                            </form>
+                        </div>  
+                        </div> 
+                        <div class="log">
+                            <div class="heading-div">
+                                    <a href="#close" class="reg-start-close log-start-close"><img src="img/close-arrow-btn.png"></a> 
+                                    <h1 class="login-heading">Login with email</h1>
+                                    <a href="#close" class="cancel reg-end-close2 log-end-close"><img src="img/cross-img.png"></a> 
+                                    <hr class="reg-hr">
+                            </div>      
+                            <div>
+                                <form role="form" class="log-form">
+                                        <div class="form-group">
+                                            <input type="email" class="form-control log-in-placeholder" id="email1" placeholder="Email ID" required/>
+                                                <input type="password" class="form-control log-in-placeholder" id="pwd" placeholder="Password" required/>
+                                        </div>
+                                            <button type="submit" class="login-btn1">LOGIN</button>
+                                           <span><a class="forget-psw color-a">Forgot password</a></span>
+                                      <hr>
+                                </form>
+                               
+                            </div>  
+                            <div class="login-register">
+                                Don't have patient accont? <a class="color-a register-btn">Register</a>
+                            </div> 
+                        </div>      
+                </div>
+                
+                    <div id="cover"></div> 
+   
+ </div>
 <div class="background">
 <div class="container">
  <div id="Appointment_div">
@@ -28,7 +105,7 @@
 
 
  <div>
- 	<h4 class="Appointment_heading1">Search Your Doctor & Book an Appointment</h4>
+  <h4 class="Appointment_heading1">Search Your Doctor & Book an Appointment</h4>
  </div>
 
 
@@ -116,29 +193,27 @@
      </div>-->
 </div>
 </div>
-
+<div class="container">
+        <div class="Appointment_p2 Appointment_div1"><span class="Appointment_div1-span">Recommended Doctors</span><span class="Appointment_p2_div"><span class="Appointment_span2">Sort By:</span><span class="Appointment_span3"><a href="javascript:void(0);">FEES</a></span><span><a href="javascript:void(0);" class="Appointment_span4">RATINGS</a></span></span></div>
+    </div>
 
 <div class="container">
-		<div class="Appointment_p2 Appointment_div1"><span class="Appointment_div1-span">Recommended Doctors</span><!-- <span class="Appointment_p2_div"><span class="Appointment_span2">Sort By:</span><span class="Appointment_span3"><a href="javascript:void(0);">FEES</a></span><span><a href="javascript:void(0);" class="Appointment_span4">RATINGS</a></span></span> --></div>
-	</div>
+    <div class="row row3">
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 col-xxs-12 row3_col1">
+        <div class="pos-rel">
+        <div class="row row_inside">
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 doctorImage">
+                <img src="img/Doctor.png" class="DoctorImg">
+            </div>
 
-<div class="container">
-	<div class="row row3">
-		<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 col-xxs-12 row3_col1">
-		<div class="pos-rel">
-		<div class="row row_inside">
-			<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 doctorImage">
-				<img src="img/Doctor.png" class="DoctorImg">
-			</div>
+            <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
+                
+                <div ng-view>
+                </div>
 
-			<div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
-				
-				<p class="Appointment_p3">Dr. Jonathan Mathew
-				</p>
-
-				<p class="Appointment_p4">Dermatologist (MD, MBBS)
-				</p>
-				
+                <p class="Appointment_p4">Dermatologist (MD, MBBS)
+                </p>
+                
         <fieldset class="rating">
             <input type="radio" id="star15" name="rating-1" value="5" /><label for="star15" title="Rocks!">5 stars</label>
             <input type="radio" id="star14" name="rating-1" value="4" /><label for="star14" title="Pretty good">4 stars</label>
@@ -147,42 +222,42 @@
             <input type="radio" id="star11" name="rating-1" value="1" /><label for="star11" title="Sucks big time">1 star</label>
         </fieldset>
 
-				
-				<div class="app_exp"><div class="app_weekdays Appointment_span5 Appointment_span51"><i class="fa fa-suitcase Appointment_fa_color"></i><span class="exp-yrs"> 6 yrs experience</span></div><div class="app_sun Appointment_span5 Appointment_span52"><i class="fa fa-inr Appointment_fa_color"></i><span class="exp-fee">500</span></div>
+                
+                <div class="app_exp"><div class="app_weekdays Appointment_span5 Appointment_span51"><i class="fa fa-suitcase Appointment_fa_color"></i><span class="exp-yrs"> 6 yrs experience</span></div><div class="app_sun Appointment_span5 Appointment_span52"><i class="fa fa-inr Appointment_fa_color"></i><span class="exp-fee">500</span></div>
                 </div>
                 <span class="app_exp Appointment_span6"><i class="fa fa-clock-o Appointment_fa_color"></i><span class="avail-time">Timings:</span></span>
                 <div class="app_timings">
-                	<div class="app_weekdays">
-                		<p class="Appointment_span5 Appointment_p5"><span class="app-day">Mon - Sat -</span><span class="app-time">10.00 am - 07.00 pm</span></p>                		
-                	</div>
-                	<div class="app_sun">
-                		<p class="Appointment_span5 Appointment_p5"><span class="app-day">Sun -</span><span class="app-time">12.30 pm - 04.00 pm</p>
-                		<p class="Appointment_span5 Appointment_p5 Appointment_span53 Appointment_span5_3"></p>
-                	</div>
+                    <div class="app_weekdays">
+                        <p class="Appointment_span5 Appointment_p5"><span class="app-day">Mon - Sat -</span><span class="app-time">10.00 am - 07.00 pm</span></p>                       
+                    </div>
+                    <div class="app_sun">
+                        <p class="Appointment_span5 Appointment_p5"><span class="app-day">Sun -</span><span class="app-time">12.30 pm - 04.00 pm</p>
+                        <p class="Appointment_span5 Appointment_p5 Appointment_span53 Appointment_span5_3"></p>
+                    </div>
                 </div></div>
-			</div>
+            </div>
                  <div class="book-now-btn">
                 <button class="button3">BOOK NOW</button>
                 </div>
-		</div>
+        </div>
 
-		</div>
+        </div>
 
-		<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 col-xxs-12">
-		<div class="pos-rel">
-		<div class="row row_inside">
-			<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 doctorImage">
-				<img src="img/doctor1.png" class="DoctorImg">
-			</div>
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 col-xxs-12">
+        <div class="pos-rel">
+        <div class="row row_inside">
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 doctorImage">
+                <img src="img/doctor1.png" class="DoctorImg">
+            </div>
 
-			<div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
-				
+            <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
+                
             <p class="Appointment_p3">Dr. Jonathan Mathew
-				</p>
+                </p>
 
-				<p class="Appointment_p4">Dermatologist (MD, MBBS)
-				</p>
-				
+                <p class="Appointment_p4">Dermatologist (MD, MBBS)
+                </p>
+                
         <fieldset class="rating">
             <input type="radio" id="star25" name="rating-2" value="5" /><label for="star25" title="Rocks!">5 stars</label>
             <input type="radio" id="star24" name="rating-2" value="4" /><label for="star24" title="Pretty good">4 stars</label>
@@ -190,46 +265,46 @@
             <input type="radio" id="star22" name="rating-2" value="2" /><label for="star22" title="Kinda bad">2 stars</label>
             <input type="radio" id="star21" name="rating-2" value="1" /><label for="star21" title="Sucks big time">1 star</label>
         </fieldset>
-				<div class="app_exp"><div class="app_weekdays Appointment_span5 Appointment_span51"><i class="fa fa-suitcase Appointment_fa_color"></i><span class="exp-yrs"> 6 yrs experience</span></div><div class="app_sun Appointment_span5 Appointment_span52"><i class="fa fa-inr Appointment_fa_color"></i><span class="exp-fee">500</span></div>
+                <div class="app_exp"><div class="app_weekdays Appointment_span5 Appointment_span51"><i class="fa fa-suitcase Appointment_fa_color"></i><span class="exp-yrs"> 6 yrs experience</span></div><div class="app_sun Appointment_span5 Appointment_span52"><i class="fa fa-inr Appointment_fa_color"></i><span class="exp-fee">500</span></div>
                 </div>
                 <span class="app_exp Appointment_span6"><i class="fa fa-clock-o Appointment_fa_color"></i><span class="avail-time">Timings:</span></span>
                 <div class="app_timings">
-                	<div class="app_weekdays">
-                		<p class="Appointment_span5 Appointment_p5"><span class="app-day">Mon - Sat -</span><span class="app-time">10.00 am - 07.00 pm</span></p>                		
-                	</div>
-                	<div class="app_sun">
-                		<p class="Appointment_span5 Appointment_p5"><span class="app-day">Sun -</span><span class="app-time">12.30 pm - 04.00 pm</p>
-                		<p class="Appointment_span5 Appointment_p5 Appointment_span53 Appointment_span5_3"></p>
-                	</div>
+                    <div class="app_weekdays">
+                        <p class="Appointment_span5 Appointment_p5"><span class="app-day">Mon - Sat -</span><span class="app-time">10.00 am - 07.00 pm</span></p>                       
+                    </div>
+                    <div class="app_sun">
+                        <p class="Appointment_span5 Appointment_p5"><span class="app-day">Sun -</span><span class="app-time">12.30 pm - 04.00 pm</p>
+                        <p class="Appointment_span5 Appointment_p5 Appointment_span53 Appointment_span5_3"></p>
+                    </div>
                 </div>
                 </div>
 </div>
                 <div class="book-now-btn">
                 <button class="button3">BOOK NOW</button>
 
-			</div>
-		</div>
+            </div>
+        </div>
 
-		
-	</div>
-	</div>
+        
+    </div>
+    </div>
 
 
 <div class="row row3 row4">
-		<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 col-xxs-12 row3_col1">
-		<div class="pos-rel">
-		<div class="row row_inside">
-			<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 doctorImage">
-				<img src="img/doctor1.png" class="DoctorImg">
-			</div>
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 col-xxs-12 row3_col1">
+        <div class="pos-rel">
+        <div class="row row_inside">
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 doctorImage">
+                <img src="img/doctor1.png" class="DoctorImg">
+            </div>
 
-			<div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
-				
-				<p class="Appointment_p3">Dr. Jonathan Mathew
-				</p>
+            <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
+                
+                <p class="Appointment_p3">Dr. Jonathan Mathew
+                </p>
 
-				<p class="Appointment_p4">Dermatologist (MD, MBBS)
-				</p>
+                <p class="Appointment_p4">Dermatologist (MD, MBBS)
+                </p>
 
         <fieldset class="rating">
             <input type="radio" id="star35" name="rating-3" value="5" /><label for="star35" title="Rocks!">5 stars</label>
@@ -239,42 +314,42 @@
             <input type="radio" id="star31" name="rating-3" value="1" /><label for="star31" title="Sucks big time">1 star</label>
         </fieldset>
 
-				<div class="app_exp"><div class="app_weekdays Appointment_span5 Appointment_span51"><i class="fa fa-suitcase Appointment_fa_color"></i><span class="exp-yrs"> 6 yrs experience</span></div><div class="app_sun Appointment_span5 Appointment_span52"><i class="fa fa-inr Appointment_fa_color"></i><span class="exp-fee">500</span></div>
+                <div class="app_exp"><div class="app_weekdays Appointment_span5 Appointment_span51"><i class="fa fa-suitcase Appointment_fa_color"></i><span class="exp-yrs"> 6 yrs experience</span></div><div class="app_sun Appointment_span5 Appointment_span52"><i class="fa fa-inr Appointment_fa_color"></i><span class="exp-fee">500</span></div>
                 </div>
                 <span class="app_exp Appointment_span6"><i class="fa fa-clock-o Appointment_fa_color"></i><span class="avail-time">Timings:</span></span>
                 <div class="app_timings">
-                	<div class="app_weekdays">
-                		<p class="Appointment_span5 Appointment_p5"><span class="app-day">Mon - Sat -</span><span class="app-time">10.00 am - 07.00 pm</span></p>                		
-                	</div>
-                	<div class="app_sun">
-                		<p class="Appointment_span5 Appointment_p5"><span class="app-day">Sun -</span><span class="app-time">12.30 pm - 04.00 pm</p>
-                		<p class="Appointment_span5 Appointment_p5 Appointment_span53 Appointment_span5_3"></p>
-                	</div>
+                    <div class="app_weekdays">
+                        <p class="Appointment_span5 Appointment_p5"><span class="app-day">Mon - Sat -</span><span class="app-time">10.00 am - 07.00 pm</span></p>                       
+                    </div>
+                    <div class="app_sun">
+                        <p class="Appointment_span5 Appointment_p5"><span class="app-day">Sun -</span><span class="app-time">12.30 pm - 04.00 pm</p>
+                        <p class="Appointment_span5 Appointment_p5 Appointment_span53 Appointment_span5_3"></p>
+                    </div>
                 </div>
                 </div>
                 <div class="book-now-btn">
                 <button class="button3">BOOK NOW</button>
                 </div>
-			</div>
-		</div>
+            </div>
+        </div>
 
 
-		</div>
+        </div>
 
-		<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 col-xxs-12">
-		<div class="pos-rel">
-		<div class="row row_inside">
-			<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 doctorImage">
-				<img src="img/doctor3.png" class="DoctorImg">
-			</div>
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 col-xxs-12">
+        <div class="pos-rel">
+        <div class="row row_inside">
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 doctorImage">
+                <img src="img/doctor3.png" class="DoctorImg">
+            </div>
 
-			<div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
-				
+            <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
+                
             <p class="Appointment_p3">Dr. Jonathan Mathew
-				</p>
+                </p>
 
-				<p class="Appointment_p4">Dermatologist (MD, MBBS)
-				</p>				
+                <p class="Appointment_p4">Dermatologist (MD, MBBS)
+                </p>                
 
         <fieldset class="rating">
             <input type="radio" id="star45" name="rating-4" value="5" /><label for="star45" title="Rocks!">5 stars</label>
@@ -284,45 +359,45 @@
             <input type="radio" id="star41" name="rating-4" value="1" /><label for="star41" title="Sucks big time">1 star</label>
         </fieldset>
 
-				<div class="app_exp"><div class="app_weekdays Appointment_span5 Appointment_span51"><i class="fa fa-suitcase Appointment_fa_color"></i><span class="exp-yrs"> 6 yrs experience</span></div><div class="app_sun Appointment_span5 Appointment_span52"><i class="fa fa-inr Appointment_fa_color"></i><span class="exp-fee">500</span></div>
+                <div class="app_exp"><div class="app_weekdays Appointment_span5 Appointment_span51"><i class="fa fa-suitcase Appointment_fa_color"></i><span class="exp-yrs"> 6 yrs experience</span></div><div class="app_sun Appointment_span5 Appointment_span52"><i class="fa fa-inr Appointment_fa_color"></i><span class="exp-fee">500</span></div>
                 </div>
                 <span class="app_exp Appointment_span6"><i class="fa fa-clock-o Appointment_fa_color"></i><span class="avail-time">Timings:</span></span>
                 <div class="app_timings">
-                	<div class="app_weekdays">
-                		<p class="Appointment_span5 Appointment_p5"><span class="app-day">Mon - Sat -</span><span class="app-time">10.00 am - 07.00 pm</span></p>                		
-                	</div>
-                	<div class="app_sun">
-                		<p class="Appointment_span5 Appointment_p5"><span class="app-day">Sun -</span><span class="app-time">12.30 pm - 04.00 pm</p>
-                		<p class="Appointment_span5 Appointment_p5 Appointment_span53 Appointment_span5_3"></p>
-                	</div>
+                    <div class="app_weekdays">
+                        <p class="Appointment_span5 Appointment_p5"><span class="app-day">Mon - Sat -</span><span class="app-time">10.00 am - 07.00 pm</span></p>                       
+                    </div>
+                    <div class="app_sun">
+                        <p class="Appointment_span5 Appointment_p5"><span class="app-day">Sun -</span><span class="app-time">12.30 pm - 04.00 pm</p>
+                        <p class="Appointment_span5 Appointment_p5 Appointment_span53 Appointment_span5_3"></p>
+                    </div>
                 </div></div>
                 <div class="book-now-btn">
                 <button class="button3">BOOK NOW</button>
 </div>
 
-			</div>
-		</div>
+            </div>
+        </div>
 
-		
-	</div>
-	</div>
+        
+    </div>
+    </div>
 
 
 <div class="row row3 row4 row5">
-		<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 col-xxs-12 row3_col1">
-		<div class="pos-rel">
-		<div class="row row_inside ">
-			<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 doctorImage">
-				<img src="img/doctor3.png" class="DoctorImg">
-			</div>
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 col-xxs-12 row3_col1">
+        <div class="pos-rel">
+        <div class="row row_inside ">
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 doctorImage">
+                <img src="img/doctor3.png" class="DoctorImg">
+            </div>
 
-			<div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
-				
-				<p class="Appointment_p3">Dr. Jonathan Mathew
-				</p>
+            <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
+                
+                <p class="Appointment_p3">Dr. Jonathan Mathew
+                </p>
 
-				<p class="Appointment_p4">Dermatologist (MD, MBBS)
-				</p>
+                <p class="Appointment_p4">Dermatologist (MD, MBBS)
+                </p>
 
         <fieldset class="rating">
             <input type="radio" id="star55" name="rating-5" value="5" /><label for="star55" title="Rocks!">5 stars</label>
@@ -332,17 +407,17 @@
             <input type="radio" id="star51" name="rating-5" value="1" /><label for="star51" title="Sucks big time">1 star</label>
         </fieldset>
 
-				<div class="app_exp"><div class="app_weekdays Appointment_span5 Appointment_span51"><i class="fa fa-suitcase Appointment_fa_color"></i><span class="exp-yrs"> 6 yrs experience</span></div><div class="app_sun Appointment_span5 Appointment_span52"><i class="fa fa-inr Appointment_fa_color"></i><span class="exp-fee">500</span></div>
+                <div class="app_exp"><div class="app_weekdays Appointment_span5 Appointment_span51"><i class="fa fa-suitcase Appointment_fa_color"></i><span class="exp-yrs"> 6 yrs experience</span></div><div class="app_sun Appointment_span5 Appointment_span52"><i class="fa fa-inr Appointment_fa_color"></i><span class="exp-fee">500</span></div>
                 </div>
                 <span class="app_exp Appointment_span6"><i class="fa fa-clock-o Appointment_fa_color"></i><span class="avail-time">Timings:</span></span>
                 <div class="app_timings">
-                	<div class="app_weekdays">
-                		<p class="Appointment_span5 Appointment_p5"><span class="app-day">Mon - Sat -</span><span class="app-time">10.00 am - 07.00 pm</span></p>                		
-                	</div>
-                	<div class="app_sun">
-                		<p class="Appointment_span5 Appointment_p5"><span class="app-day">Sun -</span><span class="app-time">12.30 pm - 04.00 pm</p>
-                		<p class="Appointment_span5 Appointment_p5 Appointment_span53 Appointment_span5_3"></p>
-                	</div>
+                    <div class="app_weekdays">
+                        <p class="Appointment_span5 Appointment_p5"><span class="app-day">Mon - Sat -</span><span class="app-time">10.00 am - 07.00 pm</span></p>                       
+                    </div>
+                    <div class="app_sun">
+                        <p class="Appointment_span5 Appointment_p5"><span class="app-day">Sun -</span><span class="app-time">12.30 pm - 04.00 pm</p>
+                        <p class="Appointment_span5 Appointment_p5 Appointment_span53 Appointment_span5_3"></p>
+                    </div>
                 </div>
                 </div>
                 <div class="book-now-btn">
@@ -351,27 +426,27 @@
 
 
 
-			</div>
-		</div>
+            </div>
+        </div>
 
 
-		</div>
+        </div>
 
-		<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 col-xxs-12">
-		<div class="pos-rel">
-		<div class="row row_inside">
-			<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 doctorImage">
-				<img src="img/Doctor.png" class="DoctorImg">
-			</div>
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 col-xxs-12">
+        <div class="pos-rel">
+        <div class="row row_inside">
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 doctorImage">
+                <img src="img/Doctor.png" class="DoctorImg">
+            </div>
 
-			<div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
-				
+            <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
+                
             <p class="Appointment_p3">Dr. Jonathan Mathew
-				</p>
+                </p>
 
-				<p class="Appointment_p4">Dermatologist (MD, MBBS)
-				</p>
-				
+                <p class="Appointment_p4">Dermatologist (MD, MBBS)
+                </p>
+                
         <fieldset class="rating">
             <input type="radio" id="star65" name="rating-6" value="5" /><label for="star65" title="Rocks!">5 stars</label>
             <input type="radio" id="star64" name="rating-6" value="4" /><label for="star64" title="Pretty good">4 stars</label>
@@ -380,46 +455,50 @@
             <input type="radio" id="star61" name="rating-6" value="1" /><label for="star61" title="Sucks big time">1 star</label>
         </fieldset>
 
-				<div class="app_exp"><div class="app_weekdays Appointment_span5 Appointment_span51"><i class="fa fa-suitcase Appointment_fa_color"></i><span class="exp-yrs"> 6 yrs experience</span></div><div class="app_sun Appointment_span5 Appointment_span52"><i class="fa fa-inr Appointment_fa_color"></i><span class="exp-fee">500</span></div>
+                <div class="app_exp"><div class="app_weekdays Appointment_span5 Appointment_span51"><i class="fa fa-suitcase Appointment_fa_color"></i><span class="exp-yrs"> 6 yrs experience</span></div><div class="app_sun Appointment_span5 Appointment_span52"><i class="fa fa-inr Appointment_fa_color"></i><span class="exp-fee">500</span></div>
                 </div>
                 <span class="app_exp Appointment_span6"><i class="fa fa-clock-o Appointment_fa_color"></i><span class="avail-time">Timings:</span></span>
                 <div class="app_timings">
-                	<div class="app_weekdays">
-                		<p class="Appointment_span5 Appointment_p5"><span class="app-day">Mon - Sat -</span><span class="app-time">10.00 am - 07.00 pm</span></p>                		
-                	</div>
-                	<div class="app_sun">
-                		<p class="Appointment_span5 Appointment_p5"><span class="app-day">Sun -</span><span class="app-time">12.30 pm - 04.00 pm</p>
-                		<p class="Appointment_span5 Appointment_p5 Appointment_span53 Appointment_span5_3"></p>
-                	</div>
+                    <div class="app_weekdays">
+                        <p class="Appointment_span5 Appointment_p5"><span class="app-day">Mon - Sat -</span><span class="app-time">10.00 am - 07.00 pm</span></p>                       
+                    </div>
+                    <div class="app_sun">
+                        <p class="Appointment_span5 Appointment_p5"><span class="app-day">Sun -</span><span class="app-time">12.30 pm - 04.00 pm</p>
+                        <p class="Appointment_span5 Appointment_p5 Appointment_span53 Appointment_span5_3"></p>
+                    </div>
                 </div>
                 </div>
                 <div class="book-now-btn">
                 <button class="button3">BOOK NOW</button>
                 </div>
 
-			</div>
-		</div>
+            </div>
+        </div>
 
-		
-	</div>
-	</div>
+        
+    </div>
+    </div>
 
 
 </div>
 
 <footer>
-        <div class="container">
-            <div class="footer-contents1">
-                <span class="Appointment_p7">Powered by</span>
-                <img src="img/footerImg.png">
-                <img src="img/footerImgName.png">
-            </div>
+    <div class="footer-contents container">
+        
+       <div class="footer-contents1"><span class="Appointment_p7">Powered by</span><img src="img/footerImg.png"> <img src="img/footerImgName.png"></div>
         </div>
     </footer>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular.min.js"></script>
+    <script src="https://code.angularjs.org/1.2.28/angular-route.min.js"></script>
+<script src="js/hideShowPassword.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/datepicker.js"></script>
+<script src="js/form.js"></script>
 <script type="text/javascript" src="js/script.js"></script>
-
+<script src="js/app.js"></script>
+<script src="js/controllers/HomeController.js"></script>
+<script src="js/services/photos.js"></script>
 </body>
 </html>
