@@ -1,0 +1,579 @@
+@font-face {
+    font-family: "OpenSans-Bold";
+    src: url(../font/ttf/OpenSans-Bold.ttf);
+}
+@font-face {
+    font-family: "OpenSans-BoldItalic";
+    src: url(../font/ttf/OpenSans-BoldItalic.ttf);
+}
+@font-face {
+    font-family: "OpenSans-Light";
+    src: url(../font/ttf/OpenSans-Light.ttf);
+}
+@font-face {
+    font-family: "OpenSans-LightItalic";
+    src: url(../font/ttf/OpenSans-LightItalic.ttf);
+}
+@font-face {
+    font-family: "OpenSans-Regular";
+    src: url(../font/ttf/OpenSans-Regular.ttf);
+}
+@font-face {
+    font-family: "OpenSans-Italic";
+    src: url(../font/ttf/OpenSans-Italic.ttf);
+}
+@font-face {
+    font-family: "OpenSans-SemiBold";
+    src: url(../font/ttf/OpenSans-SemiBold.ttf);
+}
+@font-face {
+    font-family: "OpenSans-SemiBoldItalic";
+    src: url(../font/ttf/OpenSans-SemiBoldItalic.ttf);
+}
+@font-face {
+    font-family: "OpenSans-ExtraBold";
+    src: url(../font/ttf/OpenSans-ExtraBold.ttf);
+}
+@font-face {
+    font-family: "OpenSans-ExtraBoldItalic";
+    src: url(../font/ttf/OpenSans-ExtraBoldItalic.ttf);
+}
+@font-face {
+    font-family: 'FontAwesome';
+    src: url('../fonts/fontawesome-webfont.eot?v=4.4.0');
+    src: url('../fonts/fontawesome-webfont.eot?#iefix&v=4.4.0') format('embedded-opentype'), url('../fonts/fontawesome-webfont.woff2?v=4.4.0') format('woff2'), url('../fonts/fontawesome-webfont.woff?v=4.4.0') format('woff'), url('../fonts/fontawesome-webfont.ttf?v=4.4.0') format('truetype'), url('../fonts/fontawesome-webfont.svg?v=4.4.0#fontawesomeregular') format('svg');
+    font-weight: normal;
+    font-style: normal
+}
+body {
+    width: 100%;
+}
+/*header start*/
+#headtop {
+    height: 75px;
+    border: 1px solid #e7e7e7;
+    background-color: #ffffff;
+}
+#appointment_img1 {
+    margin-top: 10px;
+    margin-left: 90px;
+    cursor: pointer;
+}
+@media screen and (max-width: 767px) {
+    #appointment_img1 {
+        margin-left: 25px;
+    }
+}
+/*header end*/
+.appointment-whole-page{
+    background-color: #fefefe;
+}
+#Appointment_div {
+    margin-top: 75px;
+}
+.Appointment_para1 {
+    color: #666666;
+    font-family: "OpenSans-Regular";
+    font-size: 12px;
+    padding-top: 39.5px;
+}
+.Appointment_span1 {
+    color: #333333;
+    font-family: "OpenSans-SemiBold";
+}
+.r-arr {
+    vertical-align: middle;
+}
+.appointment-patient-inner-class {
+    border: 1px solid #efe1e8;
+    border-right: 1px solid #eeeaee;
+    margin-right: 10px;
+    padding-bottom:15px;
+     border-radius: 5px;
+}
+.appointment-patient-inner-class1 {
+    border: 1px solid #efe1e8;
+    border-left: 1px solid #eeeaee;
+    margin-left: 10px;
+    padding-bottom: 35px;
+     border-radius: 5px;
+}
+.appointment-patient-col-1{
+    padding-right: 0px;
+    padding-left: 0px;
+    background-color: #fff;
+}
+.appointment-patient-paragraph{
+    margin-left: 20px;
+}
+.appointment-patient-paragraph-1{
+    font-family: "OpenSans-Regular";
+    color: #666;
+    font-size: 15px;
+    margin-top: 3px;
+}
+.appointment-patient-date-span{
+    font-family: "OpenSans-Regular";
+    color: #666;
+    font-size: 15px;
+}
+.appointment-patient-para-spacing{
+    margin-bottom: 40px;
+}
+.appointment-patient-para-spacing1{
+    margin-bottom: 90px;
+}
+.appointment-patient-paragraph-1-1{
+    margin-bottom: 23px;
+}
+.appointment-patient-paragraph-1-2{
+    margin-bottom: 35px;
+}
+.appointment-patient-last-para{
+    margin-bottom: 
+}
+.appointment-patient1-paragraph-1{
+    margin-bottom: 32px;
+}
+.appointment-patient-input{
+    width: 100%;
+    height: 30px;
+    margin-bottom: 18px;
+    border-radius: 5px;
+    border: 1px solid #e8e2e9;
+}
+.btn.btn-default.dropdown-toggle.drop-btn-1 {
+    width: 122px;
+}
+.appointment-dropdown{
+    padding-left: 0px;
+    margin-bottom: 20px;
+}
+.caretCode{
+    float: right;
+}
+.genderName {
+    float: left;
+    }
+.appointment-patient-date-division{
+    padding-right: 0;
+    padding-left: 0px;
+}
+.appointment-patient-date-input{
+    height: 30px;
+    margin-left: 20px;
+    padding-left: 26px;
+    width: 67%;
+    border: 1px solid #e8e2e9;
+    border-radius: 5px;
+}
+.appointment-patient-input-1{
+    margin-bottom: 20px;
+}
+.appointment-patient-input-2{
+margin-bottom: 22px;
+}
+.appointment-patient-input-4{
+resize: none;
+height: 90px;
+}
+.appointment-patient-input.appointment-patient-input-3 {
+    margin-bottom: 0;
+}
+.appointment-patient-heading-6{
+    font-family: "OpenSans-Regular";
+    font-size:10px;
+    color: #999;
+    margin-top: 3px;
+}
+.appointment-patient-date-input{
+font-family: "OpenSans-Regular";
+    font-size:15px;
+    color: #666;
+}
+.appointment-patient-heading{
+    font-family: "OpenSans-Regular";
+    font-size:18px;
+    border-bottom: 1px solid #eaeaea;
+    color: #333333;
+    padding-bottom: 20px;
+    margin-left: 2px;
+    padding-left: 18px;
+    margin-bottom: 20px;
+}
+.row{
+   margin-left: 0px;
+    margin-right: 0px;
+}
+.appointment-patient-proceed{
+    height: 46px;
+    width: 122px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #d41c5c;
+    color: #fff;
+    font-size: 14px;
+    font-family: "OpenSans-SemiBold";
+    border: none;
+    border-radius: 5px;
+     margin: 40px 10px 50px 0;
+     float: right;
+}
+ .appointment-phone-no-div{
+        position: relative;
+        margin-bottom: 21px;
+    }
+    .patient-phone-no-code {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    border-color: #e8e2e9 -moz-use-text-color #e8e2e9 #e8e2e9;
+    border-image: none;
+    border-radius: 5px 0 0 5px;
+    border-style: solid none solid solid;
+    border-width: 1px medium 1px 1px;
+    height: 34px;
+    position: absolute;
+    width: 10%;
+}
+   #phone-number-1 {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    border-bottom: 1px solid #e8e2e9;
+    border-image: none;
+    border-radius: 0 5px 5px 0;
+    border-right: 1px solid #e8e2e9;
+    border-top: 1px solid #e8e2e9;
+    box-shadow: none;
+    margin-bottom: 0;
+    margin-left: 10%;
+    width: 90%;
+}
+  .input-group.input-append.date{
+    position: absolute;
+    top: 0;
+    left: 30%;
+  }
+  .appointment-datepicker{
+    position: relative;
+  }
+  .form-control.appointment-form-control {
+    border: 1px solid #e8e2e9;
+    border-radius: 5px;
+    height: 30px;
+    width: 100%;
+     box-shadow: none;
+}
+.input-group-addon.add-on {
+    background-color: #fff;
+    border: 1px solid #e8e2e9;
+    height: 30px;
+    border-left: none;
+    display: none;
+}
+.input-group-addon{
+     padding: 6px 12px;
+}
+.appointment-col-four{
+padding-right: 0px;
+}
+.Appointment_para1 > a {
+    color: #666;
+}
+.Appointment_para1 a {
+    color: #666;
+}
+.clearfix{
+    width: 100%;
+}
+.datepicker-dropdown.datepicker-orient-left::before {
+    left: 109px !important;
+    }
+    .datepicker-dropdown.datepicker-orient-left::after {
+    left: 110px !important;
+    }  
+    .input-group .form-control:first-child, .input-group-addon:first-child, .input-group-btn:first-child > .btn, .input-group-btn:first-child > .btn-group > .btn, .input-group-btn:first-child > .dropdown-toggle, .input-group-btn:last-child > .btn-group:not(:last-child) > .btn, .input-group-btn:last-child > .btn:not(:last-child):not(.dropdown-toggle) {
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+}
+/*footer start*/
+.footer-contents.container {
+    position: relative;
+}
+footer {
+    padding-top: 22px;
+    background-color: #fafafc;
+    height: 104.9px;
+}
+.footer-contents1 {
+    float: right;
+    position: absolute;
+    right: 0;
+    top: 30px;
+}
+/*footer end*/
+@media screen and (max-width: 1024px){
+
+.appointment-patient-col-2,.appointment-patient-col-3{
+    width: 100%;
+}
+.appointment-patient-division {
+    margin-left: auto;
+    margin-right: auto;
+    width: 122px;
+}
+.patient-phone-no-code{
+    height: 40px;
+    width: 5%;
+}
+#phone-number-1{
+    margin-left: 5%;
+    width: 95%;
+}
+.input-group-addon {
+    padding: 11px 12px;
+}
+.appointment-patient-input {
+    height: 40px;
+}
+
+.form-control.appointment-form-control {
+    border-right: none;
+    height: 40px;
+    width: 80%;
+    }
+    .input-group-addon.add-on {
+    display: block;
+    float: right;
+    height: 40px;
+    width: 20%;
+} 
+.btn.btn-default.dropdown-toggle.drop-btn-1 {
+    height: 40px;
+    }
+    .form-control {
+    height: 40px;
+}
+.input-group .form-control:first-child, .input-group-addon:first-child, .input-group-btn:first-child > .btn, .input-group-btn:first-child > .btn-group > .btn, .input-group-btn:first-child > .dropdown-toggle, .input-group-btn:last-child > .btn-group:not(:last-child) > .btn, .input-group-btn:last-child > .btn:not(:last-child):not(.dropdown-toggle) {
+    border-bottom-right-radius: 0px;
+    border-top-right-radius: 0px;
+
+}
+.appointment-patient-input-4 {
+    height: 60px;
+    }
+    .appointment-patient-inner-class {
+        margin-right: 0px;
+    }
+    .appointment-patient-inner-class1 {
+        margin-left: 0px;
+    }
+    .appointment-patient-paragraph-1{
+        margin-top: 10px;
+    }
+    .appointment-patient-paragraph-1-2 {
+    margin-bottom: 44px;
+}
+.appointment-patient1-paragraph-1 {
+    margin-bottom: 42px;
+}
+.appointment-patient-para-spacing1 {
+    margin-bottom: 70px;
+}
+.appointment-patient-paragraph-1-1 {
+    font-size: 12px;
+}
+}
+@media screen and (max-width: 991px){
+    .input-group-addon {
+    padding: 11px 0;
+}
+
+    /*.input-group.input-append.date {
+    left: 47%;
+    }
+    .appointment-patient-date-division{
+        padding-left: 15px;
+    }*/
+.patient-phone-no-code{
+    height: 40px;
+    width: 7%;
+}
+#phone-number-1{
+    margin-left: 7%;
+    width: 93%;
+}
+}
+@media screen and (max-width: 990px){
+.input-group.input-append.date {
+    left: 30%;
+}
+}
+@media screen and (max-width: 767px){
+    .input-group .form-control:first-child, .input-group-addon:first-child, .input-group-btn:first-child > .btn, .input-group-btn:first-child > .btn-group > .btn, .input-group-btn:first-child > .dropdown-toggle, .input-group-btn:last-child > .btn-group:not(:last-child) > .btn, .input-group-btn:last-child > .btn:not(:last-child):not(.dropdown-toggle) {
+    border-bottom-right-radius: 0px;
+    border-top-right-radius: 0px;
+}
+    .appointment-dropdown {
+    margin-bottom: 16px;
+}
+.btn.btn-default.dropdown-toggle.drop-btn-1 {
+    height: 25px;
+}
+    .input-group-addon {
+    padding: 3px 7px;
+}
+.patient-phone-no-code{
+height: 25px;
+}
+.form-control{
+    height: 25px;
+}
+.form-control.appointment-form-control {
+    height: 25px;
+    }
+    .input-group-addon.add-on {
+    height: 25px;
+}  
+.input-group.input-append.date {
+    left: 18%;
+}
+.appointment-patient-inner-class{
+margin-right: 0px;
+}
+.appointment-patient-inner-class1{
+margin-left: 0px;
+}
+.appointment-patient-heading {
+    font-size: 12px;
+    margin-bottom: 12px;
+    padding-bottom: 14px;
+    padding-left: 12px;
+      margin-top: 14px;
+}
+.appointment-patient-paragraph-1 {
+    font-size: 10px;
+    margin-top: 8px;
+}
+.appointment-patient-input{
+    height: 25px;
+    margin-bottom: 16px;
+}
+.appointment-patient-paragraph-1-2 {
+    margin-bottom: 30px;
+}
+.btn.btn-default.dropdown-toggle.Appointment_fontfamily {
+    height: 25px;
+    margin-bottom: 10px;
+    padding-left: 0;
+    width: 88px;
+}
+.btn .caret {
+    margin-top: 1px;
+}
+
+.btn {
+   padding: 0 12px;
+}
+.appointment-patient-date-division {
+    padding-left: 15px;
+}
+.appointment-patient-date-span {
+    font-size: 9px;
+}
+.appointment-patient-date-input {
+    height: 25px;
+    margin-left: 8px;
+    width: 45%;
+}
+.appointment-patient-para-spacing{
+    margin-right: -2px;
+    margin-bottom: 30px;
+}
+.appointment-patient1-paragraph-1 {
+    margin-bottom: 28px;
+    margin-top: 4px;
+}
+.appointment-patient-input-4{
+    height: 40px;
+}
+.appointment-patient-para-spacing1 {
+    margin-bottom: 45px;
+}
+.appointment-patient-proceed {
+    margin: 40px 10px 50px 0;
+    text-align: center;
+    width: 72px;
+    margin-bottom: 30px;
+    margin-top: 16px;
+}
+.appointment-patient-paragraph-1-1 {
+    margin-bottom: 12px;
+}
+.appointment-patient-inner-class1{
+    padding-bottom: 12px;
+}
+.appointment-patient-paragraph {
+    margin-left: 10px;
+}
+.appointment-patient-division {
+    margin-left: auto;
+    margin-right: auto;
+    width: 72px;
+}
+
+}
+@media screen and (max-width: 600px){
+    .input-group.input-append.date {
+    left: 30%;
+}
+.input-group-addon {
+    padding: 3px 2px;
+}
+.input-group.input-append.date {
+    left: 42%;
+}
+.appointment-form-control{
+    padding: 0px;
+}
+.form-control.appointment-form-control {
+    width: 60%;
+}
+.input-group-addon.add-on {
+    width: 40%;
+}
+}
+@media screen and (max-width: 420px){
+    .input-group-addon.add-on > img {
+    width: 8px;
+}
+.appointment-patient-paragraph-1 {
+    font-size: 9px;
+}
+#phone-number-1 {
+ margin-left: 16%;
+    width: 84%;
+}
+.patient-phone-no-code {
+     width: 16%;
+}
+.appointment-patient-para-spacing {
+    margin-bottom: 40px;
+}
+.btn.btn-default.dropdown-toggle.drop-btn-1{
+    width: 90px;
+    height: 25px;
+}
+.appointment-dropdown{
+    margin-bottom: 12px;
+}
+}
+@media screen and (max-width: 353px){
+    .Appointment_para1 {
+        font-size: 10px;
+    }
+}
+

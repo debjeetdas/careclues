@@ -1,36 +1,39 @@
-<!DOCTYPE html>
+<!DOCTYPE>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
-    <title>doctor-public-profile</title>
-    <!-- Bootstrap -->
+    <title>Doctor public profile page
+    </title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/datepicker.css" />
-    <link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
-    <script src="js/modernizr.custom.js"></script>
-    <link rel="stylesheet" type="text/css" href="css/jquery.mCustomScrollbar.css">
     <link rel="stylesheet" type="text/css" href="css/doctor-public-profile.css">
-</head>
-<body id="doctors_public_profile">
-    <nav class="navbar navbar-default navbar-fixed-top navbar-top-fixed-banner">
+    <link rel="stylesheet" type="text/css" href="css/jquery.mCustomScrollbar.css">
+  </head>
+  <body>
+    <div id="doctorpublicpage">
+      <nav class="navbar navbar-default navbar-fixed-top navbar-top-fixed-banner">
         <div id="headtop">
-            <div class="navbar-header table">
-              <div class="tablerow">
-                  <div class="cell marketing-background-cell">
-                  <a href="/"><img class="marketing-background-logo" src="img/Logo.png"/></a>
-                  </div>
-                  <span class="divider"></span>
-                  <div class="cell marketing-background-cell-1 marketing-background-cell-2">
-                   <a href="/blog">Doctor profile</a>
-                  </div>
+          <div class="navbar-header table">
+            <div class="tablerow">
+              <div class="cell marketing-background-cell">
+                <a href="/">
+                  <img class="marketing-background-logo" src="img/Logo.png"/>
+                </a>
+              </div>
+              <span class="divider">
+              </span>
+              <div class="cell marketing-background-cell-1 marketing-background-cell-2">
+                <a href="/blog">Doctor profile
+                </a>
               </div>
             </div>
-       </div>
-    </nav>
-    <div class="container public-priofile-container">
-        <div class="row">
+          </div>
+        </div>
+      </nav>
+               <div class="container public-priofile-container">
+              <div class="row">
              <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 row_inside1">
                             <img src="img/Doctor.png" class="doctor-img">
                         </div>
@@ -40,7 +43,6 @@
                              <p class="doctor-qualification">(MD, MBBS, Fellowship In Cosmetic Dermatology , ECAMS)</p>
                             <p class="specialist-in">Dermatologist , Cosmetologist , Trichologist , Dermatosurgeon , Pediatric Dermatologist , Aesthetic Dermatology.
                             </p>
-                            <!-- <i class="fa fa-star Appointment_fa-star"></i> <i class="fa fa-star Appointment_fa-star"></i> <i class="fa fa-star Appointment_fa-star"></i> <i class="fa fa-star Appointment_fa-star"></i> <i class="fa fa-star Appointment_fa-star1"></i> -->
                             <div class="row doctor-rating">
                                 <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
                                     <fieldset class="rating">
@@ -59,53 +61,803 @@
                             </div>   
                         </div>
         </div>
-        <span class="pro-statment">Professional Statement</span>
-        <p class="doctor-statement">Please note, Gramercy Laser and Medical Dermatology has a 24 hour cancellation policy. If you are an existing patient of Dr. Mack from another practice, please click that you are a new patient so that the insurance information transfers over. Thank you!</p>
-        <p class="doctor-statement">Please note, Gramercy Laser and Medical Dermatology has a 24 hour cancellation policy. If you are an existing patient of Dr. Mack from another practice, please click that you are a new patient so that the insurance information transfers over. Thank you!</p>
-        <span class="read-more"><a href="#">Read more</a><i class="fa fa-angle-double-right"></i></span>
-        <div class="Services_Offered_div">
-                        <p class="Services_Offered_para">Services Offered</p>
-                        <div class="group" id="categories">
-                            <ul class="colorFix">
-                                <li><span class="service-list">Laser Hair Removal</li>
-                                <li><span class="service-list">Tattoo Removal</li>
-                                <li><span class="service-list">Hair Loss Treatment</li>
-                                <li><span class="service-list">General dermatology</li>
-                                <li><span class="service-list">Cosmetic Dermatology</li>
-                                <li><span class="service-list">Cosmetic Surgery</li>
-                                <li><span class="service-list">Acne and Scar Removal</li>
-                                <li><span class="service-list">Deep Pigmentation Treatment</li>
-                                <li><span class="service-list">Non Surgical Face Sculpting</li>
-                                <li><span class="service-list">Dark Circle Treatments</li>
-                                <li><span class="service-list">Thread Lifting Liposuction</li>
-                                <li><span class="service-list">Fat Reduction Treatments</li>
-                                <li><span class="service-list">Body Sculpting</li>
-                                <li><span class="service-list">PRP Hair Transplant</li>
-                                <li><span class="service-list">Growth Factor Injections</li>
-                                <li><span class="service-list">Skin Maintenance</li>
-                                <li><span class="service-list">Bridal Treatment</li>
-                                <li><span class="service-list">Botox / Dermal Fillers</li>
-                                <li><span class="service-list">Microdermabrasion</li>
-                                <li><span class="service-list">Laser Skin Rejuvenation</li>
-                                <li><span class="service-list">Laser Removal of Tattoos</li>
-                            </ul>
-                            <a class="Services_Offered_para_3" href="javascript:void(0);">Read Less</a>
+        <div class="statement">
+            <span class="pro-statment">Professional Statement</span>
+            <p class="doctor-statement">Please note, Gramercy Laser and Medical Dermatology has a 24 hour cancellation policy. If you are an existing patient of Dr. Mack from another practice, please click that you are a new patient so that the insurance information transfers over. Thank you!</p>
+            <p class="doctor-statement">Please note, Gramercy Laser and Medical Dermatology has a 24 hour cancellation policy. If you are an existing patient of Dr. Mack from another practice, please click that you are a new patient so that the insurance information transfers over. Thank you!</p>
+            <p class="doctor-statement complete-para">Please note, Gramercy Laser and Medical Dermatology has a 24 hour cancellation policy. If you are an existing patient of Dr. Mack from another practice, please click that you are a new patient so that the insurance information transfers over. Thank you!</p>
+            <p class="doctor-statement complete-para">Please note, Gramercy Laser and Medical Dermatology has a 24 hour cancellation policy. If you are an existing patient of Dr. Mack from another practice, please click that you are a new patient so that the insurance information transfers over. Thank you!</p>
+            <span class="read-more"><a href="javascript:void(0);">Read more</a><i class="fa fa-angle-right read-more-fa"></i><i class="fa fa-angle-right read-more-fa"></i></span>
+        </div>
+         <div class="booking">
+            <span class="hospital-clinic">Hospitals / Clinic</span>
+            <span class="click">(click on a hospital to book appointment)</span>
+        </div>
+        <div class="booking-div">
+                <div id="h-1" class="hospital-name float-left"><div class="hsp-header"><h>APOLLO GLENEAGLES HOSPITAL</h><span class="plus"><i class="fa fa-plus plus1"></i     ><i class="fa fa-minus minus1"></i>
+                                </span></div>
+                </div>
+<div class="hsp-content">
+                <div id="hd-1" class="row booking-menu">
+                     <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 google">
+                        <div class="location-detail-div">
+                            <img src="img/googleicon.png">
+                            <span class="location-detail">58, Canal Circular Road, Kadapara, Phool Bagan, Kolkata, West Bengal 700054</span>
+                        </div>
+                        <div class="google-map">
+                            <img src="img/googlemap.png" class="google-map-img">
                         </div>
                     </div>
-    </div>   
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="js/hideShowPassword.min.js"></script>
-    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="js/datepicker.js"></script>
-    <script src="js/form.js"></script>
-    <script type="text/javascript" src="script.js"></script>    
-    <!-- custom scrollbar plugin -->
-    <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
-    <script type="text/javascript">
-        var $window = $(window);
-        $window.one('scroll',function() {     
-           $('.treat-scroll').css('height','inherit');
-        });
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 time">
+                        <div class="available-timing">
+                                <div class="fee-div">
+                                    <span>
+                                        <span class="fees">Fees:</span>
+                                        <span class="rupi-500"><i class="fa fa-inr public_fa_color"></i><span class="exp-rupies">500</span></span>
+                                    </span>  
+                                </div> 
+                                <div class="timimg-div">    
+                                    <span class="clock-img"><img  src="img/clock.png" class="fa fa-clock-o Appointment_fa-clock"><span class="avail-time">Available Timings:</span></span>
+                                </div>    
+                                <div class="time-table-week">
+                                    <img src="img/arrow-down.png">
+                                    <h6>Mon<h6>
+                                    <img src="img/arrow-up.png">
+                                </div>
+                                <div class="time-table">
+                                    <h6>10.00 am - 02.00 pm<h6>
+                                    <h6>10.00 am - 02.00 pm<h6>
+                                </div>
+                            </div>  
+                        <div class="row slot-div-date">
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                 <h class="AvailableSlots_para">Available Slots</h>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                <div class="fa-angle-div">
+                                        <i class="fa fa-angle-left"></i><span class="fa-angle-para">Today, 25 February</span><i class="fa fa-angle-right"></i>
+                                </div>
+                            </div>
+                        </div>
+                                        <div class="treat-scroll">
+                                    <div class="available-slots-div mCustomScrollbar">   
+                        <div class="row AvailableSlots_button inner_slots">
+                                <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 btn-margin-right"><button class="btn slots_button disabled">12:00PM</button></div>
+                                <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 btn-margin-left"><button class="btn slots_button disabled">12:30PM</button></div>
+                                <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 btn-margin-left-1"><button class="btn slots_button disabled">02:00PM</button></div>
+                                <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 btn-margin-right-1"><button class="btn slots_button disabled">02:30PM</button></div>
+                        </div>
+                        <div class="row AvailableSlots_button inner_slots">
+                                <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 btn-margin-right"><button class="btn slots_button">03:00PM</button></div>
+                                <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 btn-margin-left"><button class="btn slots_button">03:30PM</button></div>
+                                <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 btn-margin-left-1"><button class="btn slots_button active">04:00PM</button></div>
+                                <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 btn-margin-right-1"><button class="btn slots_button active">04:30PM</button></div>
+                        </div>
+                         <div class="row AvailableSlots_button inner_slots">
+                                <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 btn-margin-right"><button class="btn slots_button disabled">05:00PM</button></div>
+                                <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 btn-margin-left"><button class="btn slots_button disabled">05:30PM</button></div>
+                                <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 btn-margin-left-1"><button class="btn slots_button">06:00PM</button></div>
+                                <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 btn-margin-right-1"><button class="btn slots_button">06:30PM</button></div>
+                        </div>
+                        <div class="row AvailableSlots_button inner_slots">
+                                <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 btn-margin-right"><button class="btn slots_button disabled">05:00PM</button></div>
+                                <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 btn-margin-left"><button class="btn slots_button disabled">05:30PM</button></div>
+                                <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 btn-margin-left-1"><button class="btn slots_button">06:00PM</button></div>
+                                <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 btn-margin-right-1"><button class="btn slots_button">06:30PM</button></div>
+                        </div>
+                    </div>    
+                    </div>
+                    <div class="BookNow_div">
+                            <button class="BookNow_button">BOOK NOW</button>
+                                <p class="Booked-timing">You have choosen a 30 Min slot at 4.00PM.</p>
+                    </div>
+            </div>
+                </div></div>
+                <div id="h-2" class="hospital-name float-right"><div class="hsp-header"><h>APOLLO GLENEAGLES HOSPITAL</h><span class="plus"><i class="fa fa-plus plus2"></i><i class="fa fa-minus minus2"></i></span></div>
+                </div>
+                <div class="hsp-content"><div id="hd-2" class="row booking-menu">
+                                     <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 google">
+                                        <div class="available-timing">
+                                                <div class="fee-div">
+                                                    <span>
+                                                        <span class="fees">Fees:</span>
+                                                        <span class="rupi-500"><i class="fa fa-inr public_fa_color"></i><span class="exp-rupies">500</span></span>
+                                                    </span>  
+                                                </div> 
+                                                <div class="timimg-div">    
+                                                    <span class="clock-img"><img  src="img/clock.png" class="fa fa-clock-o Appointment_fa-clock"><span class="avail-time">Available Timings:</span></span>
+                                                </div>    
+                                                <div class="time-table-week">
+                                                    <img src="img/arrow-down.png">
+                                                    <h6>Mon<h6>
+                                                    <img src="img/arrow-up.png">
+                                                </div>
+                                                <div class="time-table">
+                                                    <h6>10.00 am - 02.00 pm<h6>
+                                                    <h6>10.00 am - 02.00 pm<h6>
+                                                </div>
+                                            </div>  
+                                        <div class="row slot-div-date">
+                                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                                 <h class="AvailableSlots_para">Available Slots</h>
+                                            </div>
+                                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                                <div class="fa-angle-div">
+                                                        <i class="fa fa-angle-left"></i><span class="fa-angle-para">Today, 25 February</span><i class="fa fa-angle-right"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="treat-scroll">
+                                    <div class="available-slots-div mCustomScrollbar">   
+                                        <div class="row AvailableSlots_button inner_slots">
+                                                <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 btn-margin-right"><button class="btn slots_button disabled">12:00PM</button></div>
+                                                <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 btn-margin-left"><button class="btn slots_button disabled">12:30PM</button></div>
+                                                <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 btn-margin-left-1"><button class="btn slots_button disabled">02:00PM</button></div>
+                                                <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 btn-margin-right-1"><button class="btn slots_button disabled">02:30PM</button></div>
+                                        </div>
+                                        <div class="row AvailableSlots_button inner_slots">
+                                                <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 btn-margin-right"><button class="btn slots_button">03:00PM</button></div>
+                                                <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 btn-margin-left"><button class="btn slots_button">03:30PM</button></div>
+                                                <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 btn-margin-left-1"><button class="btn slots_button active">04:00PM</button></div>
+                                                <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 btn-margin-right-1"><button class="btn slots_button active">04:30PM</button></div>
+                                        </div>
+                                         <div class="row AvailableSlots_button inner_slots">
+                                                <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 btn-margin-right"><button class="btn slots_button disabled">05:00PM</button></div>
+                                                <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 btn-margin-left"><button class="btn slots_button disabled">05:30PM</button></div>
+                                                <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 btn-margin-left-1"><button class="btn slots_button">06:00PM</button></div>
+                                                <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 btn-margin-right-1"><button class="btn slots_button">06:30PM</button></div>
+                                        </div>
+                                        <div class="row AvailableSlots_button inner_slots">
+                                                <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 btn-margin-right"><button class="btn slots_button disabled">05:00PM</button></div>
+                                                <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 btn-margin-left"><button class="btn slots_button disabled">05:30PM</button></div>
+                                                <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 btn-margin-left-1"><button class="btn slots_button">06:00PM</button></div>
+                                                <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 btn-margin-right-1"><button class="btn slots_button">06:30PM</button></div>
+                                        </div>
+                                    </div> 
+                                    </div>
+                                    <div class="BookNow_div">
+                                            <button class="BookNow_button">BOOK NOW</button>
+                                                <p class="Booked-timing">You have choosen a 30 Min slot at 4.00PM.</p>
+                                    </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 time">
+                                    <div class="location-detail-div">
+                                            <img src="img/googleicon.png">
+                                            <span class="location-detail">58, Canal Circular Road, Kadapara, Phool Bagan, Kolkata, West Bengal 700054</span>
+                                        </div>
+                                        <div class="google-map">
+                                            <img src="img/googlemap.png" class="google-map-img">
+                                        </div>
+                                       
+                            </div>
+                                </div></div>
+            <div id="h-3" class="hospital-name float-left1 margin-top"><div class="hsp-header"><h>APOLLO GLENEAGLES HOSPITAL</h><span class="plus"><i class="fa fa-plus plus3"></i><i class="fa fa-minus minus3"></i>
+                            </span></div>
+                </div>
+                <div class="hsp-content"><div id="hd-3" class="row booking-menu">
+                                     <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 google">
+                                        <div class="available-timing">
+                                                <div class="fee-div">
+                                                    <span>
+                                                        <span class="fees">Fees:</span>
+                                                        <span class="rupi-500"><i class="fa fa-inr public_fa_color"></i><span class="exp-rupies">500</span></span>
+                                                    </span>  
+                                                </div> 
+                                                <div class="timimg-div">    
+                                                    <span class="clock-img"><img  src="img/clock.png" class="fa fa-clock-o Appointment_fa-clock"><span class="avail-time">Available Timings:</span></span>
+                                                </div>    
+                                                <div class="time-table-week">
+                                                    <img src="img/arrow-down.png">
+                                                    <h6>Mon<h6>
+                                                    <img src="img/arrow-up.png">
+                                                </div>
+                                                <div class="time-table">
+                                                    <h6>10.00 am - 02.00 pm<h6>
+                                                    <h6>10.00 am - 02.00 pm<h6>
+                                                </div>
+                                            </div>  
+                                        <div class="row slot-div-date">
+                                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                                 <h class="AvailableSlots_para">Available Slots</h>
+                                            </div>
+                                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                                <div class="fa-angle-div">
+                                                        <i class="fa fa-angle-left"></i><span class="fa-angle-para">Today, 25 February</span><i class="fa fa-angle-right"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="treat-scroll">
+                                    <div class="available-slots-div mCustomScrollbar">   
+                                        <div class="row AvailableSlots_button inner_slots">
+                                                <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 btn-margin-right"><button class="btn slots_button disabled">12:00PM</button></div>
+                                                <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 btn-margin-left"><button class="btn slots_button disabled">12:30PM</button></div>
+                                                <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 btn-margin-left-1"><button class="btn slots_button disabled">02:00PM</button></div>
+                                                <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 btn-margin-right-1"><button class="btn slots_button disabled">02:30PM</button></div>
+                                        </div>
+                                        <div class="row AvailableSlots_button inner_slots">
+                                                <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 btn-margin-right"><button class="btn slots_button">03:00PM</button></div>
+                                                <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 btn-margin-left"><button class="btn slots_button">03:30PM</button></div>
+                                                <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 btn-margin-left-1"><button class="btn slots_button active">04:00PM</button></div>
+                                                <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 btn-margin-right-1"><button class="btn slots_button active">04:30PM</button></div>
+                                        </div>
+                                         <div class="row AvailableSlots_button inner_slots">
+                                                <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 btn-margin-right"><button class="btn slots_button disabled">05:00PM</button></div>
+                                                <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 btn-margin-left"><button class="btn slots_button disabled">05:30PM</button></div>
+                                                <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 btn-margin-left-1"><button class="btn slots_button">06:00PM</button></div>
+                                                <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 btn-margin-right-1"><button class="btn slots_button">06:30PM</button></div>
+                                        </div>
+                                        <div class="row AvailableSlots_button inner_slots">
+                                                <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 btn-margin-right"><button class="btn slots_button disabled">05:00PM</button></div>
+                                                <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 btn-margin-left"><button class="btn slots_button disabled">05:30PM</button></div>
+                                                <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 btn-margin-left-1"><button class="btn slots_button">06:00PM</button></div>
+                                                <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 btn-margin-right-1"><button class="btn slots_button">06:30PM</button></div>
+                                        </div>
+                                    </div>  
+                                    </div>  
+                                    <div class="BookNow_div">
+                                            <button class="BookNow_button">BOOK NOW</button>
+                                                <p class="Booked-timing">You have choosen a 30 Min slot at 4.00PM.</p>
+                                    </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 time">
+                                    <div class="location-detail-div">
+                                            <img src="img/googleicon.png">
+                                            <span class="location-detail">58, Canal Circular Road, Kadapara, Phool Bagan, Kolkata, West Bengal 700054</span>
+                                        </div>
+                                        <div class="google-map">
+                                            <img src="img/googlemap.png" class="google-map-img">
+                                        </div>
+                                       
+                            </div>
+                                </div></div>
+                <div id="h-4" class="hospital-name margin-top"><div class="hsp-header"><h>APOLLO GLENEAGLES HOSPITAL</h><span class="plus"><i class="fa fa-plus plus4"></i><i class="fa fa-minus minus4"></i></span></div>
+                </div>
+                <div class="hsp-content"><div id="hd-4" class="row booking-menu">
+                                     <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 google">
+                                        <div class="available-timing">
+                                                <div class="fee-div">
+                                                    <span>
+                                                        <span class="fees">Fees:</span>
+                                                        <span class="rupi-500"><i class="fa fa-inr public_fa_color"></i><span class="exp-rupies">500</span></span>
+                                                    </span>  
+                                                </div> 
+                                                <div class="timimg-div">    
+                                                    <span class="clock-img"><img  src="img/clock.png" class="fa fa-clock-o Appointment_fa-clock"><span class="avail-time">Available Timings:</span></span>
+                                                </div>    
+                                                <div class="time-table-week">
+                                                    <img src="img/arrow-down.png">
+                                                    <h6>Mon<h6>
+                                                    <img src="img/arrow-up.png">
+                                                </div>
+                                                <div class="time-table">
+                                                    <h6>10.00 am - 02.00 pm<h6>
+                                                    <h6>10.00 am - 02.00 pm<h6>
+                                                </div>
+                                            </div>  
+                                        <div class="row slot-div-date">
+                                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                                 <h class="AvailableSlots_para">Available Slots</h>
+                                            </div>
+                                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                                <div class="fa-angle-div">
+                                                        <i class="fa fa-angle-left"></i><span class="fa-angle-para">Today, 25 February</span><i class="fa fa-angle-right"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="treat-scroll">
+                                    <div class="available-slots-div mCustomScrollbar">    
+                                        <div class="row AvailableSlots_button inner_slots">
+                                                <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 btn-margin-right"><button class="btn slots_button disabled">12:00PM</button></div>
+                                                <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 btn-margin-left"><button class="btn slots_button disabled">12:30PM</button></div>
+                                                <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 btn-margin-left-1"><button class="btn slots_button disabled">02:00PM</button></div>
+                                                <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 btn-margin-right-1"><button class="btn slots_button disabled">02:30PM</button></div>
+                                        </div>
+                                        <div class="row AvailableSlots_button inner_slots">
+                                                <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 btn-margin-right"><button class="btn slots_button">03:00PM</button></div>
+                                                <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 btn-margin-left"><button class="btn slots_button">03:30PM</button></div>
+                                                <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 btn-margin-left-1"><button class="btn slots_button active">04:00PM</button></div>
+                                                <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 btn-margin-right-1"><button class="btn slots_button active">04:30PM</button></div>
+                                        </div>
+                                         <div class="row AvailableSlots_button inner_slots">
+                                                <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 btn-margin-right"><button class="btn slots_button disabled">05:00PM</button></div>
+                                                <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 btn-margin-left"><button class="btn slots_button disabled">05:30PM</button></div>
+                                                <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 btn-margin-left-1"><button class="btn slots_button">06:00PM</button></div>
+                                                <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 btn-margin-right-1"><button class="btn slots_button">06:30PM</button></div>
+                                        </div>
+                                        <div class="row AvailableSlots_button inner_slots">
+                                                <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 btn-margin-right"><button class="btn slots_button disabled">05:00PM</button></div>
+                                                <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 btn-margin-left"><button class="btn slots_button disabled">05:30PM</button></div>
+                                                <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 btn-margin-left-1"><button class="btn slots_button">06:00PM</button></div>
+                                                <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 btn-margin-right-1"><button class="btn slots_button">06:30PM</button></div>
+                                        </div>
+                                    </div>    
+                                    </div>
+                                    <div class="BookNow_div">
+                                            <button class="BookNow_button">BOOK NOW</button>
+                                                <p class="Booked-timing">You have choosen a 30 Min slot at 4.00PM.</p>
+                                    </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 time">
+                                    <div class="location-detail-div">
+                                            <img src="img/googleicon.png">
+                                            <span class="location-detail">58, Canal Circular Road, Kadapara, Phool Bagan, Kolkata, West Bengal 700054</span>
+                                        </div>
+                                        <div class="google-map">
+                                            <img src="img/googlemap.png" class="google-map-img">
+                                        </div>
+                                       
+                            </div>
+                                </div></div>
+                <div id="h-5" class="hospital-name margin-top"><div class="hsp-header"><h>APOLLO GLENEAGLES HOSPITAL</h><span class="plus"><i class="fa fa-plus plus5"></i><i class="fa fa-minus minus5"></i></span></div>
+                </div>
+                <div class="hsp-content">
+                <div id="hd-5" class="row booking-menu">
+                                     <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 google">
+                                        <div class="available-timing">
+                                                <div class="fee-div">
+                                                    <span>
+                                                        <span class="fees">Fees:</span>
+                                                        <span class="rupi-500"><i class="fa fa-inr public_fa_color"></i><span class="exp-rupies">500</span></span>
+                                                    </span>  
+                                                </div> 
+                                                <div class="timimg-div">    
+                                                    <span class="clock-img"><img  src="img/clock.png" class="fa fa-clock-o Appointment_fa-clock"><span class="avail-time">Available Timings:</span></span>
+                                                </div>    
+                                                <div class="time-table-week">
+                                                    <img src="img/arrow-down.png">
+                                                    <h6>Mon<h6>
+                                                    <img src="img/arrow-up.png">
+                                                </div>
+                                                <div class="time-table">
+                                                    <h6>10.00 am - 02.00 pm<h6>
+                                                    <h6>10.00 am - 02.00 pm<h6>
+                                                </div>
+                                            </div>  
+                                        <div class="row slot-div-date">
+                                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                                 <h class="AvailableSlots_para">Available Slots</h>
+                                            </div>
+                                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                                <div class="fa-angle-div">
+                                                        <i class="fa fa-angle-left"></i><span class="fa-angle-para">Today, 25 February</span><i class="fa fa-angle-right"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="treat-scroll">
+                                    <div class="available-slots-div mCustomScrollbar">    
+                                        <div class="row AvailableSlots_button inner_slots">
+                                                <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 btn-margin-right"><button class="btn slots_button disabled">12:00PM</button></div>
+                                                <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 btn-margin-left"><button class="btn slots_button disabled">12:30PM</button></div>
+                                                <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 btn-margin-left-1"><button class="btn slots_button disabled">02:00PM</button></div>
+                                                <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 btn-margin-right-1"><button class="btn slots_button disabled">02:30PM</button></div>
+                                        </div>
+                                        <div class="row AvailableSlots_button inner_slots">
+                                                <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 btn-margin-right"><button class="btn slots_button">03:00PM</button></div>
+                                                <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 btn-margin-left"><button class="btn slots_button">03:30PM</button></div>
+                                                <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 btn-margin-left-1"><button class="btn slots_button active">04:00PM</button></div>
+                                                <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 btn-margin-right-1"><button class="btn slots_button active">04:30PM</button></div>
+                                        </div>
+                                         <div class="row AvailableSlots_button inner_slots">
+                                                <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 btn-margin-right"><button class="btn slots_button disabled">05:00PM</button></div>
+                                                <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 btn-margin-left"><button class="btn slots_button disabled">05:30PM</button></div>
+                                                <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 btn-margin-left-1"><button class="btn slots_button">06:00PM</button></div>
+                                                <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 btn-margin-right-1"><button class="btn slots_button">06:30PM</button></div>
+                                        </div>
+                                        <div class="row AvailableSlots_button inner_slots">
+                                                <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 btn-margin-right"><button class="btn slots_button disabled">05:00PM</button></div>
+                                                <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 btn-margin-left"><button class="btn slots_button disabled">05:30PM</button></div>
+                                                <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 btn-margin-left-1"><button class="btn slots_button">06:00PM</button></div>
+                                                <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 btn-margin-right-1"><button class="btn slots_button">06:30PM</button></div>
+                                        </div>
+                                    </div>   
+                    </div>  
+                                    <div class="BookNow_div">
+                                            <button class="BookNow_button">BOOK NOW</button>
+                                                <p class="Booked-timing">You have choosen a 30 Min slot at 4.00PM.</p>
+                                    </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 time">
+                                    <div class="location-detail-div">
+                                            <img src="img/googleicon.png">
+                                            <span class="location-detail">58, Canal Circular Road, Kadapara, Phool Bagan, Kolkata, West Bengal 700054</span>
+                                        </div>
+                                        <div class="google-map">
+                                            <img src="img/googlemap.png" class="google-map-img">
+                                        </div>
+                                       
+                            </div>
+                                </div></div>
+        </div>
+
+      <div class="container">
+        <div class="Services_Offered_div">
+          <p class="Services_Offered_para">Services Offered
+          </p>
+          <div class="group" id="categories">
+            <div class="row">
+              <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 margin-right-service">
+                <ul class="colorFix">
+                  <li class="service-list">Laser Hair Removal
+                  </li>
+                  <li class="service-list">Hair Loss Treatment
+                  </li>
+                  <li class="service-list">General dermatology
+                  </li>
+                  <li class="service-list">Cosmetic Dermatology
+                  </li>
+                  <li class="service-list">Cosmetic Surgery
+                  </li>
+                  <li class="service-list">Acne and Scar Removal
+                  </li>
+                  <li class="service-list">Deep Pigmentation Treatment
+                  </li>
+                </ul>
+              </div>
+              <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 margin-right-service1">
+                <ul class="colorFix s-div">
+                  <li class="service-list">Non Surgical Face Sculpting
+                  </li>
+                  <li class="service-list">Dark Circle Treatments
+                  </li>
+                  <li class="service-list">Thread Lifting Liposuction
+                  </li>
+                  <li class="service-list">Fat Reduction Treatments
+                  </li>
+                  <li class="service-list">Body Sculpting
+                  </li>
+                  <li class="service-list">PRP Hair Transplant
+                  </li>
+                  <li class="service-list">Growth Factor Injections
+                  </li>
+                </ul>
+              </div>  
+              <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 service-list-1">
+                <ul class="colorFix t-div">
+                  <li class="service-list">Skin Maintenance
+                  </li>
+                  <li class="service-list">Bridal Treatment
+                  </li>
+                  <li class="service-list">Botox / Dermal Fillers
+                  </li>
+                  <li class="service-list">Microdermabrasion
+                  </li>
+                  <li class="service-list">Laser Skin Rejuvenation
+                  </li>
+                  <li class="service-list">Laser Removal of Tattoos
+                  </li>
+                  <li class="service-list">Laser Removal of Tattoos
+                  </li>
+                </ul>
+              </div>  
+            </div>
+            <div class="row complete">
+              <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 margin-right-service">
+                <ul class="colorFix">
+                  <li class="service-list">Laser Hair Removal
+                  </li>
+                  <li class="service-list">Hair Loss Treatment
+                  </li>
+                  <li class="service-list">General dermatology
+                  </li>
+                  <li class="service-list">Cosmetic Dermatology
+                  </li>
+                  <li class="service-list">Cosmetic Surgery
+                  </li>
+                  <li class="service-list">Acne and Scar Removal
+                  </li>
+                  <li class="service-list">Deep Pigmentation Treatment
+                  </li>
+                </ul>
+              </div>
+              <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 margin-right-service1">
+                <ul class="colorFix s-div">
+                  <li class="service-list">Non Surgical Face Sculpting
+                  </li>
+                  <li class="service-list">Dark Circle Treatments
+                  </li>
+                  <li class="service-list">Thread Lifting Liposuction
+                  </li>
+                  <li class="service-list">Fat Reduction Treatments
+                  </li>
+                  <li class="service-list">Body Sculpting
+                  </li>
+                  <li class="service-list">PRP Hair Transplant
+                  </li>
+                  <li class="service-list">Growth Factor Injections
+                  </li>
+                </ul>
+              </div>  
+              <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 service-list-1">
+                <ul class="colorFix t-div">
+                  <li class="service-list">Skin Maintenance
+                  </li>
+                  <li class="service-list">Bridal Treatment
+                  </li>
+                  <li class="service-list">Botox / Dermal Fillers
+                  </li>
+                  <li class="service-list">Microdermabrasion
+                  </li>
+                  <li class="service-list">Laser Skin Rejuvenation
+                  </li>
+                  <li class="service-list">Laser Removal of Tattoos
+                  </li>
+                </ul>
+              </div>  
+            </div>           
+          </div>
+        </div>
+        <i class="fa fa-angle-up appointment-fa-angle-up more">
+        </i>
+        <i class="fa fa-angle-down appointment-fa-angle-up less">
+        </i>
+        <div class="appointmentmaker-credential-full-division">
+          <h1 class="appointmentmaker-doctor-credentials">Credentials
+          </h1>
+          <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+              <div class="appointmentmaker-doctor-credentials-col">
+                <img src="img/education.png">
+                <span class="appointmentmaker-doctor-credentials-division">EDUCATION
+                </span>
+              </div>
+              <div class="treat-scroll">
+                <div class="appointmentmaker-doctor-credentials-col1 mCustomScrollbar">
+                  <ul class="appointmentmaker-doctor-credentials-unorderlist">
+                    <li>MBBS-Lady Hardinge Medical College, New Delhi,2003
+                    </li>
+                    <li>MD-Dermotology-University College of Medical sciences & GTB Hospital, New Delhi,2007
+                    </li>
+                    <li>MD-Dermotology-University College of Medical sciences & GTB Hospital, New Delhi,2007
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+              <div class="appointmentmaker-doctor-credentials-col">
+                <img src="img/education.png">
+                <span class="appointmentmaker-doctor-credentials-division">SPECIALIZATIONS
+                </span>
+              </div>
+              <div class="treat-scroll">
+                <div class="appointmentmaker-doctor-credentials-col1 mCustomScrollbar">
+                  <ul class="appointmentmaker-doctor-credentials-unorderlist">
+                    <li>Dermotology
+                    </li>
+                    <li>Cosmotology
+                    </li>
+                    <li>Trichology
+                    </li>
+                    <li>Dermotosurgeon
+                    </li>
+                    <li>Dermotosurgeon
+                    </li>
+                    <li>Dermotosurgeon
+                    </li>
+                    <li>Dermotosurgeon
+                    </li>
+                    <li>Dermotosurgeon
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+              <div class="appointmentmaker-doctor-credentials-col">
+                <img src="img/education.png">
+                <span class="appointmentmaker-doctor-credentials-division">EXPERIANCE
+                </span>
+              </div>
+              <div class="treat-scroll">
+                <div class="appointmentmaker-doctor-credentials-col1 mCustomScrollbar">
+                  <ul class="appointmentmaker-doctor-credentials-unorderlist">
+                    <li>2007-2010 Dermotologist at AIIMS
+                    </li>
+                    <li>2004-2007 Dermotologist at UCMS & GTBH
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+              <div class="appointmentmaker-doctor-credentials-col">
+                <img src="img/education.png">
+                <span class="appointmentmaker-doctor-credentials-division">AWARDS
+                </span>
+              </div>
+              <div class="treat-scroll">
+                <div class="appointmentmaker-doctor-credentials-col1 mCustomScrollbar">
+                  <ul class="appointmentmaker-doctor-credentials-unorderlist">
+                    <li>Best Postgraguate in Dermotology AIIMS-2009
+                    </li>
+                    <li>Gold Medal Standing first in Final MBBS-2002
+                    </li>
+                    <li>Gold Medal Final MBBS Student-2002
+                    </li>
+                    <li>Best Graguate 0f 2003-2003
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+              <div class="appointmentmaker-doctor-credentials-col">
+                <img src="img/education.png">
+                <span class="appointmentmaker-doctor-credentials-division">MEMBERSHIPS
+                </span>
+              </div>
+              <div class="treat-scroll">
+                <div class="appointmentmaker-doctor-credentials-col1  mCustomScrollbar">
+                  <ul class="appointmentmaker-doctor-credentials-unorderlist">
+                    <li>Delhi Medical Council
+                    </li>
+                    <li>Indian Association of Dermotologist, Venereol-ogists and leprologists(IADVL)
+                    </li>
+                    <li>Association of Cutaneous Surgeons of India(ACSI)
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js">
     </script>
-</body>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js">
+    </script>
+    <script type="text/javascript" src="js/script.js">
+    </script>
+    <!-- custom scrollbar plugin -->
+    <script src="js/jquery.mCustomScrollbar.concat.min.js">
+    </script>
+    <script type="text/javascript">
+      var $window = $(window);
+      $window.one('scroll',function() {
+        $('.treat-scroll').css('height','inherit');
+      });
+      
+      $(".less").hide();
+      $(".complete").hide();
+      $( ".more" ).click(function() {
+        $(".complete").show();
+        $(".more").hide();
+        $(".less").show();
+      });
+      $( ".less" ).click(function() {
+        $(".complete").hide();
+        $(".more").show();
+        $(".less").hide();
+      });
+      $(".complete-para").hide();
+$(".read-more").click(function() {
+    $(".complete-para").toggle();
+});
+$('.hospital-name').each(function(i){
+  i=i+1;
+  if(i%2 == 0){
+    $(this).addClass('fr');
+  }
+  else{
+    $(this).addClass('fl');
+  }
+});
+$('.hsp-content').each(function(i){
+    i=i+1;
+    if(i%2 == 0){
+        $(this).children('.booking-menu').addClass('det-r');
+    }
+    else{
+        $(this).children('.booking-menu').addClass('det-l');
+    }
+});
+var h_count=$('.hospital-name').length;
+for(var i=1;i<=h_count;i++){
+    $('#h-'+i).click(function(){        
+        var id_h=$(this).attr('id');
+        var id_hd=id_h.substring(0,1)+'d'+id_h.substring(1,3);
+        var adj_div_index = parseInt(id_h.substring(2,3))+1;
+        var bs= $('#'+id_hd+'.booking-menu');    
+        if ($(bs).is(':visible')) {
+            $(bs).hide();
+            $(this).removeClass('active-hsp');
+            $('#'+id_h+' .fa-plus').show();
+            $('#'+id_h+' .fa-minus').hide();
+            if (screen.width>1024) {
+                $('#h-'+adj_div_index).css({
+                    position :'',
+                    right:0,
+                    top:0
+                });
+                if(adj_div_index > 2){
+                    $('#h-'+adj_div_index).css({
+                        'margin-top':'30px'
+                    });
+                } 
+            }
+            return false;
+        }
+        else{
+            for(var j=1;j<=h_count;j++){
+                $('#hd-'+j+'.booking-menu').hide();
+                $('#h-'+j+' .fa-plus').show();
+                $('#h-'+j+' .fa-minus').hide();
+                $('#h-'+j).removeClass('active-hsp');
+            }            
+            if (screen.width>1024) {
+                $(this).siblings('.fr').css({
+                    position:'',
+                    right:0,
+                    top:0,
+                    'margin-top':'30px'
+                });
+                if($(this).hasClass('fl')) {
+                    $(this).siblings('.fr:eq(0)').css({
+                        'margin-top':0
+                    });
+                }
+                if (adj_div_index<2) {
+                    $(this).nextAll('.fr').css({
+                        'margin-top':0
+                    });
+                }
+                if (adj_div_index>4) {
+                    $(this).siblings('.fr').css({
+                        position:'',
+                        right:0,
+                        top:0,
+                        'margin-top':'30px'
+                    });
+                    $(this).siblings('.fr:eq(0)').css({
+                        'margin-top':0
+                    });
+                };
+                if($('#h-'+adj_div_index).hasClass('fr')){
+                    $('#h-'+adj_div_index).css({
+                        position :'absolute',
+                        right:0,
+                        top:0,
+                        'margin-top':0
+                    });
+                }
+                if (adj_div_index>3 && $('#h-'+adj_div_index).hasClass('fr')){
+                    var adj_div_index_height = 22*adj_div_index;
+                    $('#h-'+adj_div_index).css({
+                        top:adj_div_index_height+'px',
+                        'margin-top':'0px'
+                    });
+                }
+                if($(this).hasClass('fr')) {
+                    $(this).css({
+                        position :'',
+                        right:0,
+                        top:0,
+                        'margin-top':0
+                    });
+                    if(adj_div_index > 3){
+                        $(this).css({
+                            'margin-top':'30px'
+                        });
+                    }
+                }
+            }
+            $(this).addClass('active-hsp');
+            $(bs).show();
+            $('#'+id_h+' .fa-plus').hide();
+            $('#'+id_h+' .fa-minus').show();
+        }
+    });
+}
+    </script>
+  </body>
 </html>
+
+            
+        
+    
+

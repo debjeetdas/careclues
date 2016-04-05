@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Appointment Maker
+    </title>
+    <!-- Bootstrap -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/datepicker.css" />
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/css/datepicker3.min.css" />
+    <link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="css/appointmentmakerPatientPage.css">
+    <script src="js/modernizr.custom.js">
+    </script>
+  </head>
+  <body id="app_marker_Patient_page"> 
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div id="headtop">
+        <div class="navbar-header">
+          <img class="marginLeft" id="appointment_img1" src="img/apollo-logo.png" />
+        </div>
+      </div>
+    </nav>
+    <div class="appointment-whole-page">
+      <div class="container">
+        <div id="Appointment_div">
+          <p class="Appointment_para1">
+            <a href="javascript:void(0);">Home
+            </a> 
+            <span class="r-arr">>
+            </span> 
+            <a href="javascript:void(0);">Dermotologists
+            </a> 
+            <span class="r-arr">>
+            </span> 
+            <span>
+              <a href="javascript:void(0);">Doctor Details
+              </a>
+            </span> 
+            <span class="r-arr">>
+            </span> 
+            <span class="Appointment_span1">
+              <a href="javascript:void(0);">Patient Details
+              </a>
+            </span>
+          </p>
+        </div>
+        <div class="row appointment-starting-row">
+          <div class="col-lg-7 col-md-7 col-sm-12 col-xs-12 appointment-patient-col-1 appointment-patient-col-2">
+            <div class="appointment-patient-inner-class bg-content-i-50">
+              <div>
+                <h1 class="appointment-patient-heading">My Details
+                </h1>
+              </div>
+              <div class="row appointment-patient-details">
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 appointment-col-four">
+                  <h6 class="appointment-patient-paragraph-1 appointment-patient-paragraph-1-2">Patient Name:
+                  </h6>
+                  <h6 class="appointment-patient-paragraph-1 appointment-patient-paragraph-1-2"> Gender:
+                  </h6>
+                  <h6 class="appointment-patient-paragraph-1 appointment-patient1-paragraph-1">Email Id:
+                  </h6>
+                  <h6 class="appointment-patient-paragraph-1 appointment-patient-para-spacing">Mobile Number:
+                  </h6>
+                  <h6 class="appointment-patient-paragraph-1 appointment-patient-para-spacing1">Message:
+                  </h6>
+                  <h6 class="appointment-patient-paragraph-1 appointment-patient-paragraph-1-2">Offer Code:
+                  </h6>
+                </div>
+                <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
+                  <input type="text" class="appointment-patient-input">
+                  <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 appointment-dropdown">
+                      <div class="btn-group btn-input clearfix">
+                        <button type="button" class="btn btn-default dropdown-toggle drop-btn-1" data-toggle="dropdown">
+                          <span data-bind="label" class="genderName log-in-placeholder1" id="dropdown_title2">
+                          </span> 
+                          <span class="caretCode">
+                            <span class="genderCaret caret">
+                            </span>
+                          </span>
+                        </button>
+                        <ul class="dropdown-menu" role="menu">
+                          <li>
+                            <a href="#">male
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#">Female
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 appointment-patient-date-division">
+                      <div class="appointment-datepicker">
+                        <span class="appointment-patient-date-span">DOB : 
+                          <div class="input-group input-append date" id="dateRangePicker">
+                            <input type="date" class="form-control appointment-form-control" name="date" placeholder="DD:MM:YYYY" required/>
+                            </span>
+                          <span class="input-group-addon add-on">
+                            <img src="img/calender-img.png">
+                          </span>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+                  <input type="email" class="appointment-patient-input appointment-patient-input-1"/>
+                  <div class="appointment-phone-no-div">
+                    <span class="appointment-mobile-no-start-code">
+                      <input class="patient-phone-no-code" type="text" placeholder="+91">
+                    </span>
+                    <input type="text" pattern="[789][0-9]{9}" class="form-control" id="phone-number-1" placeholder="Mobile number" required/>
+                  </div>
+                  <textarea class="appointment-patient-input appointment-patient-input-4">
+                  </textarea>
+                  <input type="text" class="appointment-patient-input appointment-patient-input-3"/> 
+                  <h6 class="appointment-patient-heading-6">No coupon applied
+                  </h6>     
+                </div>
+              </div>
+            </div>
+            <div class="appointment-patient-division">
+              <button class="appointment-patient-proceed">PROCEED
+              </button>
+            </div>
+          </div>
+          <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12 appointment-patient-col-1 appointment-patient-col-3 bg-content-t-50">
+            <div class="appointment-patient-inner-class1">
+              <div>
+                <h1 class="appointment-patient-heading">Please Note
+                </h1>
+              </div> 
+              <div class="appointment-patient-paragraph ">
+                <p class="appointment-patient-paragraph-1 appointment-patient-paragraph-1-1">1. Please ensure you visit the doctor on an empty stomach as this consultation may require you to undergo tests that need to be taken on an empty stomach.
+                </p>
+                <p class="appointment-patient-paragraph-1 appointment-patient-paragraph-1-1">1. Please ensure you visit the doctor on an empty stomach as this consultation may require you to undergo tests that need to be taken on an empty stomach.
+                </p>
+                <p class="appointment-patient-paragraph-1 appointment-patient-paragraph-1-1">1.Please ensure you visit the doctor on an empty stomach as this consultation may require you to undergo tests that need to be taken on an empty stomach.
+                </p>
+                <p class="appointment-patient-paragraph-1 appointment-patient-paragraph-1-1">1.Please ensure you visit the doctor on an empty stomach as this consultation may require you to undergo tests that need to be taken on an empty stomach.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="footer-contents container">
+        <div class="footer-contents1">
+          <span class="Appointment_p7">Powered by</span>
+          <img src="img/footerImg.png"> 
+          <img src="img/footerImgName.png">
+        </div>
+      </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js">
+    </script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js">
+    </script>
+    <script type="text/javascript" src="js/datepicker.js">
+    </script>
+    <script src="js/form.js">
+    </script> 
+  </body>
+</html>
+
+
+    
+    
+        
+            
+        
+    
+
