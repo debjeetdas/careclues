@@ -1,152 +1,152 @@
 @font-face {
   font-family: "AvenirNext-Bold";
-  src: url(../fonts/AvenirNext-Bold.ttf);
+  src: url(../font/AvenirNext-Bold.ttf);
 }
 
 @font-face {
   font-family: "AvenirNext-Regular";
-src: url(../fonts/AvenirNext-Regular.ttf);
+src: url(../font/AvenirNext-Regular.ttf);
 }
 
 @font-face {
   font-family: "omnes-medium-webfont";
-src: url(../fonts/omnes-medium-webfont.ttf);
+src: url(../font/omnes-medium-webfont.ttf);
 }
 
 @font-face {
   font-family: "omnes-Regular-webfont";
-src: url(../fonts/omnes-Regular-webfont.ttf);
+src: url(../font/omnes-Regular-webfont.ttf);
 }
 
 @font-face {
   font-family:"Oxygen-Bold";
-src: url(../fonts/Oxygen-Bold.ttf);
+src: url(../font/Oxygen-Bold.ttf);
 }
 
 @font-face {
   font-family:"Oxygen-Regular";
-src: url(../fonts/Oxygen-Regular.ttf);
+src: url(../font/Oxygen-Regular.ttf);
 }
 
 @font-face {
   font-family: "Oxygen-Light";
-src: url(../fonts/Oxygen-Light.ttf);
+src: url(../font/Oxygen-Light.ttf);
 }
 
 @font-face {
   font-family: "Roboto-Black";
-src: url(../fonts/Roboto-Black.ttf);
+src: url(../font/Roboto-Black.ttf);
 }
 
 @font-face {
   font-family:"Roboto-BlackItalic";
-src: url(../fonts/Roboto-BlackItalic.ttf);
+src: url(../font/Roboto-BlackItalic.ttf);
 }
 
 @font-face {
   font-family:"Roboto-BoldItalic";
-src: url(../fonts/Roboto-BoldItalic.ttf);
+src: url(../font/Roboto-BoldItalic.ttf);
 }
 
 @font-face {
   font-family:"Roboto-Bold";
-src: url(../fonts/Roboto-Bold.ttf);
+src: url(../font/Roboto-Bold.ttf);
 }
 
 @font-face {
   font-family:"Roboto-Italic";
-src: url(../fonts/Roboto-Italic.ttf);
+src: url(../font/Roboto-Italic.ttf);
 }
 
 @font-face {
   font-family:"Roboto-LightItalic";
-src: url(../fonts/Roboto-LightItalic.ttf);
+src: url(../font/Roboto-LightItalic.ttf);
 }
 
 @font-face {
   font-family:"Roboto-Light";
-src: url(../fonts/Roboto-Light.ttf);
+src: url(../font/Roboto-Light.ttf);
 }
 
 @font-face {
   font-family:"Roboto-Medium";
-src: url(../fonts/Roboto-Medium.ttf);
+src: url(../font/Roboto-Medium.ttf);
 }
 
 @font-face {
   font-family:"Roboto-MediumItalic";
-src: url(../fonts/Roboto-MediumItalic.ttf);
+src: url(../font/Roboto-MediumItalic.ttf);
 }
 
 @font-face {
   font-family:"Roboto-Regular";
-src: url(../fonts/Roboto-Regular.ttf);
+src: url(../font/Roboto-Regular.ttf);
 }
 
 @font-face {
   font-family:"Roboto-Thin";
-src: url(../fonts/Roboto-Thin.ttf);
+src: url(../font/Roboto-Thin.ttf);
 }
 
 @font-face {
   font-family:"Roboto-ThinItalic";
-src: url(../fonts/Roboto-ThinItalic.ttf);
+src: url(../font/Roboto-ThinItalic.ttf);
 }
 
 @font-face {
   font-family: "OpenSans-Bold";
-    src: url(../fonts/ttf/OpenSans-Bold.ttf);
+    src: url(../font/ttf/OpenSans-Bold.ttf);
 }
 
 @font-face {
   font-family: "OpenSans-BoldItalic";
-    src: url(../fonts/ttf/OpenSans-BoldItalic.ttf);
+    src: url(../font/ttf/OpenSans-BoldItalic.ttf);
 }
 
 @font-face {
   font-family: "OpenSans-Light";
-    src: url(../fonts/ttf/OpenSans-Light.ttf);
+    src: url(../font/ttf/OpenSans-Light.ttf);
 }
 
 @font-face {
   font-family: "OpenSans-LightItalic";
-    src: url(../fonts/ttf/OpenSans-LightItalic.ttf);
+    src: url(../font/ttf/OpenSans-LightItalic.ttf);
 }
 
 @font-face {
   font-family: "OpenSans-Regular";
-    src: url(../fonts/ttf/OpenSans-Regular.ttf);
+    src: url(../font/ttf/OpenSans-Regular.ttf);
 }
 
 @font-face {
   font-family: "OpenSans-Italic";
-    src: url(../fonts/ttf/OpenSans-Italic.ttf);
+    src: url(../font/ttf/OpenSans-Italic.ttf);
 }
 
 @font-face {
   font-family: "OpenSans-SemiBold";
-    src: url(../fonts/ttf/OpenSans-SemiBold.ttf);
+    src: url(../font/ttf/OpenSans-SemiBold.ttf);
 }
 
 @font-face {
   font-family: "OpenSans-SemiBoldItalic";
-    src: url(../fonts/ttf/OpenSans-SemiBoldItalic.ttf);
+    src: url(../font/ttf/OpenSans-SemiBoldItalic.ttf);
 }
 
 @font-face {
   font-family: "OpenSans-ExtraBold";
-    src: url(../fonts/ttf/OpenSans-ExtraBold.ttf);
+    src: url(../font/ttf/OpenSans-ExtraBold.ttf);
 }
 
 @font-face {
   font-family: "OpenSans-ExtraBoldItalic";
-    src: url(../fonts/ttf/OpenSans-ExtraBoldItalic.ttf);
+    src: url(../font/ttf/OpenSans-ExtraBoldItalic.ttf);
 }
 
 @font-face {
   font-family: 'FontAwesome';
-    src: url('../fonts/fontawesome-webfont.eot?v=4.4.0');
-    src: url('../fonts/fontawesome-webfont.eot?#iefix&v=4.4.0') format('embedded-opentype'), url('../fonts/fontawesome-webfont.woff2?v=4.4.0') format('woff2'), url('../fonts/fontawesome-webfont.woff?v=4.4.0') format('woff'), url('../fonts/fontawesome-webfont.ttf?v=4.4.0') format('truetype'), url('../fonts/fontawesome-webfont.svg?v=4.4.0#fontawesomeregular') format('svg');
+    src: url('../font/fontawesome-webfont.eot?v=4.4.0');
+    src: url('../font/fontawesome-webfont.eot?#iefix&v=4.4.0') format('embedded-opentype'), url('../font/fontawesome-webfont.woff2?v=4.4.0') format('woff2'), url('../font/fontawesome-webfont.woff?v=4.4.0') format('woff'), url('../font/fontawesome-webfont.ttf?v=4.4.0') format('truetype'), url('../font/fontawesome-webfont.svg?v=4.4.0#fontawesomeregular') format('svg');
     font-weight: normal;
     font-style: normal;
 }
@@ -321,6 +321,244 @@ src: url(../fonts/Roboto-ThinItalic.ttf);
 .read-more{
 	float:right;
 }
+.statement{
+  display:table;
+}
+.hospital-name {
+  background-color: #d41c5c;
+  padding: 10px;
+}
+.hospital-name > .plus {
+  float: right;
+  color: #fff;
+  margin-top: 10px;
+}
+.hospital-name > h{
+  color: #fff;
+  font-family:"OpenSans-SemiBold"; 
+  font-size:27px;
+}
+.hospital-clinic{
+  color: #333;
+  font-family:"OpenSans-SemiBold"; 
+  font-size:30px;
+}
+.click{
+  font-family: "OpenSans-Regular";
+  font-size: 21px;
+  color:#666666;
+  margin-left: 34px;
+}
+.booking{
+  margin-bottom: 40px;
+}
+/*.fa.fa-plus {
+    margin-top: 13px;
+}
+.fa.fa-minus {
+    margin-top: 13px;
+}*/
+/*avilable slot strats*/
+.AvailableSlots_para {
+  font-family: "OpenSans-Semibold";
+  font-size: 18.43px;
+}
+.fa-angle-para {
+    color: #666666;
+    font-family: "OpenSans-SemiBold";
+    font-size: 20px;
+    vertical-align: middle;
+}
+.fa-angle-left {
+    text-align: left;
+}
+.fa-angle-left,.fa-angle-right {
+    color: #bbbbbd;
+    cursor: pointer;
+    font-size: 34px;
+    vertical-align: middle;
+}
+.inner_slots .slots_button {
+    background-color: #fafafc;
+    border: 1px solid #d7155b;
+    border-radius: 0 !important;
+    color: #666666;
+    font-family: "OpenSans-SemiBold";
+    font-size: 16.01px;
+    margin-bottom: 9px;
+    padding: 11px 0;
+    width: 100%;
+}
+.inner_slots .slots_button:active, .inner_slots .slots_button:hover, .inner_slots .slots_button:focus, .BookNow_button:active, .BookNow_button:hover, .BookNow_button:focus {
+    background-color: #d7155b;
+    color: #fafafc;
+}
+.BookNow_button {
+    background-color: #fafafc;
+    border: 1px solid #d7155b;
+    border-radius: 5px;
+    color: #d7155b;
+    font-family: "OpenSans-SemiBold";
+    font-size: 14px;
+    margin-bottom: 28px;
+    padding-bottom: 11.5px;
+    padding-top: 11.5px;
+    width: 35%;
+}
+.BookNow_div {
+    margin-top: 32px;
+    text-align: center;
+}
+.hospital-name{
+  width:48.6%;
+  cursor: pointer;
+}
+.booking-menu,.booking-menu1{
+  display:none;
+  margin:0px;
+}
+.google-map{
+  border: 1px solid #4d4d4d;
+  padding: 10px;
+  margin-top: 30px;
+}
+.google-map-img{
+  width:100%;
+}
+.location-detail{
+  font-family: "OpenSans-Regular";
+  font-size: 21px;
+  color:#333333;
+}
+.location-detail-div {
+    margin-top: 68px;
+}
+.available-slots-div {
+    border: 1px solid #999999;
+    padding: 12px;
+    margin-top: 15px;
+}
+.available-timing {
+    margin-top: 50px;
+}
+.fees{
+  font-family: "OpenSans-Regular";
+  font-size: 18px;
+  color:#666666;
+  display: table-cell;
+}
+.public_fa_color{
+  color: #b6b6b7;
+  font-size: 28px;
+  vertical-align: middle;
+}
+.exp-rupies{
+  font-size: 21px;
+  margin-left: 5px;
+}
+.rupi-500 {
+    margin-left: 12px;
+}
+/*.clock-img{
+  margin-left: 64px;
+ float: right;
+}*/
+.avail-time{
+  font-family: "OpenSans-Regular"; 
+  font-size: 14px;
+  color: #999999;
+  margin-left: 13px;
+}
+.slot-div-date{
+  margin-top: 60px;
+}
+.Booked-timing{
+  font-family: "OpenSans-Regular";
+  font-size: 14px;
+  color:#666666;
+}
+.available-timing{
+  width:100%;
+  display: table;
+}
+.fee-div{
+  display: table-cell;
+  vertical-align: middle;
+  width:30%;
+}
+.timimg-div{
+  display: table-cell;
+  vertical-align: middle;
+  width:30%;
+}
+.time-table-week{
+    display: table-cell;
+  vertical-align: middle;
+  width:10%;
+}
+.time-table{
+    display: table-cell;
+  vertical-align: middle;
+  width:30%;
+}
+/*.col-lg-6.col-md-6.col-sm-12.col-xs-12.time {
+    border-top: 2px solid #d41c5c;
+}*/
+/*.col-lg-6.col-md-6.col-sm-12.col-xs-12.google {
+    border-left: 2px solid #d41c5c;
+    padding-bottom: 30px;
+}*/
+.row.booking-menu ,.row.booking-menu1 {
+    border-bottom: 2px solid #d41c5c;
+    border-left: 2px solid #d41c5c;
+    border-right: 2px solid #d41c5c;
+}
+.float-left{
+  float:right;
+}
+.float-right{
+  float:left;
+}
+.minus1,.minus2{
+  display: none;
+}
+/*available slot ends*/
+/*changes*/
+.btn-margin-left{
+  padding-left: 7.5px;
+  padding-right: 7.5px;
+}
+.btn-margin-right{
+  padding-right: 7.5px;
+}
+.btn-margin-left-1{
+  padding-left: 7.5px;
+  padding-right: 7.5px;
+}
+.btn-margin-right-1{
+  padding-left: 7.5px;
+}
+ .row.AvailableSlots_button.inner_slots {
+    margin: 15px 0;
+}
+
+@media screen and (max-width:1024px){
+  .google{
+   width:100%;
+  }
+  .time{
+    width:100%;
+  }
+  .row.booking-menu,.row.booking-menu1{
+    border:none;
+  }
+  .col-lg-6.col-md-6.col-sm-12.col-xs-12.time {
+    border:none;
+  }
+  .hospital-name{
+    width:100%;
+  }
+}
 @media screen and (max-width: 991px){
 	.specialist-in {
 		margin-right:0px;
@@ -356,6 +594,9 @@ src: url(../fonts/Roboto-ThinItalic.ttf);
 	.doctor-img{
 		width:100%;
 	}
+  .hospital-name {
+    width: 100%;
+}
 }
 @media screen and (min-width: 600px) and (max-width: 767px) {
   .marketing-background-cell-1 a {
@@ -407,4 +648,30 @@ padding-left: 0px;
 }
 .col-lg-4.col-md-4.col-sm-4.col-xs-4.margin-right-service1 {
     padding-left: 8%;
+}
+@media screen and (max-width: 991px){
+  .specialist-in {
+    margin-right:0px;
+  }
+  .inner_slots .slots_button {
+  font-size: 12px;
+}
+}
+@media screen and (max-width: 767px) {
+
+.inner_slots .slots_button {
+  font-size: 16px;
+}
+}
+@media screen and (max-width: 420px) {
+
+   .inner_slots .slots_button {
+  font-size: 12px;
+}
+}
+@media screen and (max-width: 360px) {
+
+   .inner_slots .slots_button {
+  font-size: 9px;
+}
 }

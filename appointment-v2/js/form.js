@@ -58,4 +58,21 @@ $(document).ready(function() {
   $(".log-start-close").click(function(){
      $('#loginScreen').modal('hide');
   });
+    $(".float-right").click(function(){
+      $('.booking-menu').toggle();
+       $('.booking-menu1').hide();
+        $('.minus2').show();
+       $('.plus2').hide();
+        $('.minus1').hide();
+       $('.plus1').show();
+  });
+      $(".float-left").click(function(){
+      $('.booking-menu1').toggle();
+       $('.booking-menu').hide();
+        $('.minus1').show();
+       $('.plus1').hide();
+        $('.minus2').hide();
+       $('.plus2').show();
+  });
+
 });            

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>doctor-public-profile</title>
+    <!-- Bootstrap -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/datepicker.css" />
+    <link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+    <script src="js/modernizr.custom.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/jquery.mCustomScrollbar.css">
+    <link rel="stylesheet" type="text/css" href="css/doctor-public-profile.css">
+</head>
+<style>
+#map-canvas{
+    width: 100%;
+    height: 400px;
+    margin-top: 20px
+}
+
+.location {
+   display: block;
+   height: 30px;
+   margin-bottom: 10px
+}
+</style>
+    <body>
+        <div class="container public-priofile-container">
+            <div class="booking">
+                <span class="hospital-clinic">Hospitals / Clinic</span>
+                <span class="click">(click on a hospital to book appointment)</span>
+            </div>
+        <div class="booking-div">
+            <div class="hedding">
+                <div class="hospital-name"><h>APOLLO GLENEAGLES HOSPITAL</h><span class="plus"><i class="fa fa-plus"></i><span>
+                </div>
+                <div class="row booking-menu" style="display:block">
+                     <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                       <div class="location-detail-div">
+                            <img src="img/googleicon.png">
+                            <span class="location-detail"><a class="location" title="58, Canal Circular Road, Kadapara, Phool Bagan, Kolkata, West Bengal 700054">58, Canal Circular Road, Kadapara, Phool Bagan, Kolkata, West Bengal 700054</a></span>
+                        </div>
+                        <div class="google-map">
+                           <!--  <img src="img/googlemap.png" class="google-map-img"> -->
+                           <!-- <div id="googleMap" style="width:500px;height:380px;"></div> -->
+                           <div id="map-canvas" title="1600 Washington"></div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                 <h class="AvailableSlots_para">Available Slots</h>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                <div class="fa-angle-div">
+                                        <i class="fa fa-angle-left"></i><span class="fa-angle-para">Today, 25 February</span><i class="fa fa-angle-right"></i>
+                                </div>
+                            </div>
+                        </div>
+                    <div class="row AvailableSlots_button inner_slots">
+                            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3"><button class="btn slots_button">10:00AM</button></div>
+                            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3"><button class="btn slots_button">10:30AM</button></div>
+                            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3"><button class="btn slots_button">11:00AM</button></div>
+                            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3"><button class="btn slots_button">11:30AM</button></div>
+                    </div>
+                    <div class="row AvailableSlots_button inner_slots">
+                            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3"><button class="btn slots_button disabled">12:00PM</button></div>
+                            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3"><button class="btn slots_button disabled">12:30PM</button></div>
+                            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3"><button class="btn slots_button disabled">02:00PM</button></div>
+                            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3"><button class="btn slots_button disabled">02:30PM</button></div>
+                    </div>
+                    <div class="row AvailableSlots_button inner_slots">
+                            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3"><button class="btn slots_button">03:00PM</button></div>
+                            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3"><button class="btn slots_button">03:30PM</button></div>
+                            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3"><button class="btn slots_button active">04:00PM</button></div>
+                            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3"><button class="btn slots_button active">04:30PM</button></div>
+                    </div>
+                     <div class="row AvailableSlots_button inner_slots">
+                            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3"><button class="btn slots_button disabled">05:00PM</button></div>
+                            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3"><button class="btn slots_button disabled">05:30PM</button></div>
+                            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3"><button class="btn slots_button">06:00PM</button></div>
+                            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3"><button class="btn slots_button">06:30PM</button></div>
+                    </div>
+                    <div class="BookNow_div">
+                            <button class="BookNow_button">BOOK NOW</button>
+                                <p class="BookNow_para">You have choosen a 30 Min slot at 4.00PM.</p>
+                    </div>
+            </div>
+                </div>
+            </div>
+        </div>
+        </div>
+
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+            <script src="js/hideShowPassword.min.js"></script>
+            <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+            <script type="text/javascript" src="js/datepicker.js"></script>
+            <script src="js/form.js"></script>
+            <script type="text/javascript" src="script.js"></script>    
+            <!-- custom scrollbar plugin -->
+            <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+            <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gmaps.js/0.4.24/gmaps.js"></script>
+            <script src="http://maps.googleapis.com/maps/api/js">
+</script>
+
+<script>
+var geocoder;
+var map;
+function initialize() {
+    geocoder = new google.maps.Geocoder();
+    var latlng = new google.maps.LatLng(0,0);
+    var myOptions = {
+         zoom: 17,
+          center: latlng,
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+    }
+    map = new google.maps.Map(document.getElementById("map-canvas"), myOptions);
+}
+
+function codeAddress(element) {
+    var address = element.attr('title');
+    geocoder.geocode( { 'address': address}, function(results, status) {
+        if (status == google.maps.GeocoderStatus.OK) {
+            map.setCenter(results[0].geometry.location);
+            var marker = new google.maps.Marker({
+                   map: map,
+                   position: results[0].geometry.location
+            });
+        } else {
+            alert("Geocode was not successful for the following reason: " + status);
+        }
+    });
+}
+
+$(document).ready(function(){
+    $map = $('#map-canvas');
+    
+    initialize();
+    codeAddress($map);
+    
+    $('.location').click(function(){
+        $me = $(this);
+        codeAddress($me);
+    });
+});
+</script>
+   </body>
+    </html>
